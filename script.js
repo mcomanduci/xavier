@@ -131,12 +131,22 @@ document.querySelectorAll('[role="tab"]').forEach((tab) => {
 });
 
 // --------------- smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+document.querySelectorAll(".scroll-to-section").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });
+  });
+});
+
+// --------------- back to top
+const backToTop = document.querySelector("#back-to-top");
+backToTop.addEventListener("click", () => {
+  console.log("teste");
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });
