@@ -133,9 +133,6 @@
     <section
       class="relative bg-[url(./img/bg-mark1.jpg)] bg-cover bg-center bg-no-repeat"
     >
-      <!-- <div
-        class="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 sm:bg-gradient-to-r"
-      ></div> -->
       <div
         class="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/10 sm:to-black/80 sm:bg-gradient-to-t"
       ></div>
@@ -143,7 +140,7 @@
       <div
         class="relative mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-[90vh] lg:items-center"
       >
-        <div class="mx-auto max-w-xl text-center">
+        <div class="mx-auto max-w-xl text-center js-scroll js-right">
           <h1
             class="text-3xl font-extrabold text-white sm:text-5xl text-shadow"
           >
@@ -182,7 +179,7 @@
     <section class="overflow-hidden pt-8 pb-8 lg:pt-8 lg:pb-8 bg-primary">
       <div class="container mx-auto px-6">
         <div class="flex flex-wrap items-center justify-evenly -mx-4">
-          <div class="w-full px-4 lg:w-6/12">
+          <div class="w-full px-4 lg:w-6/12 js-scroll js-right">
             <div class="flex items-center -mx-3 sm:-mx-4">
               <div class="w-full px-3 sm:px-4 xl:w-1/2">
                 <div class="py-3 sm:py-4">
@@ -781,7 +778,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+          <div class="w-full px-4 lg:w-1/2 xl:w-5/12 js-scroll js-left">
             <div class="mt-10 lg:mt-0">
               <span
                 class="block mb-4 text-lg font-semibold text-primary text-rose-600 poppins"
@@ -827,7 +824,7 @@
     <!-- About Section End -->
 
     <!-- Services Section -->
-    <section class="py-16 bg-secondary">
+    <!-- <section class="py-16 bg-secondary">
       <div class="container m-auto px-6 text-gray-500">
         <h2 class="text-white text-center text-4xl poppins mb-8">
           Nosso Serviços
@@ -924,6 +921,179 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="container mx-auto py-8" aria-multiselectable="false">
+      <h2 class="text-3xl font-bold text-center text-slate-700 my-8 ">
+        Nossos Serviços
+      </h2>
+      <ul class="flex items-center border-b border-slate-200" role="tablist">
+        <li class="flex-1" role="presentation ">
+          <button
+            class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-xl font-medium tracking-wide transition-all duration-300 border-b-2 rounded-t focus-visible:outline-none whitespace-nowrap border-transparent hover:border-tertiary focus:border-tertiary text-slate-700 hover:text-tertiary focus:text-tertiary hover:bg-tertiary/10 focus:bg-tertiary/10 disabled:cursor-not-allowed disabled:border-slate-500 stroke-tertiary hover:stroke-tertiary focus:stroke-tertiary"
+            id="tab-label-1a"
+            role="tab"
+            aria-setsize="3"
+            aria-posinset="1"
+            tabindex="0"
+            aria-controls="tab-panel-1a"
+            aria-selected="true"
+          >
+            <span>Tráfego Pago</span>
+          </button>
+        </li>
+        <li class="flex-1" role="presentation ">
+          <button
+            class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-sm font-medium tracking-wide transition duration-300 border-b-2 border-transparent rounded-t focus-visible:outline-none justify-self-center hover:border-emerald-500 focus:border-emerald-600 whitespace-nowrap text-slate-700 stroke-slate-700 hover:bg-emerald-50 hover:text-emerald-500 focus:stroke-emerald-600 focus:bg-emerald-50 focus:text-emerald-600 hover:stroke-emerald-600 disabled:cursor-not-allowed disabled:text-slate-500"
+            id="tab-label-2a"
+            role="tab"
+            aria-setsize="3"
+            aria-posinset="2"
+            tabindex="-1"
+            aria-controls="tab-panel-2a"
+            aria-selected="false"
+          >
+            <span>Tab 2</span>
+          </button>
+        </li>
+        <li class="flex-1" role="presentation ">
+          <button
+            class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-sm font-medium tracking-wide transition duration-300 border-b-2 border-transparent rounded-t focus-visible:outline-none justify-self-center hover:border-emerald-500 focus:border-emerald-600 whitespace-nowrap text-slate-700 stroke-slate-700 hover:bg-emerald-50 hover:text-emerald-500 focus:stroke-emerald-600 focus:bg-emerald-50 focus:text-emerald-600 hover:stroke-emerald-600 disabled:cursor-not-allowed disabled:text-slate-500"
+            id="tab-label-3a"
+            role="tab"
+            aria-setsize="3"
+            aria-posinset="3"
+            tabindex="-1"
+            aria-controls="tab-panel-3a"
+            aria-selected="false"
+          >
+            <span>Tab 3</span>
+          </button>
+        </li>
+      </ul>
+      <div>
+        <div
+          class="px-6 py-4"
+          id="tab-panel-1a"
+          aria-hidden="false"
+          role="tabpanel"
+          aria-labelledby="tab-label-1a"
+          tabindex="-1"
+        >
+          <!-- Component: Horizontal card-->
+          <div
+            class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
+          >
+            <!-- Image -->
+            <figure class="flex-1">
+              <img
+                src="https://picsum.photos/id/118/800/600"
+                alt="card image"
+                class="object-cover min-h-full aspect-auto"
+              />
+            </figure>
+            <!-- Body-->
+            <div class="flex-1 p-6 sm:mx-6 sm:px-0">
+              <header class="flex gap-4 mb-4">
+                <div>
+                  <h3 class="text-xl font-medium text-slate-700">
+                    Gestão de Anúncios Pagos
+                  </h3>
+                  <h4 class="font-semibold">
+                    Maximize Suas Vendas com Anúncios Estratégicos
+                  </h4>
+                </div>
+              </header>
+              <p>
+                Nossa equipe especializada em anúncios pagos cria campanhas
+                personalizadas para atingir o público-alvo certo no momento
+                certo, garantindo um retorno sobre investimento (ROI)
+                consistente e impulsionando suas vendas online.
+              </p>
+            </div>
+          </div>
+          <!-- End Horizontal card-->
+        </div>
+        <div
+          class="hidden px-6 py-4"
+          id="tab-panel-2a"
+          aria-hidden="true"
+          role="tabpanel"
+          aria-labelledby="tab-label-2a"
+          tabindex="-1"
+        >
+          <!-- Component: Horizontal card-->
+          <div
+            class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
+          >
+            <!-- Image -->
+            <figure class="flex-1">
+              <img
+                src="https://fastly.picsum.photos/id/145/800/600.jpg?hmac=BNOm1K4dOTjVpP1_z8IzsaIHgWpxqf-xZtfmcA6CoAk"
+                alt="card image"
+                class="object-cover min-h-full aspect-auto"
+              />
+            </figure>
+            <!-- Body-->
+            <div class="flex-1 p-6 sm:mx-6 sm:px-0">
+              <header class="flex gap-4 mb-4">
+                <div>
+                  <h3 class="text-xl font-medium text-slate-700">
+                    Otimização de Sites (SEO)
+                  </h3>
+                  <h4 class="font-semibold">
+                    Apareça no Topo das Buscas e Aumente Suas Vendas
+                  </h4>
+                </div>
+              </header>
+              <p>
+                Com técnicas avançadas de SEO, otimizamos seu site para os
+                motores de busca, aumentando sua visibilidade, atraindo tráfego
+                qualificado e convertendo visitantes em clientes.
+              </p>
+            </div>
+          </div>
+          <!-- End Horizontal card-->
+        </div>
+        <div
+          class="hidden px-6 py-4"
+          id="tab-panel-3a"
+          aria-hidden="true"
+          role="tabpanel"
+          aria-labelledby="tab-label-3a"
+          tabindex="-1"
+        >
+          <!-- Component: Horizontal card-->
+          <div
+            class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
+          >
+            <!-- Image -->
+            <figure class="flex-1">
+              <img
+                src="https://fastly.picsum.photos/id/875/800/600.jpg?hmac=NXX-SwYycWXsbCWcJJnivoEGENe8Mp4fvuHqATxgOSY"
+                alt="card image"
+                class="object-cover min-h-full aspect-auto"
+              />
+            </figure>
+            <!-- Body-->
+            <div class="flex-1 p-6 sm:mx-6 sm:px-0">
+              <header class="flex gap-4 mb-4">
+                <div>
+                  <h3 class="text-xl font-medium text-slate-700">
+                    Criação de Conteúdo e Copywriting
+                  </h3>
+                  <h4 class="semibold">Conteúdo Que Conquista e Converte</h4>
+                </div>
+              </header>
+              <p>
+                Desenvolvemos conteúdo criativo e persuasivo que conecta com seu
+                público e impulsiona suas vendas. Desde postagens em blogs até
+                e-mails de vendas, nossos textos geram engajamento e resultados.
+              </p>
+            </div>
+          </div>
+          <!-- End Horizontal card-->
         </div>
       </div>
     </section>

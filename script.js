@@ -73,3 +73,59 @@ window.addEventListener("scroll", () => {
     header.classList.add("scrolled");
   }
 });
+
+// ---------------
+function initAnimacaoScroll() {
+  const sections = document.querySelectorAll(".js-scroll");
+  if (!sections.length) return;
+  const windowMetade = window.innerHeight * 0.6;
+
+  function animaScroll() {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const isSectionVisible = sectionTop - windowMetade < 0;
+      if (isSectionVisible) {
+        section.classList.add("animate");
+      } else {
+        section.classList.remove("animate");
+      }
+    });
+  }
+  animaScroll();
+
+  window.addEventListener("scroll", animaScroll);
+}
+initAnimacaoScroll();
+
+//-------------------------
+document.querySelectorAll('[role="tab"]').forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const tabList = tab.closest('[role="tablist"]');
+    const tabs = tabList.querySelectorAll('[role="tab"]');
+    const panels = tabList.nextElementSibling.children;
+
+    // Reset all tabs and panels
+    tabs.forEach((t) => {
+      t.classList.remove("border-tertiary", "text-tertiary", "bg-tertiary/10");
+      t.classList.add("border-transparent", "text-slate-700", "bg-transparent");
+      t.setAttribute("aria-selected", "false");
+      t.setAttribute("tabindex", "-1");
+    });
+
+    Array.from(panels).forEach((panel) => {
+      panel.setAttribute("aria-hidden", "true");
+      panel.classList.add("hidden");
+    });
+
+    // Activate the clicked tab
+    tab.classList.add("border-tertiary", "text-tertiary", "bg-tertiary/10");
+    tab.classList.remove("border-transparent", "text-slate-700");
+    tab.setAttribute("aria-selected", "true");
+    tab.setAttribute("tabindex", "0");
+
+    // Show the associated panel
+    const panel = document.getElementById(tab.getAttribute("aria-controls"));
+    panel.setAttribute("aria-hidden", "false");
+    panel.classList.remove("hidden");
+  });
+});
