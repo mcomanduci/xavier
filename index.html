@@ -18,6 +18,13 @@
       href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Header Section -->
@@ -159,22 +166,896 @@
           <div class="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href="#"
-              class="block w-full rounded bg-tertiary px-12 py-3 text-sm font-medium text-white shadow hover:bg-tertiary focus:outline-none focus:ring active:bg-tertiary/80 sm:w-auto"
+              class="block w-full rounded bg-tertiary px-12 py-3 text-sm font-medium text-black shadow hover:bg-tertiary focus:outline-none focus:ring active:bg-tertiary/80 sm:w-auto"
             >
               Entre em Contato
             </a>
 
-            <a
+            <!-- <a
               href="#"
               class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
               Saiba Mais
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
     </section>
     <!-- Hero Section End -->
+
+    <!-- Form Section -->
+    <section id="contato" class="bg-primary">
+      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+          <div class="lg:col-span-2 lg:py-12 js-scroll js-right">
+            <p class="max-w-xl text-lg text-gray-300 mb-4">
+              Estamos aqui para ajudar! Seja para tirar dúvidas, discutir
+              projetos ou receber sugestões, queremos ouvir você. Preencha o
+              formulário ao lado e nossa equipe entrará em contato o mais breve
+              possível.
+            </p>
+            <p class="max-w-xl text-lg text-gray-300 mb-4">
+              Se preferir, você também pode nos enviar um e-mail diretamente ou
+              ligar para o nosso número de atendimento. Estamos prontos para
+              oferecer todo o suporte necessário para transformar suas ideias em
+              realidade.
+            </p>
+            <p class="max-w-xl text-lg text-gray-300 mb-4">
+              Tem urgência? Entre em contato diretamente pelo nosso número ou
+              WhatsApp:
+            </p>
+
+            <div class="mt-8">
+              <a
+                href="#"
+                class="text-2xl font-bold text-tertiary hover:text-tertiary/80"
+              >
+                (37) 99999-9999
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg bg-[#2A2A2A] p-8 border shadow-lg lg:col-span-3 lg:p-12 js-scroll js-left"
+          >
+            <form action="#" class="space-y-4">
+              <div class="relative">
+                <!-- <label class="sr-only" for="name">Name</label>
+                    <input
+                      class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      placeholder="Name"
+                      type="text"
+                      id="name"
+                    /> -->
+                <input
+                  type="text"
+                  id="nome"
+                  required
+                  class="peer text-black bg-transparent border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm"
+                  placeholder="Nome"
+                />
+                <label
+                  for="nome"
+                  class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
+                >
+                  Nome
+                </label>
+              </div>
+
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="sr-only" for="email">Email</label>
+                  <input
+                    class="w-full rounded-lg border border-gray-200 p-3 text-sm bg-transparent"
+                    placeholder="Email"
+                    type="email"
+                    id="email"
+                  />
+                </div>
+
+                <div>
+                  <label class="sr-only" for="phone">Phone</label>
+                  <input
+                    class="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
+                    placeholder="Phone Number"
+                    type="tel"
+                    id="phone"
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+                <div>
+                  <label
+                    for="Option1"
+                    class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                    tabindex="0"
+                  >
+                    <input
+                      class="sr-only"
+                      id="Option1"
+                      type="radio"
+                      tabindex="-1"
+                      name="option"
+                    />
+
+                    <span class="text-sm"> Option 1 </span>
+                  </label>
+                </div>
+
+                <div>
+                  <label
+                    for="Option2"
+                    class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                    tabindex="0"
+                  >
+                    <input
+                      class="sr-only"
+                      id="Option2"
+                      type="radio"
+                      tabindex="-1"
+                      name="option"
+                    />
+
+                    <span class="text-sm"> Option 2 </span>
+                  </label>
+                </div>
+
+                <div>
+                  <label
+                    for="Option3"
+                    class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                    tabindex="0"
+                  >
+                    <input
+                      class="sr-only"
+                      id="Option3"
+                      type="radio"
+                      tabindex="-1"
+                      name="option"
+                    />
+
+                    <span class="text-sm"> Option 3 </span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label class="sr-only" for="message">Mensagem</label>
+
+                <textarea
+                  class="w-full rounded-lg border border-gray-300 bg-transparent p-3 text-sm"
+                  placeholder="Message"
+                  rows="8"
+                  id="message"
+                ></textarea>
+              </div>
+
+              <div class="mt-4">
+                <button
+                  class="inline-block w-full rounded-lg bg-tertiary px-5 py-3 font-medium text-black sm:w-auto hover:bg-tertiary/80 focus:outline-none focus:ring focus:ring-tertiary"
+                >
+                  Enviar Mensagem
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form Section End -->
+
+    <!-- CTA Section -->
+    <section
+      id="cta"
+      class="overflow-hidden bg-secondary sm:grid sm:grid-cols-2 sm:items-center"
+    >
+      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div
+          class="mx-auto max-w-xl text-center sm:text-left js-scroll js-right"
+        >
+          <h2 class="text-2xl font-bold text-gray-700 md:text-3xl">
+            Pronto para transformar sua marca?
+          </h2>
+
+          <p class="hidden text-gray-500 md:mt-4 md:block">
+            Chegou a hora de dar o próximo passo rumo ao crescimento e destaque
+            que sua marca merece! Com nossas estratégias personalizadas e
+            soluções inovadoras, você pode alcançar novos patamares e conquistar
+            o público que deseja. Não importa o tamanho do desafio, estamos aqui
+            para ajudar você a construir uma identidade forte, aumentar sua
+            presença no mercado e transformar sua visão em resultados reais.
+          </p>
+
+          <div class="mt-4 md:mt-8">
+            <a
+              href="#"
+              class="inline-block rounded bg-tertiary px-12 py-3 text-sm font-medium text-black transition hover:bg-tertiary/80 focus:outline-none focus:ring focus:ring-tertiary"
+            >
+              Comece Agora
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <img
+        alt=""
+        src="./img/meet.jpg"
+        class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px] js-scroll js-left"
+      />
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Services Section -->
+    <!-- <section class="py-16 bg-secondary">
+      <div class="container m-auto px-6 text-gray-500">
+        <h2 class="text-white text-center text-4xl poppins mb-8">
+          Nosso Serviços
+        </h2>
+        <div class="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
+          <div
+            class="bg-gray-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8"
+          >
+            <div class="mb-12 space-y-4">
+              <h3 class="text-2xl font-semibold text-rose-700 text-center mb-8">
+                Gestão de Anúncios Pagos
+              </h3>
+              <div class="h-[300px]">
+                <img
+                  src="./img/chart.jpg"
+                  class="rounded-sm h-full w-auto"
+                  alt="illustration"
+                  loading="lazy"
+                  width="900"
+                  height="600"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h5 class="text-base font-semibold text-black">
+                  Maximize Suas Vendas com Anúncios Estratégicos
+                </h5>
+                <p class="mb-6">
+                  Nossa equipe especializada em anúncios pagos cria campanhas
+                  personalizadas para atingir o público-alvo certo no momento
+                  certo, garantindo um retorno sobre investimento (ROI)
+                  consistente e impulsionando suas vendas online.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8"
+          >
+            <div class="mb-12 space-y-4">
+              <h3 class="text-2xl font-semibold text-rose-700 text-center mb-8">
+                Otimização de Sites (SEO)
+              </h3>
+              <div class="h-[300px]">
+                <img
+                  src="./img/seo.jpg"
+                  class="rounded-sm h-full w-auto"
+                  alt="illustration"
+                  loading="lazy"
+                  width="900"
+                  height="600"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h5 class="text-base font-semibold text-black">
+                  Apareça no Topo das Buscas e Aumente Suas Vendas
+                </h5>
+                <p class="mb-6">
+                  Com técnicas avançadas de SEO, otimizamos seu site para os
+                  motores de busca, aumentando sua visibilidade, atraindo
+                  tráfego qualificado e convertendo visitantes em clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8"
+          >
+            <div class="mb-12 space-y-4">
+              <h3 class="text-2xl font-semibold text-rose-700 text-center mb-8">
+                Criação de Conteúdo e Copywriting
+              </h3>
+              <div class="h-[300px]">
+                <img
+                  src="./img/copy.jpg"
+                  class="rounded-sm h-full w-auto"
+                  alt="illustration"
+                  loading="lazy"
+                  width="900"
+                  height="600"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h5 class="text-base font-semibold text-black">
+                  Conteúdo Que Conquista e Converte
+                </h5>
+                <p class="mb-6">
+                  Desenvolvemos conteúdo criativo e persuasivo que conecta com
+                  seu público e impulsiona suas vendas. Desde postagens em blogs
+                  até e-mails de vendas, nossos textos geram engajamento e
+                  resultados.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <div class="bg-primary">
+      <section
+        id="servicos"
+        class="container mx-auto py-8 js-scroll js-right"
+        aria-multiselectable="false"
+      >
+        <h2 class="text-3xl font-bold text-center text-slate-200 my-8">
+          Nossos Serviços
+        </h2>
+        <ul class="flex items-center border-b border-slate-200" role="tablist">
+          <li class="flex-1" role="presentation ">
+            <button
+              class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-xl font-medium tracking-wide transition-all duration-300 border-b-2 rounded-t focus-visible:outline-none whitespace-nowrap border-transparent hover:border-tertiary focus:border-tertiary text-slate-300 hover:text-tertiary focus:text-tertiary hover:bg-tertiary/10 focus:bg-tertiary/10 disabled:cursor-not-allowed disabled:border-slate-500 stroke-tertiary hover:stroke-tertiary focus:stroke-tertiary"
+              id="tab-label-1a"
+              role="tab"
+              aria-setsize="3"
+              aria-posinset="1"
+              tabindex="0"
+              aria-controls="tab-panel-1a"
+              aria-selected="true"
+            >
+              <span>Tráfego Pago</span>
+            </button>
+          </li>
+          <li class="flex-1" role="presentation ">
+            <button
+              class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-sm font-medium tracking-wide transition duration-300 border-b-2 border-transparent rounded-t focus-visible:outline-none justify-self-center hover:border-emerald-500 focus:border-emerald-600 whitespace-nowrap text-slate-300 stroke-slate-700 hover:bg-emerald-50 hover:text-emerald-500 focus:stroke-emerald-600 focus:bg-emerald-50 focus:text-emerald-600 hover:stroke-emerald-600 disabled:cursor-not-allowed disabled:text-slate-500"
+              id="tab-label-2a"
+              role="tab"
+              aria-setsize="3"
+              aria-posinset="2"
+              tabindex="-1"
+              aria-controls="tab-panel-2a"
+              aria-selected="false"
+            >
+              <span>Tab 2</span>
+            </button>
+          </li>
+          <li class="flex-1" role="presentation ">
+            <button
+              class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-sm font-medium tracking-wide transition duration-300 border-b-2 border-transparent rounded-t focus-visible:outline-none justify-self-center hover:border-emerald-500 focus:border-emerald-600 whitespace-nowrap text-slate-300 stroke-slate-700 hover:bg-emerald-50 hover:text-emerald-500 focus:stroke-emerald-600 focus:bg-emerald-50 focus:text-emerald-600 hover:stroke-emerald-600 disabled:cursor-not-allowed disabled:text-slate-500"
+              id="tab-label-3a"
+              role="tab"
+              aria-setsize="3"
+              aria-posinset="3"
+              tabindex="-1"
+              aria-controls="tab-panel-3a"
+              aria-selected="false"
+            >
+              <span>Tab 3</span>
+            </button>
+          </li>
+        </ul>
+        <div>
+          <div
+            class="px-6 py-4"
+            id="tab-panel-1a"
+            aria-hidden="false"
+            role="tabpanel"
+            aria-labelledby="tab-label-1a"
+            tabindex="-1"
+          >
+            <!-- Component: Horizontal card-->
+            <div
+              class="flex flex-col overflow-hidden bg-[#2A2A2A] rounded shadow-md sm:flex-row text-slate-300"
+            >
+              <!-- Image -->
+              <figure class="flex-1">
+                <img
+                  src="https://picsum.photos/id/118/800/600"
+                  alt="card image"
+                  class="object-cover min-h-full aspect-auto"
+                />
+              </figure>
+              <!-- Body-->
+              <div class="flex-1 p-6 sm:mx-6 sm:px-0">
+                <header class="flex gap-4 mb-4">
+                  <div>
+                    <h3 class="text-xl font-medium text-slate-100">
+                      Gestão de Anúncios Pagos
+                    </h3>
+                    <h4 class="font-semibold">
+                      Maximize Suas Vendas com Anúncios Estratégicos
+                    </h4>
+                  </div>
+                </header>
+                <p>
+                  Nossa equipe especializada em anúncios pagos cria campanhas
+                  personalizadas para atingir o público-alvo certo no momento
+                  certo, garantindo um retorno sobre investimento (ROI)
+                  consistente e impulsionando suas vendas online.
+                </p>
+              </div>
+            </div>
+            <!-- End Horizontal card-->
+          </div>
+          <div
+            class="hidden px-6 py-4"
+            id="tab-panel-2a"
+            aria-hidden="true"
+            role="tabpanel"
+            aria-labelledby="tab-label-2a"
+            tabindex="-1"
+          >
+            <!-- Component: Horizontal card-->
+            <div
+              class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
+            >
+              <!-- Image -->
+              <figure class="flex-1">
+                <img
+                  src="https://fastly.picsum.photos/id/145/800/600.jpg?hmac=BNOm1K4dOTjVpP1_z8IzsaIHgWpxqf-xZtfmcA6CoAk"
+                  alt="card image"
+                  class="object-cover min-h-full aspect-auto"
+                />
+              </figure>
+              <!-- Body-->
+              <div class="flex-1 p-6 sm:mx-6 sm:px-0">
+                <header class="flex gap-4 mb-4">
+                  <div>
+                    <h3 class="text-xl font-medium text-slate-700">
+                      Otimização de Sites (SEO)
+                    </h3>
+                    <h4 class="font-semibold">
+                      Apareça no Topo das Buscas e Aumente Suas Vendas
+                    </h4>
+                  </div>
+                </header>
+                <p>
+                  Com técnicas avançadas de SEO, otimizamos seu site para os
+                  motores de busca, aumentando sua visibilidade, atraindo
+                  tráfego qualificado e convertendo visitantes em clientes.
+                </p>
+              </div>
+            </div>
+            <!-- End Horizontal card-->
+          </div>
+          <div
+            class="hidden px-6 py-4"
+            id="tab-panel-3a"
+            aria-hidden="true"
+            role="tabpanel"
+            aria-labelledby="tab-label-3a"
+            tabindex="-1"
+          >
+            <!-- Component: Horizontal card-->
+            <div
+              class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
+            >
+              <!-- Image -->
+              <figure class="flex-1">
+                <img
+                  src="https://fastly.picsum.photos/id/875/800/600.jpg?hmac=NXX-SwYycWXsbCWcJJnivoEGENe8Mp4fvuHqATxgOSY"
+                  alt="card image"
+                  class="object-cover min-h-full aspect-auto"
+                />
+              </figure>
+              <!-- Body-->
+              <div class="flex-1 p-6 sm:mx-6 sm:px-0">
+                <header class="flex gap-4 mb-4">
+                  <div>
+                    <h3 class="text-xl font-medium text-slate-700">
+                      Criação de Conteúdo e Copywriting
+                    </h3>
+                    <h4 class="semibold">Conteúdo Que Conquista e Converte</h4>
+                  </div>
+                </header>
+                <p>
+                  Desenvolvemos conteúdo criativo e persuasivo que conecta com
+                  seu público e impulsiona suas vendas. Desde postagens em blogs
+                  até e-mails de vendas, nossos textos geram engajamento e
+                  resultados.
+                </p>
+              </div>
+            </div>
+            <!-- End Horizontal card-->
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Services Section End -->
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="bg-secondary">
+      <div
+        class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 js-scroll js-right"
+      >
+        <h2
+          class="text-center text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl poppins"
+        >
+          O que Nossos Clientes Têm a Dizer
+        </h2>
+
+        <div class="mt-8">
+          <div id="keen-slider" class="keen-slider">
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-[#000] p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-tertiary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-300">
+                      Carlos César
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-400">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-tertiary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Marcos Antônio
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-tertiary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Gustavo Souza
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-tertiary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Pedro Henrique
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="mt-6 flex items-center justify-center gap-4">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous"
+              class="text-gray-400 transition-colors hover:text-gray-900"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <p class="w-16 text-center text-sm text-gray-600">
+              <span id="keen-slider-active"></span>
+              /
+              <span id="keen-slider-count"></span>
+            </p>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next"
+              class="text-gray-400 transition-colors hover:text-gray-900"
+            >
+              <svg
+                class="size-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section End -->
 
     <!-- About Section -->
     <section
@@ -827,879 +1708,62 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Services Section -->
-    <!-- <section class="py-16 bg-secondary">
-      <div class="container m-auto px-6 text-gray-500">
-        <h2 class="text-white text-center text-4xl poppins mb-8">
-          Nosso Serviços
-        </h2>
-        <div class="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
-          <div
-            class="bg-gray-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8"
-          >
-            <div class="mb-12 space-y-4">
-              <h3 class="text-2xl font-semibold text-rose-700 text-center mb-8">
-                Gestão de Anúncios Pagos
-              </h3>
-              <div class="h-[300px]">
-                <img
-                  src="./img/chart.jpg"
-                  class="rounded-sm h-full w-auto"
-                  alt="illustration"
-                  loading="lazy"
-                  width="900"
-                  height="600"
-                />
-              </div>
-              <div class="flex flex-col gap-4">
-                <h5 class="text-base font-semibold text-black">
-                  Maximize Suas Vendas com Anúncios Estratégicos
-                </h5>
-                <p class="mb-6">
-                  Nossa equipe especializada em anúncios pagos cria campanhas
-                  personalizadas para atingir o público-alvo certo no momento
-                  certo, garantindo um retorno sobre investimento (ROI)
-                  consistente e impulsionando suas vendas online.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- CTA WhatsApp -->
+    <section class="bg-gray-50">
+      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="mx-auto max-w-lg text-center">
+          <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+            Fale Conosco no WhatsApp!
+          </h2>
 
-          <div
-            class="bg-gray-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8"
-          >
-            <div class="mb-12 space-y-4">
-              <h3 class="text-2xl font-semibold text-rose-700 text-center mb-8">
-                Otimização de Sites (SEO)
-              </h3>
-              <div class="h-[300px]">
-                <img
-                  src="./img/seo.jpg"
-                  class="rounded-sm h-full w-auto"
-                  alt="illustration"
-                  loading="lazy"
-                  width="900"
-                  height="600"
-                />
-              </div>
-              <div class="flex flex-col gap-4">
-                <h5 class="text-base font-semibold text-black">
-                  Apareça no Topo das Buscas e Aumente Suas Vendas
-                </h5>
-                <p class="mb-6">
-                  Com técnicas avançadas de SEO, otimizamos seu site para os
-                  motores de busca, aumentando sua visibilidade, atraindo
-                  tráfego qualificado e convertendo visitantes em clientes.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-100 rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8"
-          >
-            <div class="mb-12 space-y-4">
-              <h3 class="text-2xl font-semibold text-rose-700 text-center mb-8">
-                Criação de Conteúdo e Copywriting
-              </h3>
-              <div class="h-[300px]">
-                <img
-                  src="./img/copy.jpg"
-                  class="rounded-sm h-full w-auto"
-                  alt="illustration"
-                  loading="lazy"
-                  width="900"
-                  height="600"
-                />
-              </div>
-              <div class="flex flex-col gap-4">
-                <h5 class="text-base font-semibold text-black">
-                  Conteúdo Que Conquista e Converte
-                </h5>
-                <p class="mb-6">
-                  Desenvolvemos conteúdo criativo e persuasivo que conecta com
-                  seu público e impulsiona suas vendas. Desde postagens em blogs
-                  até e-mails de vendas, nossos textos geram engajamento e
-                  resultados.
-                </p>
-              </div>
-            </div>
-          </div>
+          <p class="text-gray-500 sm:mt-4 block max-w-4xl">
+            Tire suas dúvidas, solicite informações ou faça seu pedido de forma
+            rápida e prática. Nossa equipe está pronta para atender você
+            diretamente no WhatsApp. Clique no botão e fale conosco agora mesmo!
+          </p>
         </div>
-      </div>
-    </section> -->
-    <section
-      id="servicos"
-      class="container mx-auto py-8 js-scroll js-right"
-      aria-multiselectable="false"
-    >
-      <h2 class="text-3xl font-bold text-center text-slate-700 my-8">
-        Nossos Serviços
-      </h2>
-      <ul class="flex items-center border-b border-slate-200" role="tablist">
-        <li class="flex-1" role="presentation ">
-          <button
-            class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-xl font-medium tracking-wide transition-all duration-300 border-b-2 rounded-t focus-visible:outline-none whitespace-nowrap border-transparent hover:border-tertiary focus:border-tertiary text-slate-700 hover:text-tertiary focus:text-tertiary hover:bg-tertiary/10 focus:bg-tertiary/10 disabled:cursor-not-allowed disabled:border-slate-500 stroke-tertiary hover:stroke-tertiary focus:stroke-tertiary"
-            id="tab-label-1a"
-            role="tab"
-            aria-setsize="3"
-            aria-posinset="1"
-            tabindex="0"
-            aria-controls="tab-panel-1a"
-            aria-selected="true"
-          >
-            <span>Tráfego Pago</span>
-          </button>
-        </li>
-        <li class="flex-1" role="presentation ">
-          <button
-            class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-sm font-medium tracking-wide transition duration-300 border-b-2 border-transparent rounded-t focus-visible:outline-none justify-self-center hover:border-emerald-500 focus:border-emerald-600 whitespace-nowrap text-slate-700 stroke-slate-700 hover:bg-emerald-50 hover:text-emerald-500 focus:stroke-emerald-600 focus:bg-emerald-50 focus:text-emerald-600 hover:stroke-emerald-600 disabled:cursor-not-allowed disabled:text-slate-500"
-            id="tab-label-2a"
-            role="tab"
-            aria-setsize="3"
-            aria-posinset="2"
-            tabindex="-1"
-            aria-controls="tab-panel-2a"
-            aria-selected="false"
-          >
-            <span>Tab 2</span>
-          </button>
-        </li>
-        <li class="flex-1" role="presentation ">
-          <button
-            class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-sm font-medium tracking-wide transition duration-300 border-b-2 border-transparent rounded-t focus-visible:outline-none justify-self-center hover:border-emerald-500 focus:border-emerald-600 whitespace-nowrap text-slate-700 stroke-slate-700 hover:bg-emerald-50 hover:text-emerald-500 focus:stroke-emerald-600 focus:bg-emerald-50 focus:text-emerald-600 hover:stroke-emerald-600 disabled:cursor-not-allowed disabled:text-slate-500"
-            id="tab-label-3a"
-            role="tab"
-            aria-setsize="3"
-            aria-posinset="3"
-            tabindex="-1"
-            aria-controls="tab-panel-3a"
-            aria-selected="false"
-          >
-            <span>Tab 3</span>
-          </button>
-        </li>
-      </ul>
-      <div>
-        <div
-          class="px-6 py-4"
-          id="tab-panel-1a"
-          aria-hidden="false"
-          role="tabpanel"
-          aria-labelledby="tab-label-1a"
-          tabindex="-1"
-        >
-          <!-- Component: Horizontal card-->
-          <div
-            class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
-          >
-            <!-- Image -->
-            <figure class="flex-1">
-              <img
-                src="https://picsum.photos/id/118/800/600"
-                alt="card image"
-                class="object-cover min-h-full aspect-auto"
+
+        <div class="mx-auto mt-8 max-w-xl">
+          <form action="#" class="sm:flex sm:gap-4">
+            <div class="sm:flex-1">
+              <label for="email" class="sr-only">Mensagem</label>
+
+              <input
+                type="text"
+                placeholder="Digite sua mensagem..."
+                class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
               />
-            </figure>
-            <!-- Body-->
-            <div class="flex-1 p-6 sm:mx-6 sm:px-0">
-              <header class="flex gap-4 mb-4">
-                <div>
-                  <h3 class="text-xl font-medium text-slate-700">
-                    Gestão de Anúncios Pagos
-                  </h3>
-                  <h4 class="font-semibold">
-                    Maximize Suas Vendas com Anúncios Estratégicos
-                  </h4>
-                </div>
-              </header>
-              <p>
-                Nossa equipe especializada em anúncios pagos cria campanhas
-                personalizadas para atingir o público-alvo certo no momento
-                certo, garantindo um retorno sobre investimento (ROI)
-                consistente e impulsionando suas vendas online.
-              </p>
-            </div>
-          </div>
-          <!-- End Horizontal card-->
-        </div>
-        <div
-          class="hidden px-6 py-4"
-          id="tab-panel-2a"
-          aria-hidden="true"
-          role="tabpanel"
-          aria-labelledby="tab-label-2a"
-          tabindex="-1"
-        >
-          <!-- Component: Horizontal card-->
-          <div
-            class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
-          >
-            <!-- Image -->
-            <figure class="flex-1">
-              <img
-                src="https://fastly.picsum.photos/id/145/800/600.jpg?hmac=BNOm1K4dOTjVpP1_z8IzsaIHgWpxqf-xZtfmcA6CoAk"
-                alt="card image"
-                class="object-cover min-h-full aspect-auto"
-              />
-            </figure>
-            <!-- Body-->
-            <div class="flex-1 p-6 sm:mx-6 sm:px-0">
-              <header class="flex gap-4 mb-4">
-                <div>
-                  <h3 class="text-xl font-medium text-slate-700">
-                    Otimização de Sites (SEO)
-                  </h3>
-                  <h4 class="font-semibold">
-                    Apareça no Topo das Buscas e Aumente Suas Vendas
-                  </h4>
-                </div>
-              </header>
-              <p>
-                Com técnicas avançadas de SEO, otimizamos seu site para os
-                motores de busca, aumentando sua visibilidade, atraindo tráfego
-                qualificado e convertendo visitantes em clientes.
-              </p>
-            </div>
-          </div>
-          <!-- End Horizontal card-->
-        </div>
-        <div
-          class="hidden px-6 py-4"
-          id="tab-panel-3a"
-          aria-hidden="true"
-          role="tabpanel"
-          aria-labelledby="tab-label-3a"
-          tabindex="-1"
-        >
-          <!-- Component: Horizontal card-->
-          <div
-            class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
-          >
-            <!-- Image -->
-            <figure class="flex-1">
-              <img
-                src="https://fastly.picsum.photos/id/875/800/600.jpg?hmac=NXX-SwYycWXsbCWcJJnivoEGENe8Mp4fvuHqATxgOSY"
-                alt="card image"
-                class="object-cover min-h-full aspect-auto"
-              />
-            </figure>
-            <!-- Body-->
-            <div class="flex-1 p-6 sm:mx-6 sm:px-0">
-              <header class="flex gap-4 mb-4">
-                <div>
-                  <h3 class="text-xl font-medium text-slate-700">
-                    Criação de Conteúdo e Copywriting
-                  </h3>
-                  <h4 class="semibold">Conteúdo Que Conquista e Converte</h4>
-                </div>
-              </header>
-              <p>
-                Desenvolvemos conteúdo criativo e persuasivo que conecta com seu
-                público e impulsiona suas vendas. Desde postagens em blogs até
-                e-mails de vendas, nossos textos geram engajamento e resultados.
-              </p>
-            </div>
-          </div>
-          <!-- End Horizontal card-->
-        </div>
-      </div>
-    </section>
-    <!-- Services Section End -->
-
-    <!-- Testimonials Section -->
-    <section id="depoimentos" class="bg-primary">
-      <div
-        class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 js-scroll js-right"
-      >
-        <h2
-          class="text-center text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl poppins"
-        >
-          O que Nossos Clientes Têm a Dizer
-        </h2>
-
-        <div class="mt-8">
-          <div id="keen-slider" class="keen-slider">
-            <div
-              class="keen-slider__slide opacity-40 transition-opacity duration-500"
-            >
-              <blockquote class="rounded-lg bg-[#000] p-6 shadow-sm sm:p-8">
-                <div class="flex items-center gap-4">
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                    class="size-14 rounded-full object-cover"
-                  />
-
-                  <div>
-                    <div class="flex justify-center gap-0.5 text-tertiary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                    </div>
-
-                    <p class="mt-0.5 text-lg font-medium text-gray-300">
-                      Carlos César
-                    </p>
-                  </div>
-                </div>
-
-                <p class="mt-4 text-gray-400">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
-                  illo est quia obcaecati neque quibusdam eius accusamus error
-                  officiis atque voluptates magnam!
-                </p>
-              </blockquote>
             </div>
 
-            <div
-              class="keen-slider__slide opacity-40 transition-opacity duration-500"
-            >
-              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                <div class="flex items-center gap-4">
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                    class="size-14 rounded-full object-cover"
-                  />
-
-                  <div>
-                    <div class="flex justify-center gap-0.5 text-tertiary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                    </div>
-
-                    <p class="mt-0.5 text-lg font-medium text-gray-900">
-                      Marcos Antônio
-                    </p>
-                  </div>
-                </div>
-
-                <p class="mt-4 text-gray-700">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
-                  illo est quia obcaecati neque quibusdam eius accusamus error
-                  officiis atque voluptates magnam!
-                </p>
-              </blockquote>
-            </div>
-
-            <div
-              class="keen-slider__slide opacity-40 transition-opacity duration-500"
-            >
-              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                <div class="flex items-center gap-4">
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                    class="size-14 rounded-full object-cover"
-                  />
-
-                  <div>
-                    <div class="flex justify-center gap-0.5 text-tertiary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                    </div>
-
-                    <p class="mt-0.5 text-lg font-medium text-gray-900">
-                      Gustavo Souza
-                    </p>
-                  </div>
-                </div>
-
-                <p class="mt-4 text-gray-700">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
-                  illo est quia obcaecati neque quibusdam eius accusamus error
-                  officiis atque voluptates magnam!
-                </p>
-              </blockquote>
-            </div>
-
-            <div
-              class="keen-slider__slide opacity-40 transition-opacity duration-500"
-            >
-              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                <div class="flex items-center gap-4">
-                  <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                    class="size-14 rounded-full object-cover"
-                  />
-
-                  <div>
-                    <div class="flex justify-center gap-0.5 text-tertiary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                    </div>
-
-                    <p class="mt-0.5 text-lg font-medium text-gray-900">
-                      Pedro Henrique
-                    </p>
-                  </div>
-                </div>
-
-                <p class="mt-4 text-gray-700">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
-                  illo est quia obcaecati neque quibusdam eius accusamus error
-                  officiis atque voluptates magnam!
-                </p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="mt-6 flex items-center justify-center gap-4">
             <button
-              aria-label="Previous slide"
-              id="keen-slider-previous"
-              class="text-gray-400 transition-colors hover:text-gray-900"
+              type="submit"
+              class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-tertiary px-5 py-3 text-black transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto"
             >
+              <span class="text-sm font-medium">Enviar Mensagem</span>
+
               <svg
+                class="size-5"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
                 stroke="currentColor"
-                class="size-5"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
-              </svg>
-            </button>
-
-            <p class="w-16 text-center text-sm text-gray-300">
-              <span id="keen-slider-active"></span>
-              /
-              <span id="keen-slider-count"></span>
-            </p>
-
-            <button
-              aria-label="Next slide"
-              id="keen-slider-next"
-              class="text-gray-400 transition-colors hover:text-gray-900"
-            >
-              <svg
-                class="size-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 5l7 7-7 7"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
-    <!-- Testimonial Section End -->
-
-    <!-- CTA Section -->
-    <section
-      id="cta"
-      class="overflow-hidden bg-secondary sm:grid sm:grid-cols-2 sm:items-center"
-    >
-      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-        <div
-          class="mx-auto max-w-xl text-center sm:text-left js-scroll js-right"
-        >
-          <h2 class="text-2xl font-bold text-gray-700 md:text-3xl">
-            Pronto para transformar sua marca?
-          </h2>
-
-          <p class="hidden text-gray-500 md:mt-4 md:block">
-            Chegou a hora de dar o próximo passo rumo ao crescimento e destaque
-            que sua marca merece! Com nossas estratégias personalizadas e
-            soluções inovadoras, você pode alcançar novos patamares e conquistar
-            o público que deseja. Não importa o tamanho do desafio, estamos aqui
-            para ajudar você a construir uma identidade forte, aumentar sua
-            presença no mercado e transformar sua visão em resultados reais.
-          </p>
-
-          <div class="mt-4 md:mt-8">
-            <a
-              href="#"
-              class="inline-block rounded bg-tertiary px-12 py-3 text-sm font-medium text-black transition hover:bg-tertiary/80 focus:outline-none focus:ring focus:ring-tertiary"
-            >
-              Comece Agora
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <img
-        alt=""
-        src="./img/meet.jpg"
-        class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px] js-scroll js-left"
-      />
-    </section>
-    <!-- CTA Section End -->
-
-    <!-- Form Section -->
-    <section id="contato" class="bg-[#131313]">
-      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-          <div class="lg:col-span-2 lg:py-12 js-scroll js-right">
-            <p class="max-w-xl text-lg text-gray-300 mb-4">
-              Estamos aqui para ajudar! Seja para tirar dúvidas, discutir
-              projetos ou receber sugestões, queremos ouvir você. Preencha o
-              formulário ao lado e nossa equipe entrará em contato o mais breve
-              possível.
-            </p>
-            <p class="max-w-xl text-lg text-gray-300 mb-4">
-              Se preferir, você também pode nos enviar um e-mail diretamente ou
-              ligar para o nosso número de atendimento. Estamos prontos para
-              oferecer todo o suporte necessário para transformar suas ideias em
-              realidade.
-            </p>
-            <p class="max-w-xl text-lg text-gray-300 mb-4">
-              Tem urgência? Entre em contato diretamente pelo nosso número ou
-              WhatsApp:
-            </p>
-
-            <div class="mt-8">
-              <a
-                href="#"
-                class="text-2xl font-bold text-tertiary hover:text-tertiary/80"
-              >
-                (37) 99999-9999
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="rounded-lg bg-[#2A2A2A] p-8 border shadow-lg lg:col-span-3 lg:p-12 js-scroll js-left"
-          >
-            <form action="#" class="space-y-4">
-              <div class="relative">
-                <!-- <label class="sr-only" for="name">Name</label>
-                <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Name"
-                  type="text"
-                  id="name"
-                /> -->
-                <input
-                  type="text"
-                  id="nome"
-                  required
-                  class="peer text-black bg-transparent border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm"
-                  placeholder="Nome"
-                />
-                <label
-                  for="nome"
-                  class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
-                >
-                  Nome
-                </label>
-              </div>
-
-              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div>
-                  <label class="sr-only" for="email">Email</label>
-                  <input
-                    class="w-full rounded-lg border border-gray-200 p-3 text-sm bg-transparent"
-                    placeholder="Email"
-                    type="email"
-                    id="email"
-                  />
-                </div>
-
-                <div>
-                  <label class="sr-only" for="phone">Phone</label>
-                  <input
-                    class="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
-                    placeholder="Phone Number"
-                    type="tel"
-                    id="phone"
-                  />
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-                <div>
-                  <label
-                    for="Option1"
-                    class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-                    tabindex="0"
-                  >
-                    <input
-                      class="sr-only"
-                      id="Option1"
-                      type="radio"
-                      tabindex="-1"
-                      name="option"
-                    />
-
-                    <span class="text-sm"> Option 1 </span>
-                  </label>
-                </div>
-
-                <div>
-                  <label
-                    for="Option2"
-                    class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-                    tabindex="0"
-                  >
-                    <input
-                      class="sr-only"
-                      id="Option2"
-                      type="radio"
-                      tabindex="-1"
-                      name="option"
-                    />
-
-                    <span class="text-sm"> Option 2 </span>
-                  </label>
-                </div>
-
-                <div>
-                  <label
-                    for="Option3"
-                    class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-                    tabindex="0"
-                  >
-                    <input
-                      class="sr-only"
-                      id="Option3"
-                      type="radio"
-                      tabindex="-1"
-                      name="option"
-                    />
-
-                    <span class="text-sm"> Option 3 </span>
-                  </label>
-                </div>
-              </div>
-
-              <div>
-                <label class="sr-only" for="message">Mensagem</label>
-
-                <textarea
-                  class="w-full rounded-lg border border-gray-300 bg-transparent p-3 text-sm"
-                  placeholder="Message"
-                  rows="8"
-                  id="message"
-                ></textarea>
-              </div>
-
-              <div class="mt-4">
-                <button
-                  class="inline-block w-full rounded-lg bg-tertiary px-5 py-3 font-medium text-black sm:w-auto hover:bg-tertiary/80 focus:outline-none focus:ring focus:ring-tertiary"
-                >
-                  Enviar Mensagem
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Form Section End -->
+    <!-- CTA WhatsApp End -->
 
     <!-- Footer Section -->
-    <footer id="footer" class="bg-[#010101]">
+    <footer id="footer" class="bg-primary">
       <div
         class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
       >
@@ -1726,61 +1790,52 @@
           </a>
         </div>
 
-        <div class="lg:flex lg:items-end lg:justify-between">
+        <div class="lg:grid lg:grid-cols-3 lg:items-end lg:justify-between">
           <div>
-            <div
-              class="flex justify-center items-center text-gray-600 lg:justify-start gap-4"
-            >
-              <img src="./img/logo.png" alt="" width="80" />
-            </div>
-
-            <p
-              class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left"
-            >
-              Obrigado por nos visitar! Juntos, podemos construir algo incrível.
-              Siga-nos nas redes sociais e acompanhe nossas novidades!
-            </p>
+            <ul>
+              <li>Texto</li>
+              <li>Texto</li>
+              <li>Texto</li>
+            </ul>
           </div>
 
-          <ul
-            class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
-          >
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                Sobre Nós
-              </a>
-            </li>
+          <div class="h-full flex justify-center items-center">
+            <ul>
+              <li class="mb-6">
+                <a
+                  class="flex items-center text-gray-200 transition hover:text-gray-200/75"
+                  href="https://www.instagram.com/your_handle"
+                  aria-label="Envie-nos um e-mail"
+                >
+                  <span
+                    class="inline-flex justify-center items-center w-8 h-8 bg-white rounded-full"
+                  >
+                    <i class="fa-regular fa-envelope text-2xl text-black"></i>
+                  </span>
+                  <span class="ml-4 text-xl">emailexemplo@gmail.com</span>
+                </a>
+              </li>
 
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                Serviços
-              </a>
-            </li>
+              <li>
+                <a
+                  class="flex items-center text-gray-200 transition hover:text-gray-200/75"
+                  href="https://www.instagram.com/your_handle"
+                  aria-label="Follow us on Instagram"
+                >
+                  <span
+                    class="inline-flex justify-center items-center w-8 h-8 bg-white rounded-full"
+                  >
+                    <i class="fa-brands fa-instagram text-2xl text-black"></i>
+                  </span>
+                  <span class="ml-4 text-xl">@instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                Contato
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                Blog
-              </a>
-            </li>
-          </ul>
+          <div class="flex items-center justify-center lg:justify-end">
+            <img src="./img/logo.png" alt="" width="80" />
+          </div>
         </div>
 
         <p class="mt-12 text-center text-sm text-gray-500 lg:text-right">
