@@ -10,8 +10,12 @@
     <script src="script.js" type="module" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -29,7 +33,7 @@
   <body>
     <!-- Header Section -->
     <header
-      class="bg-black/20 fixed top-0 left-0 right-0 z-50 transition-all py-4 overflow-x-hidden"
+      class="bg-black/20 fixed top-0 left-0 right-0 z-50 transition-all py-2 overflow-x-hidden"
     >
       <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -38,22 +42,24 @@
               <span class="sr-only">Home</span>
               <img
                 class="logo-white hover:scale-105 transition-transform duration-300"
-                src="img/logo.png"
-                width="64"
+                src="img/logo2.png"
+                width="76"
                 alt="Logo X ao Cubo"
               />
               <img
-                src="img/logo-black.png"
-                width="64"
+                src="img/logo2-black.png"
+                width="76"
                 alt="Logo X ao Cubo"
                 class="hidden logo-black"
               />
             </a>
           </div>
 
-          <div class="md:flex md:items-center md:gap-12 poppins">
+          <div
+            class="md:flex md:items-center gap-3 lg:gap-6 xl:gap-12 md:text-sm lg:text-lg poppins"
+          >
             <nav aria-label="Global" class="hidden md:block">
-              <ul id="menu" class="flex items-center gap-6 text-md">
+              <ul id="menu" class="flex items-center gap-3 lg:gap-6 xl:gap-12">
                 <li>
                   <a
                     class="text-white transition hover:text-gray-400 font-medium scroll-to-section"
@@ -113,7 +119,7 @@
             <div class="flex items-center gap-4">
               <div class="sm:flex sm:gap-4">
                 <a
-                  class="rounded-md bg-tertiary px-5 py-2.5 text-sm font-medium text-black shadow hover:bg-tertiary/80"
+                  class="rounded-md bg-tertiary px-5 py-2.5 font-medium text-black shadow hover:bg-tertiary/80"
                   href="#"
                 >
                   Entre em Contato
