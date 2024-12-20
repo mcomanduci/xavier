@@ -47,13 +47,13 @@ header.scrolled #menu li a {
 .js-bottom {
   opacity: 0;
   transition: 0.3s;
-  transform: translate3d(0, 300px, 0);
+  transform: translate3d(0, 120px, 0);
 }
 
 .js-top {
   opacity: 0;
   transition: 0.3s;
-  transform: translate3d(0, -300px, 0);
+  transform: translate3d(0, -120px, 0);
 }
 
 .js-right.animate,

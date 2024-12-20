@@ -65,36 +65,39 @@ keenSliderNext.addEventListener("click", () => keenSlider.next());
 
 const header = document.querySelector("header");
 const menu = document.querySelector("#menu");
+const logoBlack = document.querySelector(".logo-black");
+const logoWhite = document.querySelector(".logo-white");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY === 0) {
-    header.classList.remove("scrolled");
-  } else {
-    header.classList.add("scrolled");
-  }
-});
+const toggleHeaderState = () => {
+  const isScrolled = window.scrollY !== 0;
+  header.classList.toggle("scrolled", isScrolled);
+  logoBlack.classList.toggle("hidden", !isScrolled);
+  logoWhite.classList.toggle("hidden", isScrolled);
+};
+
+window.addEventListener("scroll", toggleHeaderState);
+
+document.addEventListener("DOMContentLoaded", toggleHeaderState);
 
 // ---------------
 function initAnimacaoScroll() {
   const sections = document.querySelectorAll(".js-scroll");
   if (!sections.length) return;
-  const windowMetade = window.innerHeight * 0.7;
 
-  function animaScroll() {
-    sections.forEach((section) => {
-      const sectionTop = section.getBoundingClientRect().top;
-      const isSectionVisible = sectionTop - windowMetade < 0;
-      if (isSectionVisible) {
-        section.classList.add("animate");
-      } else {
-        section.classList.remove("animate");
-      }
-    });
-  }
+  const windowOffset = window.innerHeight * 0.7;
+
+  const toggleSectionVisibility = (section) => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const isVisible = sectionTop - windowOffset < 0;
+    section.classList.toggle("animate", isVisible);
+  };
+
+  const animaScroll = () => sections.forEach(toggleSectionVisibility);
+
   animaScroll();
-
   window.addEventListener("scroll", animaScroll);
 }
+
 initAnimacaoScroll();
 
 //-------------------------
@@ -143,8 +146,8 @@ document.querySelectorAll(".scroll-to-section").forEach((anchor) => {
 
 // --------------- back to top
 const backToTop = document.querySelector("#back-to-top");
-backToTop.addEventListener("click", () => {
-  console.log("teste");
+backToTop.addEventListener("click", (e) => {
+  e.preventDefault();
   window.scrollTo({
     top: 0,
     behavior: "smooth",
