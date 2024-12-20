@@ -129,3 +129,14 @@ document.querySelectorAll('[role="tab"]').forEach((tab) => {
     panel.classList.remove("hidden");
   });
 });
+
+// --------------- smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
