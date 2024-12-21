@@ -153,3 +153,9 @@ backToTop.addEventListener("click", (e) => {
     behavior: "smooth",
   });
 });
+
+// ----
+const company = document.querySelector("#company");
+company.addEventListener("change", () => {
+  company.style.color = "white";
+});
