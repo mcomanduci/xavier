@@ -134,7 +134,7 @@ document.querySelectorAll('[role="tab"]').forEach((tab) => {
 });
 
 // --------------- smooth scroll
-document.querySelectorAll(".scroll-to-section").forEach((anchor) => {
+document.querySelectorAll(".scrollto").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
