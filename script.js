@@ -63,21 +63,21 @@ keenSliderNext.addEventListener("click", () => keenSlider.next());
 
 // ---------------
 
-const header = document.querySelector("header");
-const menu = document.querySelector("#menu");
-const logoBlack = document.querySelector(".logo-black");
-const logoWhite = document.querySelector(".logo-white");
+// const header = document.querySelector("header");
+// const menu = document.querySelector("#menu");
+// const logoBlack = document.querySelector(".logo-black");
+// const logoWhite = document.querySelector(".logo-white");
 
-const toggleHeaderState = () => {
-  const isScrolled = window.scrollY !== 0;
-  header.classList.toggle("scrolled", isScrolled);
-  logoBlack.classList.toggle("hidden", !isScrolled);
-  logoWhite.classList.toggle("hidden", isScrolled);
-};
+// const toggleHeaderState = () => {
+//   const isScrolled = window.scrollY !== 0;
+//   header.classList.toggle("scrolled", isScrolled);
+//   logoBlack.classList.toggle("hidden", !isScrolled);
+//   logoWhite.classList.toggle("hidden", isScrolled);
+// };
 
-window.addEventListener("scroll", toggleHeaderState);
+// window.addEventListener("scroll", toggleHeaderState);
 
-document.addEventListener("DOMContentLoaded", toggleHeaderState);
+// document.addEventListener("DOMContentLoaded", toggleHeaderState);
 
 // ---------------
 function initAnimacaoScroll() {
