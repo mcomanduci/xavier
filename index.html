@@ -7,6 +7,10 @@
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
     <script src="script.js" type="module" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,10 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -1041,190 +1045,188 @@
 
     <!-- Services Section -->
     <!-- TODO: https://redventures.com.br/ -->
-    <div class="bg-secondary overflow-x-hidden">
-      <section
-        id="servicos"
-        class="container mx-auto py-8 js-scroll js-right"
-        aria-multiselectable="false"
+    <section class="bg-primary">
+      <div
+        class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:mee-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
       >
-        <h2 class="text-3xl font-bold text-center text-slate-200 my-8 poppins">
-          Nossos Serviços
-        </h2>
-        <ul class="flex items-center border-b border-slate-200" role="tablist">
-          <li class="flex-1" role="presentation ">
-            <button
-              class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-xl font-medium tracking-wide transition-all duration-300 border-b-2 rounded-t focus-visible:outline-none whitespace-nowrap border-transparent hover:border-tertiary focus:border-tertiary text-slate-300 hover:text-tertiary focus:text-tertiary hover:bg-tertiary/10 focus:bg-tertiary/10 disabled:cursor-not-allowed disabled:border-slate-500 stroke-tertiary hover:stroke-tertiary focus:stroke-tertiary"
-              id="tab-label-1a"
-              role="tab"
-              aria-setsize="3"
-              aria-posinset="1"
-              tabindex="0"
-              aria-controls="tab-panel-1a"
-              aria-selected="true"
+        <div
+          class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8"
+        >
+          <div>
+            <h2
+              class="max-w-xl text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl mb-4 poppins"
             >
-              <span class="poppins">Tráfego Pago</span>
-            </button>
-          </li>
-          <li class="flex-1" role="presentation ">
-            <button
-              class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-sm font-medium tracking-wide transition duration-300 border-b-2 border-transparent rounded-t focus-visible:outline-none justify-self-center hover:border-emerald-500 focus:border-emerald-600 whitespace-nowrap text-slate-300 stroke-slate-700 hover:bg-emerald-50 hover:text-emerald-500 focus:stroke-emerald-600 focus:bg-emerald-50 focus:text-emerald-600 hover:stroke-emerald-600 disabled:cursor-not-allowed disabled:text-slate-500"
-              id="tab-label-2a"
-              role="tab"
-              aria-setsize="3"
-              aria-posinset="2"
-              tabindex="-1"
-              aria-controls="tab-panel-2a"
-              aria-selected="false"
-            >
-              <span class="poppins">Tab 2</span>
-            </button>
-          </li>
-          <li class="flex-1" role="presentation ">
-            <button
-              class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 -mb-px text-sm font-medium tracking-wide transition duration-300 border-b-2 border-transparent rounded-t focus-visible:outline-none justify-self-center hover:border-emerald-500 focus:border-emerald-600 whitespace-nowrap text-slate-300 stroke-slate-700 hover:bg-emerald-50 hover:text-emerald-500 focus:stroke-emerald-600 focus:bg-emerald-50 focus:text-emerald-600 hover:stroke-emerald-600 disabled:cursor-not-allowed disabled:text-slate-500"
-              id="tab-label-3a"
-              role="tab"
-              aria-setsize="3"
-              aria-posinset="3"
-              tabindex="-1"
-              aria-controls="tab-panel-3a"
-              aria-selected="false"
-            >
-              <span class="poppins">Tab 3</span>
-            </button>
-          </li>
-        </ul>
-        <div>
-          <div
-            class="px-6 py-4"
-            id="tab-panel-1a"
-            aria-hidden="false"
-            role="tabpanel"
-            aria-labelledby="tab-label-1a"
-            tabindex="-1"
-          >
-            <!-- Component: Horizontal card-->
-            <div
-              class="flex flex-col overflow-hidden bg-[#2A2A2A] rounded shadow-md sm:flex-row text-slate-300"
-            >
-              <!-- Image -->
-              <figure class="flex-1">
-                <img
-                  src="https://picsum.photos/id/118/800/600"
-                  alt="card image"
-                  class="object-cover min-h-full aspect-auto"
-                />
-              </figure>
-              <!-- Body-->
-              <div class="flex-1 p-6 sm:mx-6 sm:px-0">
-                <header class="flex gap-4 mb-4">
-                  <div>
-                    <h3 class="text-xl font-medium text-slate-100 poppins">
-                      Gestão de Anúncios Pagos
-                    </h3>
-                    <h4 class="font-semibold">
-                      Maximize Suas Vendas com Anúncios Estratégicos
-                    </h4>
-                  </div>
-                </header>
-                <p>
-                  Nossa equipe especializada em anúncios pagos cria campanhas
-                  personalizadas para atingir o público-alvo certo no momento
-                  certo, garantindo um retorno sobre investimento (ROI)
-                  consistente e impulsionando suas vendas online.
-                </p>
-              </div>
-            </div>
-            <!-- End Horizontal card-->
+              Nossos Serviços
+            </h2>
+            <h3 class="text-gray-400 text-xl">Tudo que podemos fazer por sua empresa</h3>
           </div>
-          <div
-            class="hidden px-6 py-4"
-            id="tab-panel-2a"
-            aria-hidden="true"
-            role="tabpanel"
-            aria-labelledby="tab-label-2a"
-            tabindex="-1"
-          >
-            <!-- Component: Horizontal card-->
-            <div
-              class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
+
+          <div class="mt-8 flex gap-4 lg:mt-0">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous2"
+              class="rounded-full border border-tertiary p-3 text-tertiary transition hover:bg-tertiary hover:text-black"
             >
-              <!-- Image -->
-              <figure class="flex-1">
-                <img
-                  src="https://fastly.picsum.photos/id/145/800/600.jpg?hmac=BNOm1K4dOTjVpP1_z8IzsaIHgWpxqf-xZtfmcA6CoAk"
-                  alt="card image"
-                  class="object-cover min-h-full aspect-auto"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 rtl:rotate-180"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
                 />
-              </figure>
-              <!-- Body-->
-              <div class="flex-1 p-6 sm:mx-6 sm:px-0">
-                <header class="flex gap-4 mb-4">
-                  <div>
-                    <h3 class="text-xl font-medium text-slate-700">
-                      Otimização de Sites (SEO)
-                    </h3>
-                    <h4 class="font-semibold">
-                      Apareça no Topo das Buscas e Aumente Suas Vendas
-                    </h4>
-                  </div>
-                </header>
-                <p>
-                  Com técnicas avançadas de SEO, otimizamos seu site para os
-                  motores de busca, aumentando sua visibilidade, atraindo
-                  tráfego qualificado e convertendo visitantes em clientes.
-                </p>
-              </div>
-            </div>
-            <!-- End Horizontal card-->
-          </div>
-          <div
-            class="hidden px-6 py-4"
-            id="tab-panel-3a"
-            aria-hidden="true"
-            role="tabpanel"
-            aria-labelledby="tab-label-3a"
-            tabindex="-1"
-          >
-            <!-- Component: Horizontal card-->
-            <div
-              class="flex flex-col overflow-hidden bg-white rounded shadow-md sm:flex-row text-slate-500 shadow-slate-200"
+              </svg>
+            </button>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next2"
+              class="rounded-full border border-tertiary p-3 text-tertiary transition hover:bg-tertiary hover:text-black"
             >
-              <!-- Image -->
-              <figure class="flex-1">
-                <img
-                  src="https://fastly.picsum.photos/id/875/800/600.jpg?hmac=NXX-SwYycWXsbCWcJJnivoEGENe8Mp4fvuHqATxgOSY"
-                  alt="card image"
-                  class="object-cover min-h-full aspect-auto"
+              <svg
+                class="size-5 rtl:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
                 />
-              </figure>
-              <!-- Body-->
-              <div class="flex-1 p-6 sm:mx-6 sm:px-0">
-                <header class="flex gap-4 mb-4">
-                  <div>
-                    <h3 class="text-xl font-medium text-slate-700">
-                      Criação de Conteúdo e Copywriting
-                    </h3>
-                    <h4 class="semibold">Conteúdo Que Conquista e Converte</h4>
-                  </div>
-                </header>
-                <p>
-                  Desenvolvemos conteúdo criativo e persuasivo que conecta com
-                  seu público e impulsiona suas vendas. Desde postagens em blogs
-                  até e-mails de vendas, nossos textos geram engajamento e
-                  resultados.
-                </p>
-              </div>
-            </div>
-            <!-- End Horizontal card-->
+              </svg>
+            </button>
           </div>
         </div>
-      </section>
-    </div>
+
+        <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+          <div id="keen-slider2" class="keen-slider">
+            <div class="keen-slider__slide">
+              <div
+                id="cardsz"
+                class="w-[90%] hover:w-full h-[444px] flex flex-col justify-end overflow-hidden relative transition-all duration-500 rounded-[32px] text-white group"
+              >
+                <div
+                  class="h-full w-full bg-[url('./img/teste/sli1.jpg')] bg-center bg-no-repeat bg-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                ></div>
+                <div
+                  class="w-full bottom-0 left-0 h-[30%] z-10 absolute tetes group-hover:h-[80%]"
+                ></div>
+                <div
+                  class="absolute bottom-0 group-hover:bottom-[150px] transition-all duration-700 w-full p-8 z-20"
+                >
+                  <div><i class="fa-solid fa-image text-2xl"></i></div>
+                  <h2 class="pb-4 duration-500 text-2xl">Otimização de Sites (SEO)</h2>
+                  <p
+                    class="opacity-0 group-hover:opacity-100 absolute transition-opacity duration-500 w-[calc(100%-4rem)] group-hover:delay-200 group-hover:duration-700"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur dolores repellendus sequi, labore hic aspernatur
+                    voluptatibus quasi aut! Modi doloremque repudiandae eos
+                    deleniti perferendis eaque quo. Ullam, hic? Ut, praesentium?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="keen-slider__slide">
+              <div
+                id="cardsz"
+                class="w-[90%] h-[444px] flex flex-col justify-end overflow-hidden relative transition-all duration-500 rounded-[32px] hover:w-full text-white group"
+              >
+                <div
+                  class="h-full w-full bg-[url('./img/teste/sli2.jpg')] bg-center bg-no-repeat bg-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                ></div>
+                <div
+                  class="w-full bottom-0 left-0 h-[30%] z-10 absolute tetes group-hover:h-[80%]"
+                ></div>
+                <div
+                  class="absolute bottom-0 group-hover:bottom-[150px] transition-all duration-700 w-full p-8 z-20"
+                >
+                  <div><i class="fa-solid fa-image text-2xl"></i></div>
+                  <h2 class="pb-4 duration-500 text-2xl">Gestão de Anúncios Pagos</h2>
+                  <p
+                    class="opacity-0 group-hover:opacity-100 absolute transition-opacity duration-500 w-[calc(100%-4rem)] group-hover:delay-200 group-hover:duration-700"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur dolores repellendus sequi, labore hic aspernatur
+                    voluptatibus quasi aut! Modi doloremque repudiandae eos
+                    deleniti perferendis eaque quo. Ullam, hic? Ut, praesentium?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="keen-slider__slide">
+              <div
+                id="cardsz"
+                class="w-[90%] h-[444px] flex flex-col justify-end overflow-hidden relative transition-all duration-500 rounded-[32px] hover:w-full text-white group"
+              >
+                <div
+                  class="h-full w-full bg-[url('./img/teste/sli3.jpg')] bg-center bg-no-repeat bg-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                ></div>
+                <div
+                  class="w-full bottom-0 left-0 h-[30%] z-10 absolute tetes group-hover:h-[80%]"
+                ></div>
+                <div
+                  class="absolute bottom-0 group-hover:bottom-[150px] transition-all duration-700 w-full p-8 z-20"
+                >
+                  <div><i class="fa-solid fa-image text-2xl"></i></div>
+                  <h2 class="pb-4 duration-500 text-2xl">Criação de Conteúdo e Copywriting</h2>
+                  <p
+                    class="opacity-0 group-hover:opacity-100 absolute transition-opacity duration-500 w-[calc(100%-4rem)] group-hover:delay-200 group-hover:duration-700"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur dolores repellendus sequi, labore hic aspernatur
+                    voluptatibus quasi aut! Modi doloremque repudiandae eos
+                    deleniti perferendis eaque quo. Ullam, hic? Ut, praesentium?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="keen-slider__slide">
+              <div
+                id="cardsz"
+                class="w-[90%] h-[444px] flex flex-col justify-end overflow-hidden relative transition-all duration-500 rounded-[32px] hover:w-full text-white group"
+              >
+                <div
+                  class="h-full w-full bg-[url('./img/teste/sli4.jpg')] bg-center bg-no-repeat bg-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                ></div>
+                <div
+                  class="w-full bottom-0 left-0 h-[30%] z-10 absolute tetes group-hover:h-[80%]"
+                ></div>
+                <div
+                  class="absolute bottom-0 group-hover:bottom-[150px] transition-all duration-700 w-full p-8 z-20"
+                >
+                  <div><i class="fa-solid fa-image text-2xl"></i></div>
+                  <h2 class="pb-4 duration-500 text-2xl">Marketing Digital</h2>
+                  <p
+                    class="opacity-0 group-hover:opacity-100 absolute transition-opacity duration-500 w-[calc(100%-4rem)] group-hover:delay-200 group-hover:duration-700"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur dolores repellendus sequi, labore hic aspernatur
+                    voluptatibus quasi aut! Modi doloremque repudiandae eos
+                    deleniti perferendis eaque quo. Ullam, hic? Ut, praesentium?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Services Section End -->
 
     <!-- Testimonials Section -->
-    <section id="depoimentos" class="bg-primary">
+    <section id="depoimentos" class="bg-secondary">
       <div
         class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 js-scroll js-right"
       >
@@ -1612,7 +1614,7 @@
     <!-- Testimonial Section End -->
 
     <!-- CTA WhatsApp -->
-    <section class="bg-secondary">
+    <section class="bg-primary">
       <div class="p-8 md:p-12 lg:px-16 lg:py-24 js-scroll js-bottom">
         <div class="mx-auto max-w-lg text-center">
           <h2 class="text-2xl font-bold text-gray-900 md:text-3xl poppins">
@@ -1652,7 +1654,7 @@
     <!-- CTA WhatsApp End -->
 
     <!-- Footer Section -->
-    <footer id="footer" class="bg-primary overflow-x-hidden">
+    <footer id="footer" class="bg-[#333] overflow-x-hidden">
       <div
         class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
       >

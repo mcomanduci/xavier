@@ -1,4 +1,5 @@
-import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+// import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+import KeenSlider from "./keen.js";
 
 const keenSliderActive = document.getElementById("keen-slider-active");
 const keenSliderCount = document.getElementById("keen-slider-count");
@@ -60,6 +61,36 @@ const keenSliderNext = document.getElementById("keen-slider-next");
 
 keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
 keenSliderNext.addEventListener("click", () => keenSlider.next());
+
+// -------------
+
+const keenSlider2 = new KeenSlider(
+  "#keen-slider2",
+  {
+    loop: true,
+    slides: {
+      origin: "center",
+      perView: 1.25,
+      spacing: 16,
+    },
+    breakpoints: {
+      "(min-width: 1024px)": {
+        slides: {
+          origin: "auto",
+          perView: 2.5,
+          spacing: 32,
+        },
+      },
+    },
+  },
+  []
+);
+
+const keenSliderPrevious2 = document.getElementById("keen-slider-previous2");
+const keenSliderNext2 = document.getElementById("keen-slider-next2");
+
+keenSliderPrevious2.addEventListener("click", () => keenSlider2.prev());
+keenSliderNext2.addEventListener("click", () => keenSlider2.next());
 
 // ---------------
 

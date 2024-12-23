@@ -74,3 +74,32 @@ header.scrolled #menu li a {
   transition: 0.7s;
   transform: translate3d(0, 0, 0);
 }
+
+* {
+  animation: fadeIn, 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tetes {
+  background-image: linear-gradient(
+    0deg,
+    rgba(244, 183, 58, 0.784),
+    transparent
+  );
+}
+
+#cardsz:hover .tetes {
+  background-image: linear-gradient(
+    0deg,
+    rgba(28, 28, 27, 0.78) 40%,
+    transparent
+  );
+}
