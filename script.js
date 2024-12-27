@@ -64,33 +64,33 @@ keenSliderNext.addEventListener("click", () => keenSlider.next());
 
 // -------------
 
-const keenSlider2 = new KeenSlider(
-  "#keen-slider2",
-  {
-    loop: true,
-    slides: {
-      origin: "center",
-      perView: 1.25,
-      spacing: 16,
-    },
-    breakpoints: {
-      "(min-width: 1024px)": {
-        slides: {
-          origin: "auto",
-          perView: 2.5,
-          spacing: 32,
-        },
-      },
-    },
-  },
-  []
-);
+// const keenSlider2 = new KeenSlider(
+//   "#keen-slider2",
+//   {
+//     loop: true,
+//     slides: {
+//       origin: "center",
+//       perView: 1.25,
+//       spacing: 16,
+//     },
+//     breakpoints: {
+//       "(min-width: 1024px)": {
+//         slides: {
+//           origin: "auto",
+//           perView: 2.5,
+//           spacing: 32,
+//         },
+//       },
+//     },
+//   },
+//   []
+// );
 
-const keenSliderPrevious2 = document.getElementById("keen-slider-previous2");
-const keenSliderNext2 = document.getElementById("keen-slider-next2");
+// const keenSliderPrevious2 = document.getElementById("keen-slider-previous2");
+// const keenSliderNext2 = document.getElementById("keen-slider-next2");
 
-keenSliderPrevious2.addEventListener("click", () => keenSlider2.prev());
-keenSliderNext2.addEventListener("click", () => keenSlider2.next());
+// keenSliderPrevious2.addEventListener("click", () => keenSlider2.prev());
+// keenSliderNext2.addEventListener("click", () => keenSlider2.next());
 
 // ---------------
 
@@ -186,7 +186,36 @@ backToTop.addEventListener("click", (e) => {
 });
 
 // ----
-const company = document.querySelector("#company");
-company.addEventListener("change", () => {
-  company.style.color = "white";
+const selectWhite = document.querySelectorAll(".select-white");
+selectWhite.forEach((select) =>
+  select.addEventListener("change", () => {
+    select.style.color = "white";
+  })
+);
+
+// ---- Swiper
+const swiper = new Swiper(".swiper", {
+  slidesPerGroupSkip: 3,
+  slidesPerGroup: 1,
+  spaceBetween: 12,
+  slidesPerView: "auto",
+  centeredSlides: false,
+  allowTouchMove: true,
+  direction: "horizontal",
+  mousewheel: {
+    invert: true,
+  },
+
+  breakpoints: {
+    1024: {
+      spaceBetween: 24,
+      slidesPerView: "auto",
+    },
+  },
+
+  // Optional Navigation
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

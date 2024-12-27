@@ -42,6 +42,11 @@ header.scrolled #menu li a {
   color: black !important;
 }
 
+.js-fade {
+  opacity: 0;
+  transition: 0.8s;
+}
+
 .js-right {
   opacity: 0;
   transition: 0.3s;
@@ -66,6 +71,7 @@ header.scrolled #menu li a {
   transform: translate3d(0, -120px, 0);
 }
 
+.js-fade.animate,
 .js-right.animate,
 .js-left.animate,
 .js-bottom.animate,

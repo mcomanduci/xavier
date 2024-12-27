@@ -33,7 +33,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="swiper.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -99,9 +98,9 @@
       ></div>
 
       <div
-        class="relative mx-auto max-w-screen-xl px-4 pt-32 pb-12 lg:flex lg:h-[90vh] lg:items-center container"
+        class="relative mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-[90vh] lg:items-center container"
       >
-        <div class="text-center js-scroll js-fade mx-auto">
+        <div class="text-center js-scroll js-right mx-auto">
           <h1
             class="text-3xl font-extrabold text-white sm:text-5xl sm:leading-tight poppins max-w-[40rem] mx-auto"
           >
@@ -121,7 +120,7 @@
 
           <div class="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="#contato-form"
+              href="#contato"
               class="block w-full rounded bg-tertiary px-12 py-3 text-lg font-medium text-black shadow hover:bg-tertiary/80 focus:outline-none focus:ring active:bg-tertiary/80 sm:w-auto poppins scrollto"
             >
               Entre em Contato
@@ -140,86 +139,60 @@
     <!-- Hero Section End -->
 
     <!-- Form Section -->
-    <section
-      id="contato"
-      class="relative overflow-x-hidden bg-[linear-gradient(#000_40%,#EBEBEB_100%)]"
-    >
+    <section id="contato" class="bg-primary overflow-x-hidden">
       <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="flex flex-col items-center gap-x-16 gap-y-8">
-          <div class="w-full grid lg:grid-cols-2 gap-4">
-            <div class="lg:pb-12 js-scroll js-right">
-              <div class="z-10 max-w-3xl js-scroll js-fade pb-8">
-                <h3 class="font-semibold text-tertiary poppins">
-                  Fale Conosco e Transforme Suas Vendas!
-                </h3>
-                <h2
-                  class="mb-5 text-3xl font-bold text-white sm:text-[40px]/[48px] poppins"
-                >
-                  Lorem ipsum dolor sit
-                </h2>
-              </div>
-              <p class="max-w-5xl text-lg text-white mb-4">
-                Você sente que pode vender mais, mas falta algo para atingir
-                seus objetivos?
-              </p>
-              <p class="max-w-3xl text-lg text-white mb-4">
-                Você não está sozinho. Muitos profissionais do mercado
-                imobiliário enfrentam desafios como:
-              </p>
-              <ul class="max-w-3xl text-md text-gray-400 mb-4 list-disc pl-5">
-                <li>Perder clientes por falta de um atendimento eficiente.</li>
-                <li>
-                  Não conseguir alcançar o público certo com seus anúncios.
-                </li>
-                <li>
-                  Sentir que está estagnado e não conseguir avançar do patamar
-                  em que parou.
-                </li>
-              </ul>
-              <p class="max-w-3xl text-lg text-white mb-4">Agora imagine...</p>
-              <ul class="max-w-3xl text-md text-gray-400 mb-4 list-disc pl-5">
-                <li>
-                  Ter um processo de vendas no digital bem estruturado, que te
-                  ajuda a fechar negócios com mais facilidade, sem abrir mão dos
-                  canais de venda que você já possui.
-                </li>
-                <li>
-                  Alcançar clientes com o perfil específico dos seus imóveis.
-                </li>
-                <li>
-                  Aumentar seu faturamento e, ao mesmo tempo, deixar as
-                  estratégias de Marketing e vendas no digital com especialistas
-                  que entendem e conhecem o mercado imobiliário, liberando você
-                  para ter mais tempo para o que realmente importa em sua vida.
-                </li>
-              </ul>
-              <p class="max-w-3xl text-lg text-white mb-4">
-                Tudo isso sem se preocupar em contratar mais funcionários e ter
-                que arcar com impostos, férias, décimo terceiro e ter vínculo
-                empregatício.
-              </p>
-              <p class="max-w-3xl text-lg text-white mb-4">
-                Esse é o momento de transformar essa realidade. Preencha o
-                formulário abaixo e, em até 24 horas, nossa equipe irá entrar em
-                contato com você.
-              </p>
-              <p class="max-w-3xl text-lg text-white mb-4">
-                Faça agora mesmo. Um pequeno passo pode levar você muito mais
-                longe.
-              </p>
-            </div>
-            <div class="w-full h-full">
-              <img
-                src="/src/img/pic.jpg"
-                class="w-full h-full object-cover"
-                alt=""
-              />
-            </div>
+        <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+          <div class="lg:col-span-2 lg:py-12 js-scroll js-right">
+            <p class="max-w-xl text-lg text-gray-300 mb-4">
+              Você sente que pode vender mais, mas falta algo para atingir seus
+              objetivos?
+            </p>
+            <p class="max-w-xl text-lg text-gray-300 mb-4">
+              Você não está sozinho. Muitos profissionais do mercado imobiliário
+              enfrentam desafios como:
+            </p>
+            <ul class="max-w-xl text-md text-gray-300 mb-4 list-disc pl-5">
+              <li>Perder clientes por falta de um atendimento eficiente.</li>
+              <li>Não conseguir alcançar o público certo com seus anúncios.</li>
+              <li>
+                Sentir que está estagnado e não conseguir avançar do patamar em
+                que parou.
+              </li>
+            </ul>
+            <p class="max-w-xl text-lg text-gray-300 mb-4">Agora imagine...</p>
+            <ul class="max-w-xl text-md text-gray-300 mb-4 list-disc pl-5">
+              <li>
+                Ter um processo de vendas no digital bem estruturado, que te
+                ajuda a fechar negócios com mais facilidade, sem abrir mão dos
+                canais de venda que você já possui.
+              </li>
+              <li>
+                Alcançar clientes com o perfil específico dos seus imóveis.
+              </li>
+              <li>
+                Aumentar seu faturamento e, ao mesmo tempo, deixar as
+                estratégias de Marketing e vendas no digital com especialistas
+                que entendem e conhecem o mercado imobiliário, liberando você
+                para ter mais tempo para o que realmente importa em sua vida.
+              </li>
+            </ul>
+            <p class="max-w-xl text-lg text-gray-300 mb-4">
+              Tudo isso sem se preocupar em contratar mais funcionários e ter
+              que arcar com impostos, férias, décimo terceiro e ter vínculo
+              empregatício.
+            </p>
+            <p class="max-w-xl text-lg text-gray-300 mb-4">
+              Esse é o momento de transformar essa realidade. Preencha o
+              formulário abaixo e, em até 24 horas, nossa equipe irá entrar em contato com você.
+            </p>
+            <p class="max-w-xl text-lg text-gray-300 mb-4">
+              Faça agora mesmo. Um pequeno passo pode levar você muito mais
+              longe.
+            </p>
           </div>
 
           <div
-            id="contato-form"
-            class="rounded-lg bg-[#2A2A2A] p-8 border shadow-lg lg:p-12 min-w-full sm:min-w[500px] md:min-w-[700px] lg:min-w-[800px] js-scroll js-left"
+            class="rounded-lg bg-[#2A2A2A] p-8 border shadow-lg lg:col-span-3 lg:p-12 js-scroll js-left"
           >
             <form action="#" class="space-y-4">
               <div class="relative">
@@ -293,7 +266,7 @@
                 <select
                   name="company"
                   id="company"
-                  class="peer text-gray-500 bg-[#2A2A2A] border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm select-white"
+                  class="peer text-gray-500 bg-[#2A2A2A] border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm"
                 >
                   <option value="" disabled selected class="text-gray-500">
                     Selecione uma opção
@@ -319,7 +292,7 @@
                 <select
                   name="contact-type"
                   id="contact-type"
-                  class="peer text-gray-500 bg-[#2A2A2A] border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm select-white"
+                  class="peer text-gray-500 bg-[#2A2A2A] border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm"
                 >
                   <option value="" disabled selected class="text-gray-500">
                     Selecione uma opção
@@ -332,21 +305,20 @@
                   for="position"
                   class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
                 >
-                  Como prefere receber nosso contato?
+                  Como gostaria de receber nosso contato?
                 </label>
               </div>
 
               <div class="relative">
                 <textarea
-                  class="peer w-full rounded-[5px] border-2 border-gray-300 p-4 text-sm text-white bg-transparent outline-none placeholder-transparent"
+                  class="w-full rounded-[5px] border-2 border-gray-300 p-4 text-sm peer text-white bg-transparent px-4 outline-none placeholder-transparent"
                   placeholder="Mensagem"
                   rows="8"
                   id="message"
-                  aria-label="Gostaria de adiantar alguma informação?"
                 ></textarea>
                 <label
                   for="message"
-                  class="absolute text-gray-500 px-1 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-6 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
+                  class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-6 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
                 >
                   Gostaria de adiantar alguma informação?
                 </label>
@@ -369,14 +341,11 @@
     <!-- About Section -->
     <section
       id="sobre"
-      class="overflow-hidden pt-8 pb-8 lg:pt-8 lg:pb-8 relative overflow-x-hidden"
+      class="overflow-hidden pt-8 pb-8 lg:pt-8 lg:pb-8 bg-secondary"
     >
-      <div
-        class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-secondary"
-      ></div>
       <div class="container mx-auto px-6">
         <div class="flex flex-wrap items-center justify-evenly -mx-4">
-          <div class="w-full px-4 lg:w-6/12 js-scroll js-right">
+          <!-- <div class="w-full px-4 lg:w-6/12 js-scroll js-right">
             <div class="flex items-center -mx-3 sm:-mx-4">
               <div class="w-full px-3 sm:px-4 xl:w-1/2">
                 <div class="py-3 sm:py-4">
@@ -974,7 +943,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="w-full px-4 lg:w-1/2 xl:w-5/12 js-scroll js-left">
             <div class="mt-10 lg:mt-0">
               <span
@@ -983,27 +952,27 @@
                 Por Que Escolher Nossa Agência
               </span>
               <h2
-                class="mb-5 text-3xl font-bold text-gray-800 sm:text-[40px]/[48px] poppins"
+                class="mb-5 text-3xl font-bold text-gray-100 sm:text-[40px]/[48px] poppins"
               >
                 Impulsionamos Seu Negócio com Soluções Estratégicas
               </h2>
-              <p class="mb-5 text-base text-body-color text-gray-800">
+              <p class="mb-5 text-base text-body-color text-gray-300">
                 Ajudamos marcas a alcançarem novos patamares com estratégias
                 criativas e eficazes. Nossa missão é transformar desafios em
                 oportunidades, nossa visão é ser referência no mercado digital,
                 e nossos valores incluem inovação, transparência e compromisso
                 com resultados.
               </p>
-              <p class="mb-8 text-base text-body-color text-gray-800">
+              <p class="mb-8 text-base text-body-color text-gray-300">
                 Nosso compromisso é entregar resultados que fazem a diferença.
                 Trabalhamos lado a lado com nossos clientes para criar campanhas
                 estratégicas e impactantes, sempre focando em alcançar objetivos
                 reais e mensuráveis.
               </p>
-              <h3 class="font-semibold text-gray-800">
+              <h3 class="font-semibold text-gray-300">
                 Pronto para alavancar sua marca?
               </h3>
-              <p class="text-gray-800 mb-8 text-base text-body-color">
+              <p class="text-gray-300 mb-8 text-base text-body-color">
                 Estamos aqui para ajudar você a crescer com soluções
                 personalizadas que fazem a diferença.
               </p>
@@ -1021,9 +990,10 @@
     <!-- About Section End -->
 
     <!-- CTA Section -->
+
     <section
       id="cta"
-      class="overflow-hidden relative sm:grid sm:grid-cols-2 sm:items-center overflow-x-hidden bg-secondary"
+      class="overflow-hidden bg-secondary sm:grid sm:grid-cols-2 sm:items-center overflow-x-hidden"
     >
       <div class="p-8 md:p-12 lg:px-16 lg:py-24">
         <div class="mx-auto max-w-xl text-left js-scroll js-right">
@@ -1072,79 +1042,79 @@
         </div>
       </div>
 
-      <img
+      <!-- <img
         alt=""
         src="./img/meet.jpg"
         class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px] js-scroll js-left"
-      />
+      /> -->
     </section>
     <!-- CTA Section End -->
 
     <!-- Services Section -->
     <!-- TODO: https://redventures.com.br/ -->
-    <!-- <section class="bg-primary overflow-x-hidden relative">
+    <section class="bg-primary">
       <div
-        class="mx-auto max-w-7xl items-center justify-between sm:flex sm:flex-col sm:pe-6 lg:pe-8 absolute left-8 top-0"
+        class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:mee-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
       >
-        <div>
-          <h2
-            class="max-w-xl text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl mb-4 poppins"
-          >
-            Nossos Serviços
-          </h2>
-          <h3 class="text-gray-400 text-xl">
-            Tudo que podemos fazer por sua empresa
-          </h3>
+        <div
+          class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8"
+        >
+          <div>
+            <h2
+              class="max-w-xl text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl mb-4 poppins"
+            >
+              Nossos Serviços
+            </h2>
+            <h3 class="text-gray-400 text-xl">
+              Tudo que podemos fazer por sua empresa
+            </h3>
+          </div>
+
+          <div class="mt-8 flex gap-4 lg:mt-0">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous2"
+              class="rounded-full border border-tertiary p-3 text-tertiary transition hover:bg-tertiary hover:text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 rtl:rotate-180"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next2"
+              class="rounded-full border border-tertiary p-3 text-tertiary transition hover:bg-tertiary hover:text-black"
+            >
+              <svg
+                class="size-5 rtl:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <div class="mt-8 flex gap-4 lg:mt-0">
-          <button
-            aria-label="Previous slide"
-            id="keen-slider-previous2"
-            class="rounded-full border border-tertiary p-3 text-tertiary transition hover:bg-tertiary hover:text-black"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-5 rtl:rotate-180"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
-              />
-            </svg>
-          </button>
-
-          <button
-            aria-label="Next slide"
-            id="keen-slider-next2"
-            class="rounded-full border border-tertiary p-3 text-tertiary transition hover:bg-tertiary hover:text-black"
-          >
-            <svg
-              class="size-5 rtl:rotate-180"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 5l7 7-7 7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div
-        class="ml-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:mee-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
-      >
         <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
           <div id="keen-slider2" class="keen-slider">
             <div class="keen-slider__slide">
@@ -1263,160 +1233,6 @@
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <section class="services">
-      <div class="services_container">
-        <div class="services_subcontainer">
-          <div class="services_content">
-            <h2 class="services_title">NOSSAS SOLUÇÕES</h2>
-            <p class="services_description">
-              Tudo que podemos fazer por sua empresa
-            </p>
-            <div class="slider-buttons_container services_buttons">
-              <button aria-label="Anterior" class="swiper-button-prev"></button
-              ><button aria-label="Próximo" class="swiper-button-next"></button>
-            </div>
-          </div>
-          <div class="swiper services_slider swiper-backface-hidden">
-            <div
-              class="swiper-wrapper"
-              style="transform: translate3d(0px, 0px, 0px)"
-            >
-              <div
-                class="swiper-slide swiper-slide-active"
-                style="margin-right: 24px"
-              >
-                <div class="card_card">
-                  <div
-                    style="
-                      background-image: url('/icons/home-oursolutions-strategy.png');
-                    "
-                    class="card_image"
-                  ></div>
-                  <div class="card_overlay"></div>
-                  <div class="card_container">
-                    <div class="card_header">
-                      <i class="fa-solid fa-house"></i>
-                      <p class="card_title">Estratégia e Implementação</p>
-                    </div>
-                    <p class="card_content">
-                      Com profunda experiência de nosso time em consultoria
-                      estratégica, aliada à tecnologia proprietária de ponta,
-                      idealizamos soluções digitais robustas que geram valor
-                      desproporcional no tempo para nossos parceiros. Aceleramos
-                      negócios, tanto através do crescimento de operações
-                      maduras, quanto através do lançamento de novos produtos
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide swiper-slide-next"
-                style="margin-right: 24px"
-              >
-                <div class="card_card">
-                  <div
-                    style="
-                      background-image: url('/icons/home-oursolutions-products.png');
-                    "
-                    class="card_image"
-                  ></div>
-                  <div class="card_overlay"></div>
-                  <div class="card_container">
-                    <div class="card_header">
-                      <i class="fa-solid fa-house"></i>
-                      <p class="card_title">Produtos digitais</p>
-                    </div>
-                    <p class="card_content">
-                      Construimos soluções inovadoras, oferecendo abordagens
-                      criativas e eficientes para resolver problemas, com
-                      tecnologia de ponta e com equipe multidisciplinar que
-                      buscará otimizações gerais e não apenas locais.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" style="margin-right: 24px">
-                <div class="card_card">
-                  <div
-                    style="
-                      background-image: url('/icons/home-oursolutions-growth.png');
-                    "
-                    class="card_image"
-                  ></div>
-                  <div class="card_overlay"></div>
-                  <div class="card_container">
-                    <div class="card_header">
-                      <i class="fa-solid fa-house"></i>
-                      <p class="card_title">Growth e Martech</p>
-                    </div>
-                    <p class="card_content">
-                      Usamos nossa tecnologia maximizar o retorno sobre o
-                      investimento das mídias pagas, através da criação, de
-                      experimentação, de otimizações e de personalização de
-                      experiências digitais e híbridas, e do uso de algoritmos,
-                      diminuindo o CAC, aumentando a conversão de vendas e o
-                      LTV.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" style="margin-right: 24px">
-                <div class="card_card">
-                  <div
-                    style="
-                      background-image: url('/icons/home-oursolutions-data.png');
-                    "
-                    class="card_image"
-                  ></div>
-                  <div class="card_overlay"></div>
-                  <div class="card_container">
-                    <div class="card_header">
-                      <i class="fa-solid fa-house"></i>
-                      <p class="card_title">Data analytics &amp; AI</p>
-                    </div>
-                    <p class="card_content">
-                      Estruturamos ambiente, pipeline e algoritmos de dados,
-                      tanto para a solução de problemas tecnológicos, quanto
-                      para a implementação de uma cultura data-driven que traz
-                      assertividade para as decisões e eleva o potencial de
-                      negócios.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" style="margin-right: 24px">
-                <div class="card_card">
-                  <div
-                    style="
-                      background-image: url('/icons/home-oursolutions-crm.png');
-                    "
-                    class="card_image"
-                  ></div>
-                  <div class="card_overlay"></div>
-                  <div class="card_container">
-                    <div class="card_header">
-                      <i class="fa-solid fa-house"></i>
-                      <p class="card_title">CRM</p>
-                    </div>
-                    <p class="card_content">
-                      Aplicamos ferramentas proprietárias e de parceiros
-                      estratégicos para agilizar e organizar a jornada de mídia,
-                      CRM, vendas físicas e digitais, afiliados, testes A/B,
-                      Analytics, trazendo resultados de negócio e melhorando a
-                      experiência do cliente
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide oursolutions_lastSlide"
-                style="margin-right: 24px"
-              ></div>
             </div>
           </div>
         </div>
@@ -1956,6 +1772,5 @@
       </div>
     </footer>
     <!-- Footer Section End -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
