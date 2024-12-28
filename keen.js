@@ -1003,5 +1003,3 @@ var y = function (n, i, e) {
   }
 };
 export { y as default };
-
-console.log("teste2");

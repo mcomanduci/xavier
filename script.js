@@ -203,7 +203,7 @@ const swiper = new Swiper(".swiper", {
   allowTouchMove: true,
   direction: "horizontal",
   mousewheel: {
-    invert: true,
+    invert: false,
   },
 
   breakpoints: {

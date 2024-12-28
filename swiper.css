@@ -95,32 +95,32 @@
 }
 
 .swiper-button-prev {
-  background-image: url(/icons/left-arrow-grey.svg);
+  background-image: url(./icons/left-arrow-grey.svg);
   margin-right: 16px;
 }
 
 .swiper-button-prev:hover {
-  background-image: url(/icons/left-arrow-red.svg);
+  background-image: url(./icons/left-arrow-red.svg);
 }
 
 @media (hover: none) {
   .swiper-button-prev:hover {
-    background-image: url(/icons/left-arrow-grey.svg);
+    background-image: url(./icons/left-arrow-grey.svg);
   }
 }
 
 .swiper-button-next {
-  background-image: url(/icons/right-arrow-grey.svg);
+  background-image: url(./icons/right-arrow-grey.svg);
   position: relative;
 }
 
 .swiper-button-next:hover {
-  background-image: url(/icons/right-arrow-red.svg);
+  background-image: url(./icons/right-arrow-red.svg);
 }
 
 @media (hover: none) {
   .swiper-button-next:hover {
-    background-image: url(/icons/right-arrow-grey.svg);
+    background-image: url(./icons/right-arrow-grey.svg);
   }
 }
 
