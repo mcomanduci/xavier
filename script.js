@@ -219,3 +219,24 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// ---- load
+// window.addEventListener("load", function () {
+//   // Let the rotate animation run for 3 seconds
+//   setTimeout(function () {
+//     // After 3 seconds, remove the rotate animation and add the expand animation
+//     const logo = document.getElementById("logo-animation");
+//     logo.classList.remove("logo-rotate");
+//     logo.classList.add("logo-expand");
+
+//     // Wait for the expand animation to complete (1 second)
+//     setTimeout(function () {
+//       // Hide the logo spinner and reveal the content
+//       document.getElementById("logo-spinner").style.display = "none";
+//       document.getElementById("content").style.opacity = "1";
+//     }, 1000);
+//   }, 1500);
+// });
+
+document.getElementById("logo-spinner").style.display = "none";
+document.getElementById("content").style.opacity = "1";
