@@ -51,3 +51,7 @@ i {
 .card_content {
   @apply text-base leading-7 absolute text-white duration-500 transition-opacity ease-[cubic-bezier(0.5,_0,_0,_1)] w-[calc(100%-32px)] mt-2 z-30 lg:text-lg lg:leading-[30px] lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:absolute lg:group-hover:delay-200 lg:group-hover:duration-700 lg:group-hover:leading-6;
 }
+
+.button-color {
+  @apply bg-golden-gradient bg-[200%_auto] hover:bg-[right_center] active:bg-[right_center] duration-500 font-poppins;
+}
