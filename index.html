@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -34,7 +34,7 @@
     <!-- load animation -->
     <div
       id="logo-spinner"
-      class="fixed inset-0 flex items-center justify-center z-50 bg-black"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black"
     >
       <!-- Logo or icon to animate -->
       <div class="logo-rotate" id="logo-animation">
@@ -43,21 +43,21 @@
     </div>
 
     <!-- Main Content -->
-    <div id="content" class="opacity-0 fade-in">
+    <div id="content" class="fade-in opacity-0">
       <!-- load animation -->
       <!-- Header Section -->
       <header
-        class="bg-black/20 absolute top-0 left-0 right-0 z-50 transition-all py-2 overflow-x-hidden"
+        class="absolute left-0 right-0 top-0 z-50 overflow-x-hidden bg-black/20 py-2 transition-all"
       >
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div
-            class="flex justify-between md:grid md:grid-cols-4 h-16 items-center"
+            class="flex h-16 items-center justify-between md:grid md:grid-cols-4"
           >
             <div class="md:flex md:items-center md:gap-12">
               <a class="block max-w-[60px] md:max-w-[76px]" href="#home">
                 <span class="sr-only">Home</span>
                 <img
-                  class="logo-white hover:scale-105 transition-transform duration-300"
+                  class="logo-white transition-transform duration-300 hover:scale-105"
                   src="img/logo2.png"
                   width="76"
                   alt="Logo X ao Cubo"
@@ -66,24 +66,24 @@
                   src="img/logo2-black.png"
                   width="76"
                   alt="Logo X ao Cubo"
-                  class="hidden logo-black"
+                  class="logo-black hidden"
                 />
               </a>
             </div>
 
             <div
-              class="text-white text-xs md:text-xl font-poppins hidden md:block col-span-2 text-center teste-fonte uppercase tracking-widest font-semibold hover:text-tertiary"
+              class="teste-fonte col-span-2 hidden text-center font-poppins text-xs font-semibold uppercase tracking-widest text-white hover:text-tertiary md:block md:text-xl"
             >
               Especialistas no Mercado Imobiliário
             </div>
 
             <div
-              class="md:flex md:items-center gap-3 lg:gap-6 xl:gap-12 md:text-sm lg:text-lg font-poppins justify-self-end"
+              class="gap-3 justify-self-end font-poppins md:flex md:items-center md:text-sm lg:gap-6 lg:text-lg xl:gap-12"
             >
               <div class="flex items-center gap-4">
                 <div class="sm:flex sm:gap-4">
                   <a
-                    class="button-color rounded-md px-5 py-2.5 font-medium text-black shadow scrollto"
+                    class="button-color scrollto rounded-md px-5 py-2.5 font-medium text-black shadow"
                     href="#cta"
                   >
                     Conheça a X³
@@ -101,18 +101,18 @@
       <!-- Hero Section -->
       <section
         id="home"
-        class="relative bg-[url(./img/bg-3.jpg)] bg-cover bg-center bg-no-repeat overflow-x-hidden"
+        class="relative overflow-x-hidden bg-[url(./img/bg-3.jpg)] bg-cover bg-center bg-no-repeat"
       >
         <div
-          class="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/60 sm:to-black/80 sm:bg-gradient-to-t"
+          class="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-t sm:from-black/60 sm:to-black/80"
         ></div>
 
         <div
-          class="relative mx-auto max-w-screen-xl px-4 pt-32 pb-12 lg:flex lg:h-[90vh] lg:items-center container"
+          class="container relative mx-auto max-w-screen-xl px-4 pb-12 pt-32 lg:flex lg:h-[90vh] lg:items-center"
         >
-          <div class="text-center js-scroll js-fade mx-auto">
+          <div class="js-scroll js-fade mx-auto text-center">
             <h1
-              class="text-3xl font-extrabold sm:text-5xl sm:leading-tight font-poppins max-w-[40rem] mx-auto text-white"
+              class="mx-auto max-w-[40rem] font-poppins text-3xl font-extrabold text-white sm:text-5xl sm:leading-tight"
             >
               <strong class="block font-extrabold text-tertiary sm:block">
                 Marketing e Vendas
@@ -121,7 +121,7 @@
             </h1>
 
             <p
-              class="mt-4 text-gray-300 sm:text-base/relaxed text-shadow max-w-2xl mx-auto"
+              class="text-shadow mx-auto mt-4 max-w-2xl text-gray-300 sm:text-base/relaxed"
             >
               Marketing Digital especializado para Imobiliárias, Incorporadoras,
               Construtoras e Corretores em todo o Brasil, com foco em aumentar
@@ -131,7 +131,7 @@
             <div class="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="#contato-form"
-                class="button-color block w-full rounded px-12 py-3 text-lg font-medium text-black shadow focus:outline-none focus:ring sm:w-auto font-poppins scrollto"
+                class="button-color scrollto block w-full rounded px-12 py-3 font-poppins text-lg font-medium text-black shadow focus:outline-none focus:ring sm:w-auto"
               >
                 Entre em Contato
               </a>
@@ -149,33 +149,34 @@
       <!-- Hero Section End -->
 
       <!-- Form Section -->
-      <section
+      <!-- <section
         id="contato"
         class="relative overflow-x-hidden bg-[linear-gradient(#000_5%,_#1B1D20_50%,_#F1F1F1_100%)]"
-      >
+      > -->
+      <section id="contato" class="relative overflow-x-hidden bg-black">
         <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div class="flex flex-col items-center gap-x-16 gap-y-8">
-            <div class="w-full grid lg:grid-cols-2 gap-4">
-              <div class="lg:pb-12 js-scroll js-right">
-                <div class="z-10 max-w-3xl js-scroll js-fade pb-8">
-                  <h3 class="font-semibold text-tertiary font-poppins">
+            <div class="w-full flex">
+              <div class="js-scroll js-right lg:pb-12 max-w-[45%]">
+                <div class="js-scroll js-fade z-10 max-w-3xl pb-8">
+                  <h3 class="font-poppins font-semibold text-tertiary">
                     Fale Conosco e Transforme Suas Vendas!
                   </h3>
                   <h2
-                    class="mb-5 text-3xl font-bold text-white sm:text-[40px]/[48px] font-poppins"
+                    class="mb-5 font-poppins text-3xl font-bold text-white sm:text-[40px]/[48px]"
                   >
                     Lorem ipsum dolor sit
                   </h2>
                 </div>
-                <p class="max-w-5xl text-lg text-white mb-4">
+                <p class="mb-4 max-w-5xl text-lg text-white">
                   Você sente que pode vender mais, mas falta algo para atingir
                   seus objetivos?
                 </p>
-                <p class="max-w-3xl text-lg text-white mb-4">
+                <p class="mb-4 max-w-3xl text-lg text-white">
                   Você não está sozinho. Muitos profissionais do mercado
                   imobiliário enfrentam desafios como:
                 </p>
-                <ul class="max-w-3xl text-md text-gray-400 mb-4 list-disc pl-5">
+                <ul class="text-md mb-4 max-w-3xl list-disc pl-5 text-gray-400">
                   <li>
                     Perder clientes por falta de um atendimento eficiente.
                   </li>
@@ -187,10 +188,10 @@
                     em que parou.
                   </li>
                 </ul>
-                <p class="max-w-3xl text-lg text-white mb-4">
+                <p class="mb-4 max-w-3xl text-lg text-white">
                   Agora imagine...
                 </p>
-                <ul class="max-w-3xl text-md text-gray-400 mb-4 list-disc pl-5">
+                <ul class="text-md mb-4 max-w-3xl list-disc pl-5 text-gray-400">
                   <li>
                     Ter um processo de vendas no digital bem estruturado, que te
                     ajuda a fechar negócios com mais facilidade, sem abrir mão
@@ -207,175 +208,176 @@
                     importa em sua vida.
                   </li>
                 </ul>
-                <p class="max-w-3xl text-lg text-white mb-4">
+                <p class="mb-4 max-w-3xl text-lg text-white">
                   Tudo isso sem se preocupar em contratar mais funcionários e
                   ter que arcar com impostos, férias, décimo terceiro e ter
                   vínculo empregatício.
                 </p>
-                <p class="max-w-3xl text-lg text-white mb-4">
+                <p class="mb-4 max-w-3xl text-lg text-white">
                   Esse é o momento de transformar essa realidade. Preencha o
                   formulário abaixo e, em até 24 horas, nossa equipe irá entrar
                   em contato com você.
                 </p>
-                <p class="max-w-3xl text-lg text-white mb-4">
+                <p class="mb-4 max-w-3xl text-lg text-white">
                   Faça agora mesmo. Um pequeno passo pode levar você muito mais
                   longe.
                 </p>
               </div>
-              <div class="w-full h-full">
+
+              <div class="absolute bottom-0 right-0 h-auto w-full max-w-[45%]">
                 <img
-                  src="./img/pic.jpg"
-                  class="w-full h-full object-cover"
+                  src="./img/model2.png"
+                  class="h-auto w-full object-cover"
                   alt=""
                 />
               </div>
             </div>
-
-            <div
-              id="contato-form"
-              class="rounded-lg bg-[#2A2A2A] p-8 border shadow-lg lg:p-12 min-w-full sm:min-w[500px] md:min-w-[700px] lg:min-w-[800px] js-scroll js-left"
-            >
-              <form action="#" class="space-y-4">
-                <div class="relative">
-                  <input
-                    type="text"
-                    id="nome"
-                    required
-                    class="peer text-white bg-transparent border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm"
-                    placeholder="Nome"
-                  />
-                  <label
-                    for="nome"
-                    class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
-                  >
-                    Nome
-                  </label>
-                </div>
-
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div class="relative">
-                    <!-- TODO: COLOCAR DDD OBRIGATORIO -->
-                    <input
-                      type="tel"
-                      id="phone"
-                      required
-                      class="peer text-white bg-transparent border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm"
-                      placeholder="Telefone"
-                    />
-                    <label
-                      for="phone"
-                      class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
-                    >
-                      Telefone com DDD
-                    </label>
-                  </div>
-
-                  <div class="relative">
-                    <input
-                      type="text"
-                      id="city"
-                      required
-                      class="peer text-white bg-transparent border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm"
-                      placeholder="Cidade"
-                    />
-                    <label
-                      for="city"
-                      class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
-                    >
-                      Cidade/Região
-                    </label>
-                  </div>
-                </div>
-
-                <div class="relative">
-                  <input
-                    type="email"
-                    id="email"
-                    required
-                    class="peer text-white bg-transparent border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm"
-                    placeholder="E-Mail"
-                  />
-                  <label
-                    for="email"
-                    class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
-                  >
-                    E-mail
-                  </label>
-                </div>
-
-                <div class="relative">
-                  <select
-                    name="company"
-                    id="company"
-                    class="peer text-gray-500 bg-[#2A2A2A] border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm select-white"
-                  >
-                    <option value="" disabled selected class="text-gray-500">
-                      Selecione uma opção
-                    </option>
-                    <option value="" class="text-white">Imobiliária</option>
-                    <option value="" class="text-white">Incorporadora</option>
-                    <option value="" class="text-white">Construtora</option>
-                    <option value="" class="text-white">Loteadora</option>
-                    <option value="" class="text-white">
-                      Corretor de Imóveis
-                    </option>
-                    <option value="" class="text-white">Outros</option>
-                  </select>
-                  <label
-                    for="company"
-                    class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
-                  >
-                    Seguimento
-                  </label>
-                </div>
-
-                <div class="relative">
-                  <select
-                    name="contact-type"
-                    id="contact-type"
-                    class="peer text-gray-500 bg-[#2A2A2A] border-2 border-gray-300 rounded-[5px] px-4 outline-none placeholder-transparent w-full p-4 text-sm select-white"
-                  >
-                    <option value="" disabled selected class="text-gray-500">
-                      Selecione uma opção
-                    </option>
-                    <option value="" class="text-white">WhatsApp</option>
-                    <option value="" class="text-white">Telefone</option>
-                    <option value="" class="text-white">Email</option>
-                  </select>
-                  <label
-                    for="position"
-                    class="absolute text-gray-500 px-[5px] py-0 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
-                  >
-                    Como prefere receber nosso contato?
-                  </label>
-                </div>
-
-                <div class="relative">
-                  <textarea
-                    class="peer w-full rounded-[5px] border-2 border-gray-300 p-4 text-sm text-white bg-transparent outline-none placeholder-transparent"
-                    placeholder="Mensagem"
-                    rows="8"
-                    id="message"
-                    aria-label="Gostaria de adiantar alguma informação?"
-                  ></textarea>
-                  <label
-                    for="message"
-                    class="absolute text-gray-500 px-1 -translate-y-1/2 top-0 left-4 pointer-events-none transition-all duration-300 ease-in-out bg-[#2a2a2a] text-sm peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm peer-placeholder-shown:top-6 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base"
-                  >
-                    Gostaria de adiantar alguma informação?
-                  </label>
-                </div>
-
-                <div class="mt-4">
-                  <button
-                    class="button-color inline-block w-full rounded-lg px-5 py-3 font-medium text-black sm:w-auto focus:outline-none"
-                  >
-                    Enviar Mensagem
-                  </button>
-                </div>
-              </form>
-            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-screen-lg">
+        <div
+          id="contato-form"
+          class="sm:min-w[500px] js-scroll js-left min-w-full rounded-lg border bg-[#2A2A2A] p-8 shadow-lg md:min-w-[700px] lg:min-w-[800px] lg:p-12"
+        >
+          <form action="#" class="space-y-4">
+            <div class="relative">
+              <input
+                type="text"
+                id="nome"
+                required
+                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                placeholder="Nome"
+              />
+              <label
+                for="nome"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
+              >
+                Nome
+              </label>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div class="relative">
+                <!-- TODO: COLOCAR DDD OBRIGATORIO -->
+                <input
+                  type="tel"
+                  id="phone"
+                  required
+                  class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                  placeholder="Telefone"
+                />
+                <label
+                  for="phone"
+                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
+                >
+                  Telefone com DDD
+                </label>
+              </div>
+
+              <div class="relative">
+                <input
+                  type="text"
+                  id="city"
+                  required
+                  class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                  placeholder="Cidade"
+                />
+                <label
+                  for="city"
+                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
+                >
+                  Cidade/Região
+                </label>
+              </div>
+            </div>
+
+            <div class="relative">
+              <input
+                type="email"
+                id="email"
+                required
+                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                placeholder="E-Mail"
+              />
+              <label
+                for="email"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
+              >
+                E-mail
+              </label>
+            </div>
+
+            <div class="relative">
+              <select
+                name="company"
+                id="company"
+                class="select-white peer w-full rounded-[5px] border-2 border-gray-300 bg-[#2A2A2A] p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none"
+              >
+                <option value="" disabled selected class="text-gray-500">
+                  Selecione uma opção
+                </option>
+                <option value="" class="text-white">Imobiliária</option>
+                <option value="" class="text-white">Incorporadora</option>
+                <option value="" class="text-white">Construtora</option>
+                <option value="" class="text-white">Loteadora</option>
+                <option value="" class="text-white">Corretor de Imóveis</option>
+                <option value="" class="text-white">Outros</option>
+              </select>
+              <label
+                for="company"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
+              >
+                Seguimento
+              </label>
+            </div>
+
+            <div class="relative">
+              <select
+                name="contact-type"
+                id="contact-type"
+                class="select-white peer w-full rounded-[5px] border-2 border-gray-300 bg-[#2A2A2A] p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none"
+              >
+                <option value="" disabled selected class="text-gray-500">
+                  Selecione uma opção
+                </option>
+                <option value="" class="text-white">WhatsApp</option>
+                <option value="" class="text-white">Telefone</option>
+                <option value="" class="text-white">Email</option>
+              </select>
+              <label
+                for="position"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
+              >
+                Como prefere receber nosso contato?
+              </label>
+            </div>
+
+            <div class="relative">
+              <textarea
+                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 text-sm text-white placeholder-transparent outline-none"
+                placeholder="Mensagem"
+                rows="8"
+                id="message"
+                aria-label="Gostaria de adiantar alguma informação?"
+              ></textarea>
+              <label
+                for="message"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-1 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-6 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
+              >
+                Gostaria de adiantar alguma informação?
+              </label>
+            </div>
+
+            <div class="mt-4">
+              <button
+                class="button-color inline-block w-full rounded-lg px-5 py-3 font-medium text-black focus:outline-none sm:w-auto"
+              >
+                Enviar Mensagem
+              </button>
+            </div>
+          </form>
         </div>
       </section>
       <!-- Form Section End -->
@@ -383,15 +385,15 @@
       <!-- About Section -->
       <section
         id="sobre"
-        class="overflow-hidden pt-8 pb-8 lg:pt-8 lg:pb-8 relative overflow-x-hidden"
+        class="relative overflow-hidden overflow-x-hidden pb-8 pt-8 lg:pb-8 lg:pt-8"
       >
         <div
-          class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-secondary"
+          class="absolute inset-0 -z-10 h-full w-full items-center bg-secondary px-5 py-24"
         ></div>
         <div class="container mx-auto px-6">
-          <div class="flex flex-wrap items-center justify-evenly -mx-4">
-            <div class="w-full px-4 lg:w-6/12 js-scroll js-right">
-              <div class="flex items-center -mx-3 sm:-mx-4">
+          <div class="-mx-4 flex flex-wrap items-center justify-evenly">
+            <div class="js-scroll js-right w-full px-4 lg:w-6/12">
+              <div class="-mx-3 flex items-center sm:-mx-4">
                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
                   <div class="py-3 sm:py-4">
                     <img
@@ -415,7 +417,7 @@
                       alt=""
                       class="w-full rounded-2xl"
                     />
-                    <span class="absolute -right-7 -bottom-7 z-[-1]">
+                    <span class="absolute -bottom-7 -right-7 z-[-1]">
                       <svg
                         width="134"
                         height="106"
@@ -989,26 +991,26 @@
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-5/12 js-scroll js-left">
+            <div class="js-scroll js-left w-full px-4 lg:w-1/2 xl:w-5/12">
               <div class="mt-10 lg:mt-0">
                 <span
-                  class="block mb-4 text-lg font-semibold text-tertiary font-poppins"
+                  class="mb-4 block font-poppins text-lg font-semibold text-tertiary"
                 >
                   Por Que Escolher Nossa Agência
                 </span>
                 <h2
-                  class="mb-5 text-3xl font-bold text-gray-800 sm:text-[40px]/[48px] font-poppins"
+                  class="mb-5 font-poppins text-3xl font-bold text-gray-800 sm:text-[40px]/[48px]"
                 >
                   Impulsionamos Seu Negócio com Soluções Estratégicas
                 </h2>
-                <p class="mb-5 text-base text-body-color text-gray-800">
+                <p class="text-body-color mb-5 text-base text-gray-800">
                   Ajudamos marcas a alcançarem novos patamares com estratégias
                   criativas e eficazes. Nossa missão é transformar desafios em
                   oportunidades, nossa visão é ser referência no mercado
                   digital, e nossos valores incluem inovação, transparência e
                   compromisso com resultados.
                 </p>
-                <p class="mb-8 text-base text-body-color text-gray-800">
+                <p class="text-body-color mb-8 text-base text-gray-800">
                   Nosso compromisso é entregar resultados que fazem a diferença.
                   Trabalhamos lado a lado com nossos clientes para criar
                   campanhas estratégicas e impactantes, sempre focando em
@@ -1017,13 +1019,13 @@
                 <h3 class="font-semibold text-gray-800">
                   Pronto para alavancar sua marca?
                 </h3>
-                <p class="text-gray-800 mb-8 text-base text-body-color">
+                <p class="text-body-color mb-8 text-base text-gray-800">
                   Estamos aqui para ajudar você a crescer com soluções
                   personalizadas que fazem a diferença.
                 </p>
                 <a
                   href="#contato"
-                  class="button-color inline-flex items-center justify-center py-3 text-base font-medium text-center text-black border border-transparent rounded-md px-7 scrollto"
+                  class="button-color scrollto inline-flex items-center justify-center rounded-md border border-transparent px-7 py-3 text-center text-base font-medium text-black"
                 >
                   Entre em Contato
                 </a>
@@ -1037,37 +1039,37 @@
       <!-- CTA Section -->
       <section
         id="cta"
-        class="overflow-hidden relative sm:grid sm:grid-cols-2 sm:items-center overflow-x-hidden bg-primary"
+        class="relative overflow-hidden overflow-x-hidden bg-primary sm:grid sm:grid-cols-2 sm:items-center"
       >
         <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div class="mx-auto max-w-xl text-left js-scroll js-right">
+          <div class="js-scroll js-right mx-auto max-w-xl text-left">
             <h2
-              class="text-2xl font-bold text-gray-700 md:text-3xl text-center sm:text-left font-poppins"
+              class="text-center font-poppins text-2xl font-bold text-gray-700 sm:text-left md:text-3xl"
             >
               Você quer vender mais, certo? Então conheça a X³!
             </h2>
 
-            <p class="text-gray-500 mt-4">
+            <p class="mt-4 text-gray-500">
               Somos especializados em marketing e vendas para o mercado
               imobiliário. Conhecemos profundamente seus clientes, seja para
               imóveis de baixo, médio ou alto padrão. Sabemos exatamente quais
               são suas dores, seus desejos, as objeções que podem apresentar e
               como capturar sua atenção.
             </p>
-            <p class="text-gray-500 mt-4">
+            <p class="mt-4 text-gray-500">
               Através de anúncios online, conduzimos os potenciais clientes até
               sua equipe de atendimento, que será treinada em vendas pela X³,
               convertendo-os em clientes reais. Também ensinamos estratégias de
               retenção à sua equipe, fazendo com que os clientes permaneçam por
               mais tempo, entregando valor e diminuindo seu custo de aquisição.
             </p>
-            <p class="text-gray-500 mt-4">
+            <p class="mt-4 text-gray-500">
               Nossas estratégias digitais já trouxeram resultados significativos
               para nossos clientes no mercado imobiliário. Sabemos exatamente
               como estruturá-las, analisá-las, corrigí-las e melhorá-las,
               garantindo um bom ROI (retorno sobre o investimento).
             </p>
-            <p class="text-gray-500 mt-4">
+            <p class="mt-4 text-gray-500">
               Somos uma assessoria de marketing e vendas e, por isso, damos
               total apoio na execução das estratégias. Trabalhamos com
               transparência e temos enraizados em nossa cultura os princípios de
@@ -1076,10 +1078,10 @@
               confiança.
             </p>
 
-            <div class="mt-4 md:mt-8 text-center sm:text-left">
+            <div class="mt-4 text-center sm:text-left md:mt-8">
               <a
                 href="#contato"
-                class="button-color inline-block rounded px-12 py-3 text-sm font-medium text-black focus:outline-none scrollto"
+                class="button-color scrollto inline-block rounded px-12 py-3 text-sm font-medium text-black focus:outline-none"
               >
                 Comece Agora
               </a>
@@ -1090,20 +1092,20 @@
         <img
           alt=""
           src="./img/meet.jpg"
-          class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px] js-scroll js-left"
+          class="js-scroll js-left h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
         />
       </section>
       <!-- CTA Section End -->
 
       <!-- Services Section -->
-      <section class="bg-secondary relative h-auto py-[60px]">
-        <div class="max-w-[1304px] mx-auto px-2 sm:px-6">
-          <div class="text-center pb-10 pt-0 px-0 lg:text-left lg:p-[60px]">
+      <section class="relative h-auto bg-secondary py-[60px]">
+        <div class="mx-auto max-w-[1304px] px-2 sm:px-6">
+          <div class="px-0 pb-10 pt-0 text-center lg:p-[60px] lg:text-left">
             <div
-              class="mb-6 flex flex-col items-center lg:pt-6 lg:mt-20 lg:w-[300px] lg:block xl:w-[400px]"
+              class="mb-6 flex flex-col items-center lg:mt-20 lg:block lg:w-[300px] lg:pt-6 xl:w-[400px]"
             >
               <h2
-                class="text-4xl !leading-[1.2] font-bold text-white m-0 lg:text-5xl xl:text-6xl font-poppins"
+                class="m-0 font-poppins text-4xl font-bold !leading-[1.2] text-white lg:text-5xl xl:text-6xl"
               >
                 NOSSAS SOLUÇÕES
               </h2>
@@ -1111,23 +1113,23 @@
                 Tudo que podemos fazer por sua empresa
               </p>
               <div
-                class="flex w-full max-w-xl items-end justify-center mt-8 lg:justify-start"
+                class="mt-8 flex w-full max-w-xl items-end justify-center lg:justify-start"
               >
                 <button
                   aria-label="Anterior"
-                  class="swiper-button-prev w-12 h-12 rounded-full bg-transparent border-2 border-[#c2c2c2] text-[#c2c2c2] bg-no-repeat bg-auto bg-center cursor-pointer mr-4 bg-[url(./icons/left-arrow-grey.svg)] hover:bg-[url(./icons/left-arrow-red.svg)] hover:border-tertiary"
+                  class="swiper-button-prev mr-4 h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(./icons/left-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(./icons/left-arrow-red.svg)]"
                 ></button
                 ><button
                   aria-label="Próximo"
-                  class="swiper-button-next w-12 h-12 rounded-full bg-transparent border-2 border-[#c2c2c2] text-[#c2c2c2] bg-no-repeat bg-auto bg-center cursor-pointer relative bg-[url(./icons/right-arrow-grey.svg)] hover:bg-[url(./icons/right-arrow-red.svg)] hover:border-tertiary"
+                  class="swiper-button-next relative h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(./icons/right-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(./icons/right-arrow-red.svg)]"
                 ></button>
               </div>
             </div>
             <div
-              class="swiper mx-auto right-0 top-[100px] w-[90%] overflow-clip p-0 z-10 block touch-pan-y lg:absolute lg:w-[60%] 2xl:w-[55%]"
+              class="swiper right-0 top-[100px] z-10 mx-auto block w-[90%] touch-pan-y overflow-clip p-0 lg:absolute lg:w-[60%] 2xl:w-[55%]"
             >
               <div
-                class="swiper-wrapper relative w-full h-full z-10 flex transition-transform box-content"
+                class="swiper-wrapper relative z-10 box-content flex h-full w-full transition-transform"
                 style="transform: translate3d(0px, 0px, 0px)"
               >
                 <div
@@ -1137,7 +1139,7 @@
                   <div class="swiper_card group">
                     <div
                       style="
-                        background-image: url('./icons/home-oursolutions-strategy.png');
+                        background-image: url(&quot;./icons/home-oursolutions-strategy.png&quot;);
                       "
                       class="card_image"
                     ></div>
@@ -1166,7 +1168,7 @@
                   <div class="swiper_card group">
                     <div
                       style="
-                        background-image: url('./icons/home-oursolutions-products.png');
+                        background-image: url(&quot;./icons/home-oursolutions-products.png&quot;);
                       "
                       class="card_image"
                     ></div>
@@ -1189,7 +1191,7 @@
                   <div class="swiper_card group">
                     <div
                       style="
-                        background-image: url('./icons/home-oursolutions-growth.png');
+                        background-image: url(&quot;./icons/home-oursolutions-growth.png&quot;);
                       "
                       class="card_image"
                     ></div>
@@ -1214,7 +1216,7 @@
                   <div class="swiper_card group">
                     <div
                       style="
-                        background-image: url('./icons/home-oursolutions-data.png');
+                        background-image: url(&quot;./icons/home-oursolutions-data.png&quot;);
                       "
                       class="card_image"
                     ></div>
@@ -1238,7 +1240,7 @@
                   <div class="swiper_card group">
                     <div
                       style="
-                        background-image: url('./icons/home-oursolutions-crm.png');
+                        background-image: url(&quot;./icons/home-oursolutions-crm.png&quot;);
                       "
                       class="card_image"
                     ></div>
@@ -1272,10 +1274,10 @@
       <!-- Testimonials Section -->
       <section id="depoimentos" class="bg-primary">
         <div
-          class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 js-scroll js-right"
+          class="js-scroll js-right mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16"
         >
           <h2
-            class="text-center text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl font-poppins"
+            class="text-center font-poppins text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl"
           >
             O que Nossos Clientes Têm a Dizer
           </h2>
@@ -1350,7 +1352,7 @@
                       </div>
 
                       <p
-                        class="mt-0.5 text-lg font-medium text-gray-300 font-poppins"
+                        class="mt-0.5 font-poppins text-lg font-medium text-gray-300"
                       >
                         Carlos César
                       </p>
@@ -1663,14 +1665,14 @@
 
       <!-- CTA WhatsApp -->
       <section class="bg-secondary">
-        <div class="p-8 md:p-12 lg:px-16 lg:py-24 js-scroll js-bottom">
+        <div class="js-scroll js-bottom p-8 md:p-12 lg:px-16 lg:py-24">
           <div class="mx-auto max-w-lg text-center">
-            <h2 class="text-2xl font-bold text-white md:text-3xl font-poppins">
+            <h2 class="font-poppins text-2xl font-bold text-white md:text-3xl">
               Fale Conosco no WhatsApp!
-              <i class="fa-brands fa-whatsapp text-green-600 pl-2 text-3xl"></i>
+              <i class="fa-brands fa-whatsapp pl-2 text-3xl text-green-600"></i>
             </h2>
 
-            <p class="text-gray-300 sm:mt-4 block max-w-4xl">
+            <p class="block max-w-4xl text-gray-300 sm:mt-4">
               Tire suas dúvidas, solicite informações ou faça seu pedido de
               forma rápida e prática. Nossa equipe está pronta para atender você
               diretamente no WhatsApp. Clique no botão e fale conosco agora
@@ -1694,7 +1696,7 @@
                 type="submit"
                 class="button-color group mt-4 flex w-full items-center justify-center gap-2 rounded-md px-5 py-3 text-white focus:outline-none sm:mt-0 sm:w-auto"
               >
-                <span class="text-sm font-medium font-poppins"
+                <span class="font-poppins text-sm font-medium"
                   >Enviar Mensagem</span
                 >
               </button>
@@ -1705,7 +1707,7 @@
       <!-- CTA WhatsApp End -->
 
       <!-- Footer Section -->
-      <footer id="footer" class="bg-primary overflow-x-hidden">
+      <footer id="footer" class="overflow-x-hidden bg-primary">
         <div
           class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
         >
@@ -1735,7 +1737,7 @@
           <div class="lg:grid lg:grid-cols-3 lg:items-end lg:justify-between">
             <div>
               <ul
-                class="text-gray-200 hover:text-gray-200/85 text-2xl font-semibold font-poppins"
+                class="font-poppins text-2xl font-semibold text-gray-200 hover:text-gray-200/85"
               >
                 <li><a href="">Lorem ipsum </a></li>
                 <li><a href="">Lorem amet dolor</a></li>
@@ -1744,21 +1746,23 @@
             </div>
 
             <div
-              class="h-full flex mt-12 lg:mt-0 lg:justify-center lg:items-center"
+              class="mt-12 flex h-full lg:mt-0 lg:items-center lg:justify-center"
             >
               <ul>
                 <li class="mb-6">
                   <a
-                    class="flex flex-col lg:flex-row lg:items-center text-gray-200 transition hover:text-gray-200/75"
+                    class="flex flex-col text-gray-200 transition hover:text-gray-200/75 lg:flex-row lg:items-center"
                     href="https://www.instagram.com/your_handle"
                     aria-label="Envie-nos um e-mail"
                   >
                     <span
-                      class="inline-flex justify-center items-center w-8 h-8 bg-white rounded-full"
+                      class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white"
                     >
-                      <i class="fa-regular fa-envelope text-xl text-black"></i>
+                      <i
+                        class="fa-regular fa-envelope mb-0 text-xl text-black"
+                      ></i>
                     </span>
-                    <span class="mt-4 lg:mt-0 lg:ml-4 lg:text-xl"
+                    <span class="mt-4 lg:ml-4 lg:mt-0 lg:text-xl"
                       >emailexemplo@gmail.com</span
                     >
                   </a>
@@ -1766,16 +1770,18 @@
 
                 <li>
                   <a
-                    class="flex flex-col lg:flex-row lg:items-center text-gray-200 transition hover:text-gray-200/75"
+                    class="flex flex-col text-gray-200 transition hover:text-gray-200/75 lg:flex-row lg:items-center"
                     href="https://www.instagram.com/your_handle"
                     aria-label="Follow us on Instagram"
                   >
                     <span
-                      class="inline-flex justify-center items-center w-8 h-8 bg-white rounded-full"
+                      class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white"
                     >
-                      <i class="fa-brands fa-instagram text-xl text-black"></i>
+                      <i
+                        class="fa-brands fa-instagram mb-0 text-xl text-black"
+                      ></i>
                     </span>
-                    <span class="lg:ml-4 mt-4 lg:mt-0 lg:text-xl"
+                    <span class="mt-4 lg:ml-4 lg:mt-0 lg:text-xl"
                       >@instagram</span
                     >
                   </a>
@@ -1789,15 +1795,15 @@
           </div>
 
           <div
-            class="mt-12 grid grid-cols-1 md:grid-cols-4 border-t border-gray-500 pt-8 gap-4"
+            class="mt-12 grid grid-cols-1 gap-4 border-t border-gray-500 pt-8 md:grid-cols-4"
           >
             <p
-              class="text-center text-sm text-gray-500 md:col-span-2 md:border-r border-gray-500 px-2"
+              class="border-gray-500 px-2 text-center text-sm text-gray-500 md:col-span-2 md:border-r"
             >
               Avenida JK, 2122 - Bom Pastor | Divinópolis - Minas Gerais
             </p>
             <p
-              class="text-center text-sm text-gray-500 md:border-r border-gray-500"
+              class="border-gray-500 text-center text-sm text-gray-500 md:border-r"
             >
               &copy; 2024 X ao Cubo
             </p>

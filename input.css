@@ -3,37 +3,23 @@
 @tailwind utilities;
 
 .swiper-slide {
-  @apply w-[300px] min-w-[100px] pb-6 h-[450px] shrink-0 relative transition-transform block lg:h-full lg:w-auto lg:pb-0 max-[375px]:w-[290px] max-[320px]:w-[240px] max-[320px]:h-[580px];
+  @apply relative block h-[450px] w-[300px] min-w-[100px] shrink-0 pb-6 transition-transform max-[375px]:w-[290px] max-[320px]:h-[580px] max-[320px]:w-[240px] lg:h-full lg:w-auto lg:pb-0;
 }
 
 .swiper_card {
-  @apply w-[300px] h-[500px] rounded-[32px] lg:w-[350px] lg:h-[444px] lg:flex lg:flex-col lg:justify-end lg:overflow-hidden lg:relative lg:duration-500 lg:hover:w-[550px] xl:h-[444px] xl:w-[400px] max-[375px]:w-[290px] max-[320px]:w-[240px] max-[320px]:h-[580px];
+  @apply h-[500px] w-[300px] rounded-[32px] max-[375px]:w-[290px] max-[320px]:h-[580px] max-[320px]:w-[240px] lg:relative lg:flex lg:h-[444px] lg:w-[350px] lg:flex-col lg:justify-end lg:overflow-hidden lg:duration-500 lg:hover:w-[550px] xl:h-[444px] xl:w-[400px];
 }
 
 .card_image {
-  @apply w-[300px] h-[450px] bg-center bg-cover filter grayscale-0 rounded-[24px] lg:w-full lg:h-full lg:rounded-[32px] lg:grayscale lg:group-hover:grayscale-0 lg:group-hover:duration-500 max-[375px]:w-[290px] max-[320px]:w-[240px] max-[320px]:h-[580px];
+  @apply h-[450px] w-[300px] rounded-[24px] bg-cover bg-center grayscale-0 filter max-[375px]:w-[290px] max-[320px]:h-[580px] max-[320px]:w-[240px] lg:h-full lg:w-full lg:rounded-[32px] lg:grayscale lg:group-hover:grayscale-0 lg:group-hover:duration-500;
 }
 
 .card_overlay {
-  @apply absolute bottom-0 left-0 w-full h-full z-10 max-lg:rounded-[23px] rounded-bl-[24px] rounded-br-[24px] lg:h-[30%] 
-
-  lg:bg-gradient-to-t lg:from-[rgba(247,171,16,0.784)] lg:to-transparent
-
-  max-lg:bg-[rgba(28,28,27,0.78)]
-
-  group-hover:bg-[linear-gradient(0deg,rgba(28,28,27,0.78)_40%,transparent)]
-  
-  lg:group-hover:h-[80%] lg:group-hover:z-10 lg:group-hover:rounded-bl-[32px] lg:group-hover:rounded-br-[32px];
+  @apply absolute bottom-0 left-0 z-10 h-full w-full rounded-bl-[24px] rounded-br-[24px] group-hover:bg-[linear-gradient(0deg,rgba(28,28,27,0.78)_40%,transparent)] max-lg:rounded-[23px] max-lg:bg-[rgba(28,28,27,0.78)] lg:h-[30%] lg:bg-gradient-to-t lg:from-[rgba(247,171,16,0.784)] lg:to-transparent lg:group-hover:z-10 lg:group-hover:h-[80%] lg:group-hover:rounded-bl-[32px] lg:group-hover:rounded-br-[32px];
 }
 
 .card_container {
-  @apply absolute p-8 transition-transform duration-700 ease-[cubic-bezier(0.5,_0,_0,_1)] w-[calc(100%-32px)] z-30
-
-  max-lg:top-0 max-lg:text-left max-lg:w-[calc(100%-24px)] max-lg:h-full max-lg:p-6
-
-  lg:group-hover:translate-y-[-170px] lg:group-hover:duration-500
-
-  max-[375px]:w-[calc(100%-24px)] max-[375px]:py-8 max-[375px]:px-6 max-[320px]:py-5 max-[320px]:px-3;
+  @apply absolute z-30 w-[calc(100%-32px)] p-8 transition-transform duration-700 ease-[cubic-bezier(0.5,_0,_0,_1)] max-lg:top-0 max-lg:h-full max-lg:w-[calc(100%-24px)] max-lg:p-6 max-lg:text-left max-[375px]:w-[calc(100%-24px)] max-[375px]:px-6 max-[375px]:py-8 max-[320px]:px-3 max-[320px]:py-5 lg:group-hover:translate-y-[-170px] lg:group-hover:duration-500;
 }
 
 .card_header {
@@ -41,17 +27,17 @@
 }
 
 i {
-  @apply text-white mb-1 text-2xl;
+  @apply mb-1 text-2xl text-white;
 }
 
 .card_title {
-  @apply font-semibold text-2xl leading-[30px]  text-white z-30 duration-500 lg:leading-none max-lg:max-w-[290px] lg:group-hover:text-xl;
+  @apply z-30 text-2xl font-semibold leading-[30px] text-white duration-500 max-lg:max-w-[290px] lg:leading-none lg:group-hover:text-xl;
 }
 
 .card_content {
-  @apply text-base leading-7 absolute text-white duration-500 transition-opacity ease-[cubic-bezier(0.5,_0,_0,_1)] w-[calc(100%-32px)] mt-2 z-30 lg:text-lg lg:leading-[30px] lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:absolute lg:group-hover:delay-200 lg:group-hover:duration-700 lg:group-hover:leading-6;
+  @apply absolute z-30 mt-2 w-[calc(100%-32px)] text-base leading-7 text-white transition-opacity duration-500 ease-[cubic-bezier(0.5,_0,_0,_1)] lg:text-lg lg:leading-[30px] lg:opacity-0 lg:group-hover:absolute lg:group-hover:leading-6 lg:group-hover:opacity-100 lg:group-hover:delay-200 lg:group-hover:duration-700;
 }
 
 .button-color {
-  @apply bg-golden-gradient bg-[200%_auto] hover:bg-[right_center] active:bg-[right_center] duration-500 font-poppins;
+  @apply bg-golden-gradient bg-[200%_auto] font-poppins duration-500 hover:bg-[right_center] active:bg-[right_center];
 }
