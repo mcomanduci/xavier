@@ -237,6 +237,3 @@ const swiper = new Swiper(".swiper", {
 //     }, 1000);
 //   }, 1500);
 // });
-
-document.getElementById("logo-spinner").style.display = "none";
-document.getElementById("content").style.opacity = "1";

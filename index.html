@@ -31,153 +31,208 @@
     />
   </head>
   <body>
-    <!-- load animation -->
-    <div
-      id="logo-spinner"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black"
+    <!-- Header Section -->
+    <header
+      class="absolute left-0 right-0 top-0 z-50 overflow-x-hidden bg-black/20 py-2 transition-all"
     >
-      <!-- Logo or icon to animate -->
-      <div class="logo-rotate" id="logo-animation">
-        <img src="./img/logo.png" alt="Logo" class="h-32 w-32" />
-      </div>
-    </div>
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex h-16 items-center justify-between md:grid md:grid-cols-4"
+        >
+          <div class="md:flex md:items-center md:gap-12">
+            <a class="block max-w-[60px] md:max-w-[76px]" href="#home">
+              <span class="sr-only">Home</span>
+              <img
+                class="logo-white transition-transform duration-300 hover:scale-105"
+                src="img/logo2.png"
+                width="76"
+                alt="Logo X ao Cubo"
+              />
+              <img
+                src="img/logo2-black.png"
+                width="76"
+                alt="Logo X ao Cubo"
+                class="logo-black hidden"
+              />
+            </a>
+          </div>
 
-    <!-- Main Content -->
-    <div id="content" class="fade-in opacity-0">
-      <!-- load animation -->
-      <!-- Header Section -->
-      <header
-        class="absolute left-0 right-0 top-0 z-50 overflow-x-hidden bg-black/20 py-2 transition-all"
-      >
-        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div
-            class="flex h-16 items-center justify-between md:grid md:grid-cols-4"
+            class="teste-fonte col-span-2 hidden text-center font-poppins text-xs font-semibold uppercase tracking-widest text-white hover:text-tertiary md:block md:text-xl"
           >
-            <div class="md:flex md:items-center md:gap-12">
-              <a class="block max-w-[60px] md:max-w-[76px]" href="#home">
-                <span class="sr-only">Home</span>
-                <img
-                  class="logo-white transition-transform duration-300 hover:scale-105"
-                  src="img/logo2.png"
-                  width="76"
-                  alt="Logo X ao Cubo"
-                />
-                <img
-                  src="img/logo2-black.png"
-                  width="76"
-                  alt="Logo X ao Cubo"
-                  class="logo-black hidden"
-                />
-              </a>
-            </div>
+            Especialistas no Mercado Imobiliário
+          </div>
 
-            <div
-              class="teste-fonte col-span-2 hidden text-center font-poppins text-xs font-semibold uppercase tracking-widest text-white hover:text-tertiary md:block md:text-xl"
-            >
-              Especialistas no Mercado Imobiliário
-            </div>
-
-            <div
-              class="gap-3 justify-self-end font-poppins md:flex md:items-center md:text-sm lg:gap-6 lg:text-lg xl:gap-12"
-            >
-              <div class="flex items-center gap-4">
-                <div class="sm:flex sm:gap-4">
-                  <a
-                    class="button-color scrollto rounded-md px-5 py-2.5 font-medium text-black shadow"
-                    href="#cta"
-                  >
-                    Conheça a X³
-                  </a>
-                </div>
-
-                <div class="block md:hidden"></div>
+          <div
+            class="gap-3 justify-self-end font-poppins md:flex md:items-center md:text-sm lg:gap-6 lg:text-lg xl:gap-12"
+          >
+            <div class="flex items-center gap-4">
+              <div class="sm:flex sm:gap-4">
+                <a
+                  class="button-color scrollto rounded-md px-5 py-2.5 font-medium text-black shadow"
+                  href="#cta"
+                >
+                  Conheça a X³
+                </a>
               </div>
+
+              <div class="block md:hidden"></div>
             </div>
           </div>
         </div>
-      </header>
-      <!-- Header Section End -->
+      </div>
+    </header>
+    <!-- Header Section End -->
 
-      <!-- Hero Section -->
-      <section
-        id="home"
-        class="relative overflow-x-hidden bg-[url(./img/bg-3.jpg)] bg-cover bg-center bg-no-repeat"
+    <!-- Hero Section -->
+    <!-- <section
+      id="home"
+      class="relative overflow-x-hidden bg-[url(./img/bg-3.jpg)] bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        class="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-t sm:from-black/60 sm:to-black/80"
+      ></div>
+
+      <div
+        class="container relative mx-auto max-w-screen-xl px-4 pb-12 pt-32 lg:flex lg:h-[90vh] lg:items-center"
       >
-        <div
-          class="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-t sm:from-black/60 sm:to-black/80"
-        ></div>
+        <div class="js-scroll js-fade mx-auto text-center">
+          <h1
+            class="mx-auto max-w-[40rem] font-poppins text-3xl font-extrabold text-white sm:text-5xl sm:leading-tight"
+          >
+            <strong class="block font-extrabold text-tertiary sm:block">
+              Marketing e Vendas
+            </strong>
+            para o Crescimento do seu negócio
+          </h1>
 
-        <div
-          class="container relative mx-auto max-w-screen-xl px-4 pb-12 pt-32 lg:flex lg:h-[90vh] lg:items-center"
-        >
-          <div class="js-scroll js-fade mx-auto text-center">
+          <p
+            class="text-shadow mx-auto mt-4 max-w-2xl text-gray-300 sm:text-base/relaxed"
+          >
+            Marketing Digital especializado para Imobiliárias, Incorporadoras,
+            Construtoras e Corretores em todo o Brasil, com foco em aumentar
+            vendas e impulsionar o crescimento do negócio.
+          </p>
+
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="#contato-form"
+              class="button-color scrollto block w-full rounded px-12 py-3 font-poppins text-lg font-medium text-black shadow focus:outline-none focus:ring sm:w-auto"
+            >
+              Entre em Contato
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section
+      id="home"
+      class="relative overflow-x-hidden bg-[url(./img/bg-3.jpg)] bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        class="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-t sm:from-black/60 sm:to-black/80"
+      ></div>
+
+      <div
+        class="container relative mx-auto max-w-screen-xl px-8 pb-12 pt-32 lg:grid lg:h-[90vh] lg:max-h-[700px] lg:grid-cols-2 lg:items-center"
+      >
+        <div class="js-scroll js-fade mx-auto text-center lg:mx-0 lg:text-left">
+          <header>
             <h1
-              class="mx-auto max-w-[40rem] font-poppins text-3xl font-extrabold text-white sm:text-5xl sm:leading-tight"
+              class="mx-auto max-w-[40rem] font-poppins text-3xl font-extrabold text-white sm:text-5xl lg:text-4xl xl:text-5xl sm:leading-tight"
             >
               <strong class="block font-extrabold text-tertiary sm:block">
                 Marketing e Vendas
               </strong>
               para o Crescimento do seu negócio
             </h1>
+          </header>
 
-            <p
-              class="text-shadow mx-auto mt-4 max-w-2xl text-gray-300 sm:text-base/relaxed"
+          <p
+            class="text-shadow mx-auto mt-4 max-w-[40rem] text-gray-300 sm:text-base/relaxed"
+          >
+            Marketing Digital especializado para Imobiliárias, Incorporadoras,
+            Construtoras e Corretores em todo o Brasil, com foco em aumentar
+            vendas e impulsionar o crescimento do negócio.
+          </p>
+
+          <div
+            class="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start"
+          >
+            <a
+              href="#contato-form"
+              class="button-color scrollto block w-full rounded px-12 py-3 font-poppins text-lg font-medium text-black shadow focus:outline-none focus:ring sm:w-auto"
             >
-              Marketing Digital especializado para Imobiliárias, Incorporadoras,
-              Construtoras e Corretores em todo o Brasil, com foco em aumentar
-              vendas e impulsionar o crescimento do negócio.
-            </p>
-
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
-              <a
-                href="#contato-form"
-                class="button-color scrollto block w-full rounded px-12 py-3 font-poppins text-lg font-medium text-black shadow focus:outline-none focus:ring sm:w-auto"
-              >
-                Entre em Contato
-              </a>
-
-              <!-- <a
-              href="#"
-              class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
-            >
-              Saiba Mais
-            </a> -->
-            </div>
+              Entre em Contato
+            </a>
           </div>
         </div>
-      </section>
-      <!-- Hero Section End -->
 
-      <!-- Form Section -->
-      <!-- <section
-        id="contato"
-        class="relative overflow-x-hidden bg-[linear-gradient(#000_5%,_#1B1D20_50%,_#F1F1F1_100%)]"
-      > -->
-      <section id="contato" class="relative overflow-x-hidden bg-black">
-        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div class="flex flex-col items-center gap-x-16 gap-y-8">
-            <div class="flex w-full">
-              <div class="js-scroll js-right max-w-[45%] lg:pb-12">
-                <div class="js-scroll js-fade z-10 max-w-3xl pb-8">
-                  <h3 class="font-poppins font-semibold text-tertiary">
-                    Fale Conosco e Transforme Suas Vendas!
-                  </h3>
-                  <h2
-                    class="mb-5 font-poppins text-3xl font-bold text-white sm:text-[40px]/[48px]"
-                  >
-                    Lorem ipsum dolor sit
-                  </h2>
-                </div>
-                <p class="mb-4 max-w-5xl text-lg text-white">
-                  Você sente que pode vender mais, mas falta algo para atingir
-                  seus objetivos?
-                </p>
-                <p class="mb-4 max-w-3xl text-lg text-white">
-                  Você não está sozinho. Muitos profissionais do mercado
-                  imobiliário enfrentam desafios como:
-                </p>
-                <ul class="text-md mb-4 max-w-3xl list-disc pl-5 text-gray-400">
-                  <li>
+        <div class="hidden lg:flex overflow-hidden h-full justify-center">
+          <img
+            src="/src/img/model112.png"
+            alt="Business marketing illustration"
+            class="max-h-full w-auto object-contain js-scroll js-fade"
+            loading="lazy"
+          />
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Hero Section End -->
+
+    <!-- Form Section -->
+    <section
+      id="contato"
+      class="relative overflow-x-hidden bg-[linear-gradient(#000_5%,_#1B1D20_50%,_#F1F1F1_100%)]"
+    >
+      <!-- TODO: CHECK ANIMATION -->
+      <!-- <section id="contato" class="relative overflow-x-hidden bg-black"> -->
+      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center gap-x-16 gap-y-8">
+          <div class="flex w-full">
+            <div class="js-scroll js-fade lg:pb-12">
+              <div class="z-10 max-w-3xl pb-8">
+                <h3 class="font-poppins font-semibold text-tertiary">
+                  Fale Conosco e Transforme Suas Vendas!
+                </h3>
+                <h2
+                  class="mb-5 font-poppins text-3xl font-bold text-white sm:text-[40px]/[48px]"
+                >
+                  Lorem ipsum dolor sit
+                </h2>
+              </div>
+              <p class="mb-2 max-w-5xl text-lg text-white">
+                Você sente que pode vender mais, mas falta algo para atingir
+                seus objetivos?
+              </p>
+              <p class="mb-4 max-w-3xl text-lg text-white">
+                Você não está sozinho. Muitos profissionais do mercado
+                imobiliário enfrentam desafios como:
+              </p>
+
+              <ul class="mt-6 grid grid-cols-3 gap-4 sm:my-8">
+                <li
+                  class="js-scroll js-right bg- flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-8 py-8 text-center uppercase text-black !delay-[600ms]"
+                >
+                  Perder clientes por falta de um atendimento eficiente.
+                </li>
+                <li
+                  class="js-scroll js-right flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-8 py-8 text-center uppercase text-black !delay-300"
+                >
+                  Não conseguir alcançar o público certo com seus anúncios.
+                </li>
+                <li
+                  class="js-scroll js-right flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-8 py-8 text-center uppercase text-black"
+                >
+                  Sentir que está estagnado e não conseguir avançar do patamar
+                  em que parou.
+                </li>
+              </ul>
+              <!-- <ul class="text-md mb-4 max-w-3xl list-disc pl-5 text-gray-400">
+                  <li class="">
                     Perder clientes por falta de um atendimento eficiente.
                   </li>
                   <li>
@@ -187,44 +242,41 @@
                     Sentir que está estagnado e não conseguir avançar do patamar
                     em que parou.
                   </li>
-                </ul>
-                <p class="mb-4 max-w-3xl text-lg text-white">
-                  Agora imagine...
-                </p>
-                <ul class="text-md mb-4 max-w-3xl list-disc pl-5 text-gray-400">
-                  <li>
-                    Ter um processo de vendas no digital bem estruturado, que te
-                    ajuda a fechar negócios com mais facilidade, sem abrir mão
-                    dos canais de venda que você já possui.
-                  </li>
-                  <li>
-                    Alcançar clientes com o perfil específico dos seus imóveis.
-                  </li>
-                  <li>
-                    Aumentar seu faturamento e, ao mesmo tempo, deixar as
-                    estratégias de Marketing e vendas no digital com
-                    especialistas que entendem e conhecem o mercado imobiliário,
-                    liberando você para ter mais tempo para o que realmente
-                    importa em sua vida.
-                  </li>
-                </ul>
-                <p class="mb-4 max-w-3xl text-lg text-white">
-                  Tudo isso sem se preocupar em contratar mais funcionários e
-                  ter que arcar com impostos, férias, décimo terceiro e ter
-                  vínculo empregatício.
-                </p>
-                <p class="mb-4 max-w-3xl text-lg text-white">
-                  Esse é o momento de transformar essa realidade. Preencha o
-                  formulário abaixo e, em até 24 horas, nossa equipe irá entrar
-                  em contato com você.
-                </p>
-                <p class="mb-4 max-w-3xl text-lg text-white">
-                  Faça agora mesmo. Um pequeno passo pode levar você muito mais
-                  longe.
-                </p>
-              </div>
+                </ul> -->
+              <p class="mb-4 max-w-3xl text-lg text-white">Agora imagine...</p>
+              <ul class="text-md mb-4 max-w-3xl list-disc pl-5 text-gray-400">
+                <li>
+                  Ter um processo de vendas no digital bem estruturado, que te
+                  ajuda a fechar negócios com mais facilidade, sem abrir mão dos
+                  canais de venda que você já possui.
+                </li>
+                <li>
+                  Alcançar clientes com o perfil específico dos seus imóveis.
+                </li>
+                <li>
+                  Aumentar seu faturamento e, ao mesmo tempo, deixar as
+                  estratégias de Marketing e vendas no digital com especialistas
+                  que entendem e conhecem o mercado imobiliário, liberando você
+                  para ter mais tempo para o que realmente importa em sua vida.
+                </li>
+              </ul>
+              <p class="mb-4 max-w-3xl text-lg text-white">
+                Tudo isso sem se preocupar em contratar mais funcionários e ter
+                que arcar com impostos, férias, décimo terceiro e ter vínculo
+                empregatício.
+              </p>
+              <p class="mb-4 max-w-3xl text-lg text-white">
+                Esse é o momento de transformar essa realidade. Preencha o
+                formulário abaixo e, em até 24 horas, nossa equipe irá entrar em
+                contato com você.
+              </p>
+              <p class="mb-4 max-w-3xl text-lg text-white">
+                Faça agora mesmo. Um pequeno passo pode levar você muito mais
+                longe.
+              </p>
+            </div>
 
-              <div
+            <!-- <div
                 class="absolute bottom-0 right-0 hidden h-auto w-full max-w-[50%] xl:block"
               >
                 <img
@@ -232,1601 +284,1587 @@
                   class="h-auto w-full object-cover"
                   alt=""
                 />
-              </div>
-            </div>
+              </div> -->
           </div>
         </div>
-      </section>
 
-      <div id="contato-form" class="bg-primary py-10">
-        <section class="mx-auto max-w-screen-lg">
-          <h2
-            class="mb-5 font-poppins text-3xl font-bold text-white sm:text-[40px]/[48px]"
-          >
-            Entre em contato
-          </h2>
-          <div
-            class="sm:min-w[500px] js-scroll js-left min-w-full rounded-lg border bg-[#2A2A2A] p-8 shadow-lg md:min-w-[700px] lg:min-w-[800px] lg:p-12"
-          >
-            <form action="#" class="space-y-4">
+        <div
+          class="sm:min-w[500px] js-scroll js-fade min-w-full rounded-lg border bg-quaternary p-8 shadow-lg md:min-w-[700px] lg:min-w-[800px] lg:p-12"
+        >
+          <form action="#" class="space-y-4">
+            <div class="relative">
+              <input
+                type="text"
+                id="nome"
+                required
+                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                placeholder="Nome"
+              />
+              <label
+                for="nome"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
+              >
+                Nome
+              </label>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div class="relative">
+                <!-- TODO: COLOCAR DDD OBRIGATORIO -->
+                <input
+                  type="tel"
+                  id="phone"
+                  required
+                  class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                  placeholder="Telefone"
+                />
+                <label
+                  for="phone"
+                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
+                >
+                  Telefone com DDD
+                </label>
+              </div>
+
               <div class="relative">
                 <input
                   type="text"
-                  id="nome"
+                  id="city"
                   required
                   class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
-                  placeholder="Nome"
+                  placeholder="Cidade"
                 />
                 <label
-                  for="nome"
-                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
+                  for="city"
+                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
                 >
-                  Nome
+                  Cidade/Região
                 </label>
-              </div>
-
-              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div class="relative">
-                  <!-- TODO: COLOCAR DDD OBRIGATORIO -->
-                  <input
-                    type="tel"
-                    id="phone"
-                    required
-                    class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
-                    placeholder="Telefone"
-                  />
-                  <label
-                    for="phone"
-                    class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
-                  >
-                    Telefone com DDD
-                  </label>
-                </div>
-
-                <div class="relative">
-                  <input
-                    type="text"
-                    id="city"
-                    required
-                    class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
-                    placeholder="Cidade"
-                  />
-                  <label
-                    for="city"
-                    class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
-                  >
-                    Cidade/Região
-                  </label>
-                </div>
-              </div>
-
-              <div class="relative">
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
-                  placeholder="E-Mail"
-                />
-                <label
-                  for="email"
-                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
-                >
-                  E-mail
-                </label>
-              </div>
-
-              <div class="relative">
-                <select
-                  name="company"
-                  id="company"
-                  class="select-white peer w-full rounded-[5px] border-2 border-gray-300 bg-[#2A2A2A] p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none"
-                >
-                  <option value="" disabled selected class="text-gray-500">
-                    Selecione uma opção
-                  </option>
-                  <option value="" class="text-white">Imobiliária</option>
-                  <option value="" class="text-white">Incorporadora</option>
-                  <option value="" class="text-white">Construtora</option>
-                  <option value="" class="text-white">Loteadora</option>
-                  <option value="" class="text-white">
-                    Corretor de Imóveis
-                  </option>
-                  <option value="" class="text-white">Outros</option>
-                </select>
-                <label
-                  for="company"
-                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
-                >
-                  Seguimento
-                </label>
-              </div>
-
-              <div class="relative">
-                <select
-                  name="contact-type"
-                  id="contact-type"
-                  class="select-white peer w-full rounded-[5px] border-2 border-gray-300 bg-[#2A2A2A] p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none"
-                >
-                  <option value="" disabled selected class="text-gray-500">
-                    Selecione uma opção
-                  </option>
-                  <option value="" class="text-white">WhatsApp</option>
-                  <option value="" class="text-white">Telefone</option>
-                  <option value="" class="text-white">Email</option>
-                </select>
-                <label
-                  for="position"
-                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
-                >
-                  Como prefere receber nosso contato?
-                </label>
-              </div>
-
-              <div class="relative">
-                <textarea
-                  class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 text-sm text-white placeholder-transparent outline-none"
-                  placeholder="Mensagem"
-                  rows="8"
-                  id="message"
-                  aria-label="Gostaria de adiantar alguma informação?"
-                ></textarea>
-                <label
-                  for="message"
-                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-[#2a2a2a] px-1 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-6 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-[#2a2a2a] peer-focus:text-sm"
-                >
-                  Gostaria de adiantar alguma informação?
-                </label>
-              </div>
-
-              <div class="mt-4">
-                <button
-                  class="button-color inline-block w-full rounded-lg px-5 py-3 font-medium text-black focus:outline-none sm:w-auto"
-                >
-                  Enviar Mensagem
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
-      </div>
-
-      <!-- Form Section End -->
-
-      <!-- About Section -->
-      <section
-        id="sobre"
-        class="relative overflow-hidden overflow-x-hidden pb-8 pt-8 lg:pb-8 lg:pt-8"
-      >
-        <div
-          class="absolute inset-0 -z-10 h-full w-full items-center bg-secondary px-5 py-24"
-        ></div>
-        <div class="container mx-auto px-6">
-          <div class="-mx-4 flex flex-wrap items-center justify-evenly">
-            <div class="js-scroll js-right w-full px-4 lg:w-6/12">
-              <div class="-mx-3 flex items-center sm:-mx-4">
-                <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div class="py-3 sm:py-4">
-                    <img
-                      src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-1.jpg"
-                      alt=""
-                      class="w-full rounded-2xl"
-                    />
-                  </div>
-                  <div class="py-3 sm:py-4">
-                    <img
-                      src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-2.jpg"
-                      alt=""
-                      class="w-full rounded-2xl"
-                    />
-                  </div>
-                </div>
-                <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div class="relative z-10 my-4">
-                    <img
-                      src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-3.jpg"
-                      alt=""
-                      class="w-full rounded-2xl"
-                    />
-                    <span class="absolute -bottom-7 -right-7 z-[-1]">
-                      <svg
-                        width="134"
-                        height="106"
-                        viewBox="0 0 134 106"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle
-                          cx="1.66667"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 1.66667 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="16.3333"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 16.3333 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="31"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 31 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="45.6667"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 45.6667 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="60.3334"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 60.3334 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="88.6667"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 88.6667 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="117.667"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 117.667 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="74.6667"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 74.6667 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="103"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 103 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="132"
-                          cy="104"
-                          r="1.66667"
-                          transform="rotate(-90 132 104)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="1.66667"
-                          cy="89.3333"
-                          r="1.66667"
-                          transform="rotate(-90 1.66667 89.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="16.3333"
-                          cy="89.3333"
-                          r="1.66667"
-                          transform="rotate(-90 16.3333 89.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="31"
-                          cy="89.3333"
-                          r="1.66667"
-                          transform="rotate(-90 31 89.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="45.6667"
-                          cy="89.3333"
-                          r="1.66667"
-                          transform="rotate(-90 45.6667 89.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="60.3333"
-                          cy="89.3338"
-                          r="1.66667"
-                          transform="rotate(-90 60.3333 89.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="88.6667"
-                          cy="89.3338"
-                          r="1.66667"
-                          transform="rotate(-90 88.6667 89.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="117.667"
-                          cy="89.3338"
-                          r="1.66667"
-                          transform="rotate(-90 117.667 89.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="74.6667"
-                          cy="89.3338"
-                          r="1.66667"
-                          transform="rotate(-90 74.6667 89.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="103"
-                          cy="89.3338"
-                          r="1.66667"
-                          transform="rotate(-90 103 89.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="132"
-                          cy="89.3338"
-                          r="1.66667"
-                          transform="rotate(-90 132 89.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="1.66667"
-                          cy="74.6673"
-                          r="1.66667"
-                          transform="rotate(-90 1.66667 74.6673)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="1.66667"
-                          cy="31.0003"
-                          r="1.66667"
-                          transform="rotate(-90 1.66667 31.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="16.3333"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 16.3333 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="16.3333"
-                          cy="31.0003"
-                          r="1.66667"
-                          transform="rotate(-90 16.3333 31.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="31"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 31 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="31"
-                          cy="31.0003"
-                          r="1.66667"
-                          transform="rotate(-90 31 31.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="45.6667"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 45.6667 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="45.6667"
-                          cy="31.0003"
-                          r="1.66667"
-                          transform="rotate(-90 45.6667 31.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="60.3333"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 60.3333 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="60.3333"
-                          cy="30.9998"
-                          r="1.66667"
-                          transform="rotate(-90 60.3333 30.9998)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="88.6667"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 88.6667 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="88.6667"
-                          cy="30.9998"
-                          r="1.66667"
-                          transform="rotate(-90 88.6667 30.9998)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="117.667"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 117.667 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="117.667"
-                          cy="30.9998"
-                          r="1.66667"
-                          transform="rotate(-90 117.667 30.9998)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="74.6667"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 74.6667 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="74.6667"
-                          cy="30.9998"
-                          r="1.66667"
-                          transform="rotate(-90 74.6667 30.9998)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="103"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 103 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="103"
-                          cy="30.9998"
-                          r="1.66667"
-                          transform="rotate(-90 103 30.9998)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="132"
-                          cy="74.6668"
-                          r="1.66667"
-                          transform="rotate(-90 132 74.6668)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="132"
-                          cy="30.9998"
-                          r="1.66667"
-                          transform="rotate(-90 132 30.9998)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="1.66667"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 1.66667 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="1.66667"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 1.66667 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="16.3333"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 16.3333 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="16.3333"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 16.3333 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="31"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 31 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="31"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 31 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="45.6667"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 45.6667 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="45.6667"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 45.6667 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="60.3333"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 60.3333 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="60.3333"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 60.3333 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="88.6667"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 88.6667 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="88.6667"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 88.6667 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="117.667"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 117.667 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="117.667"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 117.667 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="74.6667"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 74.6667 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="74.6667"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 74.6667 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="103"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 103 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="103"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 103 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="132"
-                          cy="60.0003"
-                          r="1.66667"
-                          transform="rotate(-90 132 60.0003)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="132"
-                          cy="16.3333"
-                          r="1.66667"
-                          transform="rotate(-90 132 16.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="1.66667"
-                          cy="45.3333"
-                          r="1.66667"
-                          transform="rotate(-90 1.66667 45.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="1.66667"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 1.66667 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="16.3333"
-                          cy="45.3333"
-                          r="1.66667"
-                          transform="rotate(-90 16.3333 45.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="16.3333"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 16.3333 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="31"
-                          cy="45.3333"
-                          r="1.66667"
-                          transform="rotate(-90 31 45.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="31"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 31 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="45.6667"
-                          cy="45.3333"
-                          r="1.66667"
-                          transform="rotate(-90 45.6667 45.3333)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="45.6667"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 45.6667 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="60.3333"
-                          cy="45.3338"
-                          r="1.66667"
-                          transform="rotate(-90 60.3333 45.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="60.3333"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 60.3333 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="88.6667"
-                          cy="45.3338"
-                          r="1.66667"
-                          transform="rotate(-90 88.6667 45.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="88.6667"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 88.6667 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="117.667"
-                          cy="45.3338"
-                          r="1.66667"
-                          transform="rotate(-90 117.667 45.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="117.667"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 117.667 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="74.6667"
-                          cy="45.3338"
-                          r="1.66667"
-                          transform="rotate(-90 74.6667 45.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="74.6667"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 74.6667 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="103"
-                          cy="45.3338"
-                          r="1.66667"
-                          transform="rotate(-90 103 45.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="103"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 103 1.66683)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="132"
-                          cy="45.3338"
-                          r="1.66667"
-                          transform="rotate(-90 132 45.3338)"
-                          fill="#F7AB10"
-                        />
-                        <circle
-                          cx="132"
-                          cy="1.66683"
-                          r="1.66667"
-                          transform="rotate(-90 132 1.66683)"
-                          fill="#F7AB10"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
-            <div class="js-scroll js-left w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div class="mt-10 lg:mt-0">
-                <span
-                  class="mb-4 block font-poppins text-lg font-semibold text-tertiary"
-                >
-                  Por Que Escolher Nossa Agência
-                </span>
-                <h2
-                  class="mb-5 font-poppins text-3xl font-bold text-gray-800 sm:text-[40px]/[48px]"
-                >
-                  Você quer vender mais, certo? Então conheça a X³!
-                </h2>
-                <p class="text-body-color mb-5 text-base text-gray-800">
-                  Ajudamos marcas a alcançarem novos patamares com estratégias
-                  criativas e eficazes. Nossa missão é transformar desafios em
-                  oportunidades, nossa visão é ser referência no mercado
-                  digital, e nossos valores incluem inovação, transparência e
-                  compromisso com resultados.
-                </p>
-                <p class="text-body-color mb-8 text-base text-gray-800">
-                  Nosso compromisso é entregar resultados que fazem a diferença.
-                  Trabalhamos lado a lado com nossos clientes para criar
-                  campanhas estratégicas e impactantes, sempre focando em
-                  alcançar objetivos reais e mensuráveis.
-                </p>
-                <h3 class="font-semibold text-gray-800">
-                  Pronto para alavancar sua marca?
-                </h3>
-                <p class="text-body-color mb-8 text-base text-gray-800">
-                  Estamos aqui para ajudar você a crescer com soluções
-                  personalizadas que fazem a diferença.
-                </p>
-                <a
-                  href="#contato"
-                  class="button-color scrollto inline-flex items-center justify-center rounded-md border border-transparent px-7 py-3 text-center text-base font-medium text-black"
-                >
-                  Entre em Contato
-                </a>
-              </div>
+
+            <div class="relative">
+              <input
+                type="email"
+                id="email"
+                required
+                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                placeholder="E-Mail"
+              />
+              <label
+                for="email"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
+              >
+                E-mail
+              </label>
             </div>
-          </div>
+
+            <div class="relative">
+              <select
+                name="company"
+                id="company"
+                class="select-white peer w-full rounded-[5px] border-2 border-gray-300 bg-quaternary p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none"
+              >
+                <option value="" disabled selected class="text-gray-500">
+                  Selecione uma opção
+                </option>
+                <option value="" class="text-white">Imobiliária</option>
+                <option value="" class="text-white">Incorporadora</option>
+                <option value="" class="text-white">Construtora</option>
+                <option value="" class="text-white">Loteadora</option>
+                <option value="" class="text-white">Corretor de Imóveis</option>
+                <option value="" class="text-white">Outros</option>
+              </select>
+              <label
+                for="company"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
+              >
+                Seguimento
+              </label>
+            </div>
+
+            <div class="relative">
+              <select
+                name="contact-type"
+                id="contact-type"
+                class="select-white peer w-full rounded-[5px] border-2 border-gray-300 bg-quaternary p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none"
+              >
+                <option value="" disabled selected class="text-gray-500">
+                  Selecione uma opção
+                </option>
+                <option value="" class="text-white">WhatsApp</option>
+                <option value="" class="text-white">Telefone</option>
+                <option value="" class="text-white">Email</option>
+              </select>
+              <label
+                for="position"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
+              >
+                Como prefere receber nosso contato?
+              </label>
+            </div>
+
+            <div class="relative">
+              <textarea
+                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 text-sm text-white placeholder-transparent outline-none"
+                placeholder="Mensagem"
+                rows="8"
+                id="message"
+                aria-label="Gostaria de adiantar alguma informação?"
+              ></textarea>
+              <label
+                for="message"
+                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-1 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-6 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
+              >
+                Gostaria de adiantar alguma informação?
+              </label>
+            </div>
+
+            <div class="mt-4">
+              <button
+                class="button-color inline-block w-full rounded-lg px-5 py-3 font-medium text-black focus:outline-none sm:w-auto"
+              >
+                Enviar Mensagem
+              </button>
+            </div>
+          </form>
         </div>
-      </section>
-      <!-- About Section End -->
+      </div>
+    </section>
 
-      <!-- CTA Section -->
-      <section
-        id="cta"
-        class="relative overflow-hidden overflow-x-hidden bg-secondary sm:grid sm:grid-cols-2 sm:items-center"
-      >
-        <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div class="js-scroll js-right mx-auto max-w-xl text-left">
-            <h2
-              class="text-center font-poppins text-2xl font-bold text-gray-700 sm:text-left md:text-3xl"
-            >
-              Você quer vender mais, certo? Então conheça a X³!
-            </h2>
+    <!-- Form Section End -->
 
-            <p class="mt-4 text-gray-500">
-              Somos especializados em marketing e vendas para o mercado
-              imobiliário. Conhecemos profundamente seus clientes, seja para
-              imóveis de baixo, médio ou alto padrão. Sabemos exatamente quais
-              são suas dores, seus desejos, as objeções que podem apresentar e
-              como capturar sua atenção.
-            </p>
-            <p class="mt-4 text-gray-500">
-              Através de anúncios online, conduzimos os potenciais clientes até
-              sua equipe de atendimento, que será treinada em vendas pela X³,
-              convertendo-os em clientes reais. Também ensinamos estratégias de
-              retenção à sua equipe, fazendo com que os clientes permaneçam por
-              mais tempo, entregando valor e diminuindo seu custo de aquisição.
-            </p>
-            <p class="mt-4 text-gray-500">
-              Nossas estratégias digitais já trouxeram resultados significativos
-              para nossos clientes no mercado imobiliário. Sabemos exatamente
-              como estruturá-las, analisá-las, corrigí-las e melhorá-las,
-              garantindo um bom ROI (retorno sobre o investimento).
-            </p>
-            <p class="mt-4 text-gray-500">
-              Somos uma assessoria de marketing e vendas e, por isso, damos
-              total apoio na execução das estratégias. Trabalhamos com
-              transparência e temos enraizados em nossa cultura os princípios de
-              honestidade, veracidade, seriedade, compromisso e
-              responsabilidade. Prestamos um serviço ético e digno de sua
-              confiança.
-            </p>
-
-            <div class="mt-4 text-center sm:text-left md:mt-8">
+    <!-- About Section -->
+    <section
+      id="sobre"
+      class="relative overflow-hidden overflow-x-hidden pb-8 pt-8 lg:pb-8 lg:pt-8"
+    >
+      <div
+        class="absolute inset-0 -z-10 h-full w-full items-center bg-secondary px-5 py-24"
+      ></div>
+      <div class="container mx-auto px-6">
+        <div class="-mx-4 flex flex-wrap items-center justify-evenly">
+          <div class="js-scroll js-fade w-full px-4 lg:w-6/12">
+            <div class="-mx-3 flex items-center sm:-mx-4">
+              <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                <div class="py-3 sm:py-4">
+                  <img
+                    src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-1.jpg"
+                    alt=""
+                    class="w-full rounded-2xl"
+                  />
+                </div>
+                <div class="py-3 sm:py-4">
+                  <img
+                    src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-2.jpg"
+                    alt=""
+                    class="w-full rounded-2xl"
+                  />
+                </div>
+              </div>
+              <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                <div class="relative z-10 my-4">
+                  <img
+                    src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-3.jpg"
+                    alt=""
+                    class="w-full rounded-2xl"
+                  />
+                  <span class="absolute -bottom-7 -right-7 z-[-1]">
+                    <svg
+                      width="134"
+                      height="106"
+                      viewBox="0 0 134 106"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="1.66667"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 1.66667 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="16.3333"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 16.3333 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="31"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 31 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="45.6667"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 45.6667 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="60.3334"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 60.3334 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="88.6667"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 88.6667 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="117.667"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 117.667 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="74.6667"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 74.6667 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="103"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 103 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="132"
+                        cy="104"
+                        r="1.66667"
+                        transform="rotate(-90 132 104)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="1.66667"
+                        cy="89.3333"
+                        r="1.66667"
+                        transform="rotate(-90 1.66667 89.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="16.3333"
+                        cy="89.3333"
+                        r="1.66667"
+                        transform="rotate(-90 16.3333 89.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="31"
+                        cy="89.3333"
+                        r="1.66667"
+                        transform="rotate(-90 31 89.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="45.6667"
+                        cy="89.3333"
+                        r="1.66667"
+                        transform="rotate(-90 45.6667 89.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="60.3333"
+                        cy="89.3338"
+                        r="1.66667"
+                        transform="rotate(-90 60.3333 89.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="88.6667"
+                        cy="89.3338"
+                        r="1.66667"
+                        transform="rotate(-90 88.6667 89.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="117.667"
+                        cy="89.3338"
+                        r="1.66667"
+                        transform="rotate(-90 117.667 89.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="74.6667"
+                        cy="89.3338"
+                        r="1.66667"
+                        transform="rotate(-90 74.6667 89.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="103"
+                        cy="89.3338"
+                        r="1.66667"
+                        transform="rotate(-90 103 89.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="132"
+                        cy="89.3338"
+                        r="1.66667"
+                        transform="rotate(-90 132 89.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="1.66667"
+                        cy="74.6673"
+                        r="1.66667"
+                        transform="rotate(-90 1.66667 74.6673)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="1.66667"
+                        cy="31.0003"
+                        r="1.66667"
+                        transform="rotate(-90 1.66667 31.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="16.3333"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 16.3333 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="16.3333"
+                        cy="31.0003"
+                        r="1.66667"
+                        transform="rotate(-90 16.3333 31.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="31"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 31 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="31"
+                        cy="31.0003"
+                        r="1.66667"
+                        transform="rotate(-90 31 31.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="45.6667"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 45.6667 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="45.6667"
+                        cy="31.0003"
+                        r="1.66667"
+                        transform="rotate(-90 45.6667 31.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="60.3333"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 60.3333 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="60.3333"
+                        cy="30.9998"
+                        r="1.66667"
+                        transform="rotate(-90 60.3333 30.9998)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="88.6667"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 88.6667 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="88.6667"
+                        cy="30.9998"
+                        r="1.66667"
+                        transform="rotate(-90 88.6667 30.9998)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="117.667"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 117.667 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="117.667"
+                        cy="30.9998"
+                        r="1.66667"
+                        transform="rotate(-90 117.667 30.9998)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="74.6667"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 74.6667 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="74.6667"
+                        cy="30.9998"
+                        r="1.66667"
+                        transform="rotate(-90 74.6667 30.9998)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="103"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 103 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="103"
+                        cy="30.9998"
+                        r="1.66667"
+                        transform="rotate(-90 103 30.9998)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="132"
+                        cy="74.6668"
+                        r="1.66667"
+                        transform="rotate(-90 132 74.6668)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="132"
+                        cy="30.9998"
+                        r="1.66667"
+                        transform="rotate(-90 132 30.9998)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="1.66667"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 1.66667 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="1.66667"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 1.66667 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="16.3333"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 16.3333 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="16.3333"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 16.3333 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="31"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 31 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="31"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 31 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="45.6667"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 45.6667 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="45.6667"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 45.6667 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="60.3333"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 60.3333 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="60.3333"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 60.3333 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="88.6667"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 88.6667 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="88.6667"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 88.6667 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="117.667"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 117.667 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="117.667"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 117.667 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="74.6667"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 74.6667 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="74.6667"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 74.6667 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="103"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 103 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="103"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 103 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="132"
+                        cy="60.0003"
+                        r="1.66667"
+                        transform="rotate(-90 132 60.0003)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="132"
+                        cy="16.3333"
+                        r="1.66667"
+                        transform="rotate(-90 132 16.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="1.66667"
+                        cy="45.3333"
+                        r="1.66667"
+                        transform="rotate(-90 1.66667 45.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="1.66667"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 1.66667 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="16.3333"
+                        cy="45.3333"
+                        r="1.66667"
+                        transform="rotate(-90 16.3333 45.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="16.3333"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 16.3333 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="31"
+                        cy="45.3333"
+                        r="1.66667"
+                        transform="rotate(-90 31 45.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="31"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 31 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="45.6667"
+                        cy="45.3333"
+                        r="1.66667"
+                        transform="rotate(-90 45.6667 45.3333)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="45.6667"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 45.6667 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="60.3333"
+                        cy="45.3338"
+                        r="1.66667"
+                        transform="rotate(-90 60.3333 45.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="60.3333"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 60.3333 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="88.6667"
+                        cy="45.3338"
+                        r="1.66667"
+                        transform="rotate(-90 88.6667 45.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="88.6667"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 88.6667 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="117.667"
+                        cy="45.3338"
+                        r="1.66667"
+                        transform="rotate(-90 117.667 45.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="117.667"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 117.667 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="74.6667"
+                        cy="45.3338"
+                        r="1.66667"
+                        transform="rotate(-90 74.6667 45.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="74.6667"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 74.6667 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="103"
+                        cy="45.3338"
+                        r="1.66667"
+                        transform="rotate(-90 103 45.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="103"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 103 1.66683)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="132"
+                        cy="45.3338"
+                        r="1.66667"
+                        transform="rotate(-90 132 45.3338)"
+                        fill="#F7AB10"
+                      />
+                      <circle
+                        cx="132"
+                        cy="1.66683"
+                        r="1.66667"
+                        transform="rotate(-90 132 1.66683)"
+                        fill="#F7AB10"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="js-scroll js-fade w-full px-4 lg:w-1/2 xl:w-5/12">
+            <div class="mt-10 lg:mt-0">
+              <span
+                class="mb-4 block font-poppins text-lg font-semibold text-tertiary"
+              >
+                Por Que Escolher Nossa Agência
+              </span>
+              <h2
+                class="mb-5 font-poppins text-3xl font-bold text-gray-800 sm:text-[40px]/[48px]"
+              >
+                Você quer vender mais, certo? Então conheça a X³!
+              </h2>
+              <p class="text-body-color mb-5 text-base text-gray-800">
+                Ajudamos marcas a alcançarem novos patamares com estratégias
+                criativas e eficazes. Nossa missão é transformar desafios em
+                oportunidades, nossa visão é ser referência no mercado digital,
+                e nossos valores incluem inovação, transparência e compromisso
+                com resultados.
+              </p>
+              <p class="text-body-color mb-8 text-base text-gray-800">
+                Nosso compromisso é entregar resultados que fazem a diferença.
+                Trabalhamos lado a lado com nossos clientes para criar campanhas
+                estratégicas e impactantes, sempre focando em alcançar objetivos
+                reais e mensuráveis.
+              </p>
+              <h3 class="font-semibold text-gray-800">
+                Pronto para alavancar sua marca?
+              </h3>
+              <p class="text-body-color mb-8 text-base text-gray-800">
+                Estamos aqui para ajudar você a crescer com soluções
+                personalizadas que fazem a diferença.
+              </p>
               <a
                 href="#contato"
-                class="button-color scrollto inline-block rounded px-12 py-3 text-sm font-medium text-black focus:outline-none"
+                class="button-color scrollto inline-flex items-center justify-center rounded-md border border-transparent px-7 py-3 text-center text-base font-medium text-black"
               >
-                Comece Agora
+                Entre em Contato
               </a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- About Section End -->
 
-        <img
-          alt=""
-          src="./img/meet.jpg"
-          class="js-scroll js-left h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
-        />
-      </section>
-      <!-- CTA Section End -->
-
-      <!-- Services Section -->
-      <section class="relative h-auto bg-primary py-[60px]">
-        <div class="mx-auto max-w-[1304px] px-2 sm:px-6">
-          <div class="px-0 pb-10 pt-0 text-center lg:p-[60px] lg:text-left">
-            <div
-              class="mb-6 flex flex-col items-center lg:mt-20 lg:block lg:w-[300px] lg:pt-6 xl:w-[400px]"
-            >
-              <h2
-                class="m-0 font-poppins text-4xl font-bold !leading-[1.2] text-white lg:text-5xl xl:text-6xl"
-              >
-                NOSSAS SOLUÇÕES
-              </h2>
-              <p class="text-3xl text-white">
-                Tudo que podemos fazer por sua empresa
-              </p>
-              <div
-                class="mt-8 flex w-full max-w-xl items-end justify-center lg:justify-start"
-              >
-                <button
-                  aria-label="Anterior"
-                  class="swiper-button-prev mr-4 h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(./icons/left-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(./icons/left-arrow-red.svg)]"
-                ></button
-                ><button
-                  aria-label="Próximo"
-                  class="swiper-button-next relative h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(./icons/right-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(./icons/right-arrow-red.svg)]"
-                ></button>
-              </div>
-            </div>
-            <div
-              class="swiper right-0 top-[100px] z-10 mx-auto block w-[90%] touch-pan-y overflow-clip p-0 lg:absolute lg:w-[60%] 2xl:w-[55%]"
-            >
-              <div
-                class="swiper-wrapper relative z-10 box-content flex h-full w-full transition-transform"
-                style="transform: translate3d(0px, 0px, 0px)"
-              >
-                <div
-                  class="swiper-slide swiper-slide-active"
-                  style="margin-right: 24px"
-                >
-                  <div class="swiper_card group">
-                    <div
-                      style="
-                        background-image: url(&quot;./icons/home-oursolutions-strategy.png&quot;);
-                      "
-                      class="card_image"
-                    ></div>
-                    <div class="card_overlay"></div>
-                    <div class="card_container">
-                      <div class="card_header">
-                        <i class="fa-solid fa-house"></i>
-                        <p class="card_title">Estratégia e Implementação</p>
-                      </div>
-                      <p class="card_content">
-                        Com profunda experiência de nosso time em consultoria
-                        estratégica, aliada à tecnologia proprietária de ponta,
-                        idealizamos soluções digitais robustas que geram valor
-                        desproporcional no tempo para nossos parceiros.
-                        Aceleramos negócios, tanto através do crescimento de
-                        operações maduras, quanto através do lançamento de novos
-                        produtos
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide swiper-slide-next"
-                  style="margin-right: 24px"
-                >
-                  <div class="swiper_card group">
-                    <div
-                      style="
-                        background-image: url(&quot;./icons/home-oursolutions-products.png&quot;);
-                      "
-                      class="card_image"
-                    ></div>
-                    <div class="card_overlay"></div>
-                    <div class="card_container">
-                      <div class="card_header">
-                        <i class="fa-solid fa-house"></i>
-                        <p class="card_title">Produtos digitais</p>
-                      </div>
-                      <p class="card_content">
-                        Construimos soluções inovadoras, oferecendo abordagens
-                        criativas e eficientes para resolver problemas, com
-                        tecnologia de ponta e com equipe multidisciplinar que
-                        buscará otimizações gerais e não apenas locais.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide" style="margin-right: 24px">
-                  <div class="swiper_card group">
-                    <div
-                      style="
-                        background-image: url(&quot;./icons/home-oursolutions-growth.png&quot;);
-                      "
-                      class="card_image"
-                    ></div>
-                    <div class="card_overlay"></div>
-                    <div class="card_container">
-                      <div class="card_header">
-                        <i class="fa-solid fa-house"></i>
-                        <p class="card_title">Growth e Martech</p>
-                      </div>
-                      <p class="card_content">
-                        Usamos nossa tecnologia maximizar o retorno sobre o
-                        investimento das mídias pagas, através da criação, de
-                        experimentação, de otimizações e de personalização de
-                        experiências digitais e híbridas, e do uso de
-                        algoritmos, diminuindo o CAC, aumentando a conversão de
-                        vendas e o LTV.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide" style="margin-right: 24px">
-                  <div class="swiper_card group">
-                    <div
-                      style="
-                        background-image: url(&quot;./icons/home-oursolutions-data.png&quot;);
-                      "
-                      class="card_image"
-                    ></div>
-                    <div class="card_overlay"></div>
-                    <div class="card_container">
-                      <div class="card_header">
-                        <i class="fa-solid fa-house"></i>
-                        <p class="card_title">Data analytics &amp; AI</p>
-                      </div>
-                      <p class="card_content">
-                        Estruturamos ambiente, pipeline e algoritmos de dados,
-                        tanto para a solução de problemas tecnológicos, quanto
-                        para a implementação de uma cultura data-driven que traz
-                        assertividade para as decisões e eleva o potencial de
-                        negócios.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide" style="margin-right: 24px">
-                  <div class="swiper_card group">
-                    <div
-                      style="
-                        background-image: url(&quot;./icons/home-oursolutions-crm.png&quot;);
-                      "
-                      class="card_image"
-                    ></div>
-                    <div class="card_overlay"></div>
-                    <div class="card_container">
-                      <div class="card_header">
-                        <i class="fa-solid fa-house"></i>
-                        <p class="card_title">CRM</p>
-                      </div>
-                      <p class="card_content">
-                        Aplicamos ferramentas proprietárias e de parceiros
-                        estratégicos para agilizar e organizar a jornada de
-                        mídia, CRM, vendas físicas e digitais, afiliados, testes
-                        A/B, Analytics, trazendo resultados de negócio e
-                        melhorando a experiência do cliente
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide oursolutions_lastSlide max-lg:hidden lg:!w-[160px]"
-                  style="margin-right: 24px"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Services Section End -->
-
-      <section class="h-20 bg-secondary"></section>
-
-      <!-- Testimonials Section -->
-      <section id="depoimentos" class="bg-primary">
-        <div
-          class="js-scroll js-right mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16"
-        >
+    <!-- CTA Section -->
+    <section
+      id="cta"
+      class="relative overflow-hidden overflow-x-hidden bg-secondary sm:grid sm:grid-cols-2 sm:items-center"
+    >
+      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="js-scroll js-fade mx-auto max-w-xl text-left">
           <h2
-            class="text-center font-poppins text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl"
+            class="text-center font-poppins text-2xl font-bold text-gray-700 sm:text-left md:text-3xl"
           >
-            O que Nossos Clientes Têm a Dizer
+            Você quer vender mais, certo? Então conheça a X³!
           </h2>
 
-          <div class="mt-8">
-            <div id="keen-slider" class="keen-slider">
-              <div
-                class="keen-slider__slide opacity-40 transition-opacity duration-500"
-              >
-                <blockquote
-                  class="rounded-lg bg-[#0E1013] p-6 shadow-sm sm:p-8"
-                >
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
+          <p class="mt-4 text-gray-500">
+            Somos
+            <span class="bg-tertiary3 text-black">especializados</span> em
+            marketing e vendas para o mercado imobiliário. Conhecemos
+            profundamente seus clientes, seja para imóveis de baixo, médio ou
+            alto padrão. Sabemos exatamente quais são suas dores, seus desejos,
+            as objeções que podem apresentar e como capturar sua atenção.
+          </p>
+          <p class="mt-4 text-gray-500">
+            Através de anúncios online, conduzimos os potenciais clientes até
+            sua equipe de atendimento, que será treinada em vendas pela X³,
+            convertendo-os em clientes reais. Também ensinamos estratégias de
+            retenção à sua equipe, fazendo com que os clientes permaneçam por
+            mais tempo, entregando valor e diminuindo seu custo de aquisição.
+          </p>
+          <p class="mt-4 text-gray-500">
+            Nossas estratégias digitais já trouxeram resultados significativos
+            para nossos clientes no mercado imobiliário. Sabemos exatamente como
+            estruturá-las, analisá-las, corrigí-las e melhorá-las, garantindo um
+            bom ROI (retorno sobre o investimento).
+          </p>
+          <p class="mt-4 text-gray-500">
+            Somos uma assessoria de marketing e vendas e, por isso, damos total
+            apoio na execução das estratégias. Trabalhamos com transparência e
+            temos enraizados em nossa cultura os princípios de honestidade,
+            veracidade, seriedade, compromisso e responsabilidade. Prestamos um
+            serviço ético e digno de sua confiança.
+          </p>
 
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-tertiary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                      </div>
-
-                      <p
-                        class="mt-0.5 font-poppins text-lg font-medium text-gray-300"
-                      >
-                        Carlos César
-                      </p>
-                    </div>
-                  </div>
-
-                  <p class="mt-4 text-gray-400">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
-                    illo est quia obcaecati neque quibusdam eius accusamus error
-                    officiis atque voluptates magnam!
-                  </p>
-                </blockquote>
-              </div>
-
-              <div
-                class="keen-slider__slide opacity-40 transition-opacity duration-500"
-              >
-                <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-tertiary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="mt-0.5 text-lg font-medium text-gray-900">
-                        Marcos Antônio
-                      </p>
-                    </div>
-                  </div>
-
-                  <p class="mt-4 text-gray-700">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
-                    illo est quia obcaecati neque quibusdam eius accusamus error
-                    officiis atque voluptates magnam!
-                  </p>
-                </blockquote>
-              </div>
-
-              <div
-                class="keen-slider__slide opacity-40 transition-opacity duration-500"
-              >
-                <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-tertiary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="mt-0.5 text-lg font-medium text-gray-900">
-                        Gustavo Souza
-                      </p>
-                    </div>
-                  </div>
-
-                  <p class="mt-4 text-gray-700">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
-                    illo est quia obcaecati neque quibusdam eius accusamus error
-                    officiis atque voluptates magnam!
-                  </p>
-                </blockquote>
-              </div>
-
-              <div
-                class="keen-slider__slide opacity-40 transition-opacity duration-500"
-              >
-                <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-tertiary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                          />
-                        </svg>
-                      </div>
-
-                      <p class="mt-0.5 text-lg font-medium text-gray-900">
-                        Pedro Henrique
-                      </p>
-                    </div>
-                  </div>
-
-                  <p class="mt-4 text-gray-700">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
-                    illo est quia obcaecati neque quibusdam eius accusamus error
-                    officiis atque voluptates magnam!
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-
-            <div class="mt-6 flex items-center justify-center gap-4">
-              <button
-                aria-label="Previous slide"
-                id="keen-slider-previous"
-                class="text-gray-400 transition-colors hover:text-gray-900"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 19.5L8.25 12l7.5-7.5"
-                  />
-                </svg>
-              </button>
-
-              <p class="w-16 text-center text-sm text-gray-600">
-                <span id="keen-slider-active"></span>
-                /
-                <span id="keen-slider-count"></span>
-              </p>
-
-              <button
-                aria-label="Next slide"
-                id="keen-slider-next"
-                class="text-gray-400 transition-colors hover:text-gray-900"
-              >
-                <svg
-                  class="size-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 5l7 7-7 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Testimonial Section End -->
-
-      <!-- CTA WhatsApp -->
-      <section class="bg-secondary">
-        <div class="js-scroll js-bottom p-8 md:p-12 lg:px-16 lg:py-24">
-          <div class="mx-auto max-w-lg text-center">
-            <h2 class="font-poppins text-2xl font-bold text-white md:text-3xl">
-              Fale Conosco no WhatsApp!
-              <i class="fa-brands fa-whatsapp pl-2 text-3xl text-green-600"></i>
-            </h2>
-
-            <p class="block max-w-4xl text-gray-300 sm:mt-4">
-              Tire suas dúvidas, solicite informações ou faça seu pedido de
-              forma rápida e prática. Nossa equipe está pronta para atender você
-              diretamente no WhatsApp. Clique no botão e fale conosco agora
-              mesmo!
-            </p>
-          </div>
-
-          <div class="mx-auto mt-8 max-w-xl">
-            <form action="#" class="sm:flex sm:gap-4">
-              <div class="sm:flex-1">
-                <label for="email" class="sr-only">Mensagem</label>
-
-                <input
-                  type="text"
-                  placeholder="Digite sua mensagem..."
-                  class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-tertiary"
-                />
-              </div>
-
-              <button
-                type="submit"
-                class="button-color group mt-4 flex w-full items-center justify-center gap-2 rounded-md px-5 py-3 text-white focus:outline-none sm:mt-0 sm:w-auto"
-              >
-                <span class="font-poppins text-sm font-medium"
-                  >Enviar Mensagem</span
-                >
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- CTA WhatsApp End -->
-
-      <!-- Footer Section -->
-      <footer id="footer" class="overflow-x-hidden bg-primary">
-        <div
-          class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
-        >
-          <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-6">
+          <div class="mt-4 text-center sm:text-left md:mt-8">
             <a
-              class="button-color inline-block rounded-full p-2 text-black shadow sm:p-3 lg:p-4"
-              href="#MainContent"
-              id="back-to-top"
+              href="#contato"
+              class="button-color scrollto inline-block rounded px-12 py-3 text-sm font-medium text-black focus:outline-none"
             >
-              <span class="sr-only">Back to top</span>
-
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="size-5"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              Comece Agora
             </a>
           </div>
+        </div>
+      </div>
 
-          <div class="lg:grid lg:grid-cols-3 lg:items-end lg:justify-between">
-            <div>
-              <ul
-                class="font-poppins text-2xl font-semibold text-gray-200 hover:text-gray-200/85"
+      <img
+        alt=""
+        src="./img/meet.jpg"
+        class="js-scroll js-fade h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
+      />
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Services Section -->
+    <section class="relative h-auto bg-primary py-[60px]">
+      <div class="js-fade js-scroll mx-auto max-w-[1304px] px-2 sm:px-6">
+        <div class="px-0 pb-10 pt-0 text-center lg:p-[60px] lg:text-left">
+          <div
+            class="mb-6 flex flex-col items-center lg:mt-20 lg:block lg:w-[300px] lg:pt-6 xl:w-[400px]"
+          >
+            <h2
+              class="m-0 font-poppins text-4xl font-bold !leading-[1.2] text-white lg:text-5xl xl:text-6xl"
+            >
+              NOSSAS SOLUÇÕES
+            </h2>
+            <div class="my-4 h-[1px] w-full bg-golden-gradient"></div>
+            <p class="text-3xl text-white">
+              Tudo que podemos fazer por sua empresa
+            </p>
+            <div
+              class="mt-8 flex w-full max-w-xl items-end justify-center lg:justify-start"
+            >
+              <button
+                aria-label="Anterior"
+                class="swiper-button-prev mr-4 h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(./icons/left-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(./icons/left-arrow-red.svg)]"
+              ></button
+              ><button
+                aria-label="Próximo"
+                class="swiper-button-next relative h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(./icons/right-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(./icons/right-arrow-red.svg)]"
+              ></button>
+            </div>
+          </div>
+          <div
+            class="swiper right-0 top-[100px] z-10 mx-auto block w-[90%] touch-pan-y overflow-clip p-0 lg:absolute lg:w-[60%] 2xl:w-[55%]"
+          >
+            <div
+              class="swiper-wrapper relative z-10 box-content flex h-full w-full transition-transform"
+              style="transform: translate3d(0px, 0px, 0px)"
+            >
+              <div
+                class="swiper-slide swiper-slide-active"
+                style="margin-right: 24px"
               >
-                <li><a href="">Lorem ipsum </a></li>
-                <li><a href="">Lorem amet dolor</a></li>
-                <li><a href="">Ipsum dolor</a></li>
-              </ul>
+                <div class="swiper_card group">
+                  <div
+                    style="
+                      background-image: url(&quot;./icons/home-oursolutions-strategy.png&quot;);
+                    "
+                    class="card_image"
+                  ></div>
+                  <div class="card_overlay"></div>
+                  <div class="card_container">
+                    <div class="card_header">
+                      <i class="fa-solid fa-house"></i>
+                      <p class="card_title">Estratégia e Implementação</p>
+                    </div>
+                    <p class="card_content">
+                      Com profunda experiência de nosso time em consultoria
+                      estratégica, aliada à tecnologia proprietária de ponta,
+                      idealizamos soluções digitais robustas que geram valor
+                      desproporcional no tempo para nossos parceiros. Aceleramos
+                      negócios, tanto através do crescimento de operações
+                      maduras, quanto através do lançamento de novos produtos
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-next"
+                style="margin-right: 24px"
+              >
+                <div class="swiper_card group">
+                  <div
+                    style="
+                      background-image: url(&quot;./icons/home-oursolutions-products.png&quot;);
+                    "
+                    class="card_image"
+                  ></div>
+                  <div class="card_overlay"></div>
+                  <div class="card_container">
+                    <div class="card_header">
+                      <i class="fa-solid fa-house"></i>
+                      <p class="card_title">Produtos digitais</p>
+                    </div>
+                    <p class="card_content">
+                      Construimos soluções inovadoras, oferecendo abordagens
+                      criativas e eficientes para resolver problemas, com
+                      tecnologia de ponta e com equipe multidisciplinar que
+                      buscará otimizações gerais e não apenas locais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="margin-right: 24px">
+                <div class="swiper_card group">
+                  <div
+                    style="
+                      background-image: url(&quot;./icons/home-oursolutions-growth.png&quot;);
+                    "
+                    class="card_image"
+                  ></div>
+                  <div class="card_overlay"></div>
+                  <div class="card_container">
+                    <div class="card_header">
+                      <i class="fa-solid fa-house"></i>
+                      <p class="card_title">Growth e Martech</p>
+                    </div>
+                    <p class="card_content">
+                      Usamos nossa tecnologia maximizar o retorno sobre o
+                      investimento das mídias pagas, através da criação, de
+                      experimentação, de otimizações e de personalização de
+                      experiências digitais e híbridas, e do uso de algoritmos,
+                      diminuindo o CAC, aumentando a conversão de vendas e o
+                      LTV.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="margin-right: 24px">
+                <div class="swiper_card group">
+                  <div
+                    style="
+                      background-image: url(&quot;./icons/home-oursolutions-data.png&quot;);
+                    "
+                    class="card_image"
+                  ></div>
+                  <div class="card_overlay"></div>
+                  <div class="card_container">
+                    <div class="card_header">
+                      <i class="fa-solid fa-house"></i>
+                      <p class="card_title">Data analytics &amp; AI</p>
+                    </div>
+                    <p class="card_content">
+                      Estruturamos ambiente, pipeline e algoritmos de dados,
+                      tanto para a solução de problemas tecnológicos, quanto
+                      para a implementação de uma cultura data-driven que traz
+                      assertividade para as decisões e eleva o potencial de
+                      negócios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="margin-right: 24px">
+                <div class="swiper_card group">
+                  <div
+                    style="
+                      background-image: url(&quot;./icons/home-oursolutions-crm.png&quot;);
+                    "
+                    class="card_image"
+                  ></div>
+                  <div class="card_overlay"></div>
+                  <div class="card_container">
+                    <div class="card_header">
+                      <i class="fa-solid fa-house"></i>
+                      <p class="card_title">CRM</p>
+                    </div>
+                    <p class="card_content">
+                      Aplicamos ferramentas proprietárias e de parceiros
+                      estratégicos para agilizar e organizar a jornada de mídia,
+                      CRM, vendas físicas e digitais, afiliados, testes A/B,
+                      Analytics, trazendo resultados de negócio e melhorando a
+                      experiência do cliente
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide oursolutions_lastSlide max-lg:hidden lg:!w-[160px]"
+                style="margin-right: 24px"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <section class="h-20 bg-secondary"></section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="bg-primary">
+      <div
+        class="js-scroll js-fade mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16"
+      >
+        <h2
+          class="text-center font-poppins text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl"
+        >
+          O que Nossos Clientes Têm a Dizer
+        </h2>
+
+        <div class="mt-8">
+          <div id="keen-slider" class="keen-slider">
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-quaternary p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-tertiary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p
+                      class="mt-0.5 font-poppins text-lg font-medium text-gray-300"
+                    >
+                      Carlos César
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-400">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
             </div>
 
             <div
-              class="mt-12 flex h-full lg:mt-0 lg:items-center lg:justify-center"
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
             >
-              <ul>
-                <li class="mb-6">
-                  <a
-                    class="flex flex-col text-gray-200 transition hover:text-gray-200/75 lg:flex-row lg:items-center"
-                    href="https://www.instagram.com/your_handle"
-                    aria-label="Envie-nos um e-mail"
-                  >
-                    <span
-                      class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white"
-                    >
-                      <i
-                        class="fa-regular fa-envelope mb-0 text-xl text-black"
-                      ></i>
-                    </span>
-                    <span class="mt-4 lg:ml-4 lg:mt-0 lg:text-xl"
-                      >emailexemplo@gmail.com</span
-                    >
-                  </a>
-                </li>
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
 
-                <li>
-                  <a
-                    class="flex flex-col text-gray-200 transition hover:text-gray-200/75 lg:flex-row lg:items-center"
-                    href="https://www.instagram.com/your_handle"
-                    aria-label="Follow us on Instagram"
-                  >
-                    <span
-                      class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white"
-                    >
-                      <i
-                        class="fa-brands fa-instagram mb-0 text-xl text-black"
-                      ></i>
-                    </span>
-                    <span class="mt-4 lg:ml-4 lg:mt-0 lg:text-xl"
-                      >@instagram</span
-                    >
-                  </a>
-                </li>
-              </ul>
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-tertiary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Marcos Antônio
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
             </div>
 
-            <div class="flex h-full items-center justify-center lg:justify-end">
-              <img src="./img/logo.png" alt="" width="80" />
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-tertiary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Gustavo Souza
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
             </div>
+
+            <div
+              class="keen-slider__slide opacity-40 transition-opacity duration-500"
+            >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-tertiary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">
+                      Pedro Henrique
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa sit rerum incidunt, a consequuntur recusandae ab saepe
+                  illo est quia obcaecati neque quibusdam eius accusamus error
+                  officiis atque voluptates magnam!
+                </p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="mt-6 flex items-center justify-center gap-4">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous"
+              class="text-gray-400 transition-colors hover:text-gray-900"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <p class="w-16 text-center text-sm text-gray-600">
+              <span id="keen-slider-active"></span>
+              /
+              <span id="keen-slider-count"></span>
+            </p>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next"
+              class="text-gray-400 transition-colors hover:text-gray-900"
+            >
+              <svg
+                class="size-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- CTA WhatsApp -->
+    <section class="bg-secondary">
+      <div class="js-scroll js-fade p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="mx-auto max-w-lg text-center">
+          <h2 class="font-poppins text-2xl font-bold text-white md:text-3xl">
+            Fale Conosco no WhatsApp!
+            <i class="fa-brands fa-whatsapp pl-2 text-3xl text-green-600"></i>
+          </h2>
+
+          <p class="block max-w-4xl text-gray-300 sm:mt-4">
+            Tire suas dúvidas, solicite informações ou faça seu pedido de forma
+            rápida e prática. Nossa equipe está pronta para atender você
+            diretamente no WhatsApp. Clique no botão e fale conosco agora mesmo!
+          </p>
+        </div>
+
+        <div class="mx-auto mt-8 max-w-xl">
+          <form action="#" class="sm:flex sm:gap-4">
+            <div class="sm:flex-1">
+              <label for="email" class="sr-only">Mensagem</label>
+
+              <input
+                type="text"
+                placeholder="Digite sua mensagem..."
+                class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-tertiary"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="button-color group mt-4 flex w-full items-center justify-center gap-2 rounded-md px-5 py-3 text-white focus:outline-none sm:mt-0 sm:w-auto"
+            >
+              <span class="font-poppins text-sm font-medium"
+                >Enviar Mensagem</span
+              >
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- CTA WhatsApp End -->
+
+    <!-- Footer Section -->
+    <footer id="footer" class="overflow-x-hidden bg-primary">
+      <div
+        class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+      >
+        <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-6">
+          <a
+            class="button-color inline-block rounded-full p-2 text-black shadow sm:p-3 lg:p-4"
+            href="#MainContent"
+            id="back-to-top"
+          >
+            <span class="sr-only">Back to top</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-3 lg:items-end lg:justify-between">
+          <div>
+            <ul
+              class="font-poppins text-2xl font-semibold text-gray-200 hover:text-gray-200/85"
+            >
+              <li><a href="">Lorem ipsum </a></li>
+              <li><a href="">Lorem amet dolor</a></li>
+              <li><a href="">Ipsum dolor</a></li>
+            </ul>
           </div>
 
           <div
-            class="mt-12 grid grid-cols-1 gap-4 border-t border-gray-500 pt-8 md:grid-cols-4"
+            class="mt-12 flex h-full lg:mt-0 lg:items-center lg:justify-center"
           >
-            <p
-              class="border-gray-500 px-2 text-center text-sm text-gray-500 md:col-span-2 md:border-r"
-            >
-              Avenida JK, 2122 - Bom Pastor | Divinópolis - Minas Gerais
-            </p>
-            <p
-              class="border-gray-500 text-center text-sm text-gray-500 md:border-r"
-            >
-              &copy; 2024 X ao Cubo
-            </p>
-            <p class="text-center text-sm text-gray-500">
-              <a href="#">Política de Privacidade</a>
-            </p>
+            <ul>
+              <li class="mb-6">
+                <a
+                  class="flex flex-col text-gray-200 transition hover:text-gray-200/75 lg:flex-row lg:items-center"
+                  href="https://www.instagram.com/your_handle"
+                  aria-label="Envie-nos um e-mail"
+                >
+                  <span
+                    class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white"
+                  >
+                    <i
+                      class="fa-regular fa-envelope mb-0 text-xl text-black"
+                    ></i>
+                  </span>
+                  <span class="mt-4 lg:ml-4 lg:mt-0 lg:text-xl"
+                    >emailexemplo@gmail.com</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="flex flex-col text-gray-200 transition hover:text-gray-200/75 lg:flex-row lg:items-center"
+                  href="https://www.instagram.com/your_handle"
+                  aria-label="Follow us on Instagram"
+                >
+                  <span
+                    class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white"
+                  >
+                    <i
+                      class="fa-brands fa-instagram mb-0 text-xl text-black"
+                    ></i>
+                  </span>
+                  <span class="mt-4 lg:ml-4 lg:mt-0 lg:text-xl"
+                    >@instagram</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex h-full items-center justify-center lg:justify-end">
+            <img src="./img/logo.png" alt="" width="80" />
           </div>
         </div>
-      </footer>
-    </div>
+
+        <div
+          class="mt-12 grid grid-cols-1 gap-4 border-t border-gray-500 pt-8 md:grid-cols-4"
+        >
+          <p
+            class="border-gray-500 px-2 text-center text-sm text-gray-500 md:col-span-2 md:border-r"
+          >
+            Avenida JK, 2122 - Bom Pastor | Divinópolis - Minas Gerais
+          </p>
+          <p
+            class="border-gray-500 text-center text-sm text-gray-500 md:border-r"
+          >
+            &copy; 2024 X ao Cubo
+          </p>
+          <p class="text-center text-sm text-gray-500">
+            <a href="#">Política de Privacidade</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <!-- Footer Section End -->
     <script src="swiper.js"></script>
   </body>

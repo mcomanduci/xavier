@@ -44,30 +44,32 @@ header.scrolled #menu li a {
 
 .js-fade {
   opacity: 0;
-  transition: 0.8s;
+  transition-duration: 1.2s;
+  -o-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .js-right {
   opacity: 0;
-  transition: 0.3s;
+  transition-duration: 0.3s;
   transform: translate3d(-300px, 0, 0);
 }
 
 .js-left {
   opacity: 0;
-  transition: 0.3s;
+  transition-duration: 0.3s;
   transform: translate3d(300px, 0, 0);
 }
 
 .js-bottom {
   opacity: 0;
-  transition: 0.3s;
+  transition-duration: 0.3s;
   transform: translate3d(0, 120px, 0);
 }
 
 .js-top {
   opacity: 0;
-  transition: 0.3s;
+  transition-duration: 0.3s;
   transform: translate3d(0, -120px, 0);
 }
 
@@ -77,21 +79,8 @@ header.scrolled #menu li a {
 .js-bottom.animate,
 .js-top.animate {
   opacity: 1;
-  transition: 0.7s;
+  /* transition-duration: 0.7s; */
   transform: translate3d(0, 0, 0);
-}
-
-* {
-  animation: fadeIn, 0.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .tetes {
