@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>X ao Cubo</title>
     <link rel="icon" href="img/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- TODO: AFTER FINISH, BUILD MIN AND CHANGE -->
+    <link rel="stylesheet" href="css/output.css" />
+    <!-- <link rel="stylesheet" href="css/output.min.css" /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
       rel="stylesheet"
     />
-    <script src="script.js" type="module" defer></script>
+    <script src="js/script.js" type="module" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,107 +32,56 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="bg-secondary">
     <!-- Header Section -->
     <header
-      class="absolute left-0 right-0 top-0 z-50 overflow-x-hidden bg-black/20 py-2 transition-all"
+      class="absolute left-0 right-0 top-0 z-50 bg-black/20 backdrop-blur-sm transition-all"
     >
-      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div
+      <div class="mx-auto max-w-screen-xl px-4 py-2">
+        <nav
           class="flex h-16 items-center justify-between md:grid md:grid-cols-4"
+          aria-label="Main navigation"
         >
-          <div class="md:flex md:items-center md:gap-12">
-            <a class="block max-w-[60px] md:max-w-[76px]" href="#home">
-              <span class="sr-only">Home</span>
+          <div class="md:flex md:items-center">
+            <a
+              class="block w-[60px] transition-transform hover:scale-105 md:w-[76px]"
+              href="#home"
+              aria-label="X ao Cubo - Home"
+            >
               <img
-                class="logo-white transition-transform duration-300 hover:scale-105"
                 src="img/logo2.png"
                 width="76"
-                alt="Logo X ao Cubo"
+                height="76"
+                alt="Logo of X ao Cubo"
                 loading="lazy"
-              />
-              <img
-                src="img/logo2-black.png"
-                width="76"
-                alt="Logo X ao Cubo"
-                class="logo-black hidden"
-                loading="lazy"
+                decoding="async"
               />
             </a>
           </div>
 
-          <div
-            class="teste-fonte col-span-2 hidden text-center font-poppins text-xs font-semibold uppercase tracking-widest text-white hover:text-tertiary md:block md:text-xl"
+          <h1
+            class="col-span-2 hidden text-center font-poppins text-xs font-semibold uppercase tracking-widest text-white transition-colors hover:text-tertiary md:block md:text-xl"
           >
             Especialistas no Mercado Imobiliário
-          </div>
+          </h1>
 
-          <div
-            class="gap-3 justify-self-end font-poppins md:flex md:items-center md:text-sm lg:gap-6 lg:text-lg xl:gap-12"
-          >
-            <div class="flex items-center gap-4">
-              <div class="sm:flex sm:gap-4">
-                <a
-                  class="button-color scrollto rounded-md px-5 py-2.5 font-medium text-black shadow"
-                  href="#cta"
-                >
-                  Conheça a X³
-                </a>
-              </div>
-
-              <div class="block md:hidden"></div>
-            </div>
+          <div class="flex items-center justify-end gap-4">
+            <a
+              class="button-color scrollto rounded-md px-5 py-2.5 font-poppins font-medium text-black shadow transition-colors hover:bg-gray-200"
+              href="#cta"
+            >
+              Conheça a X³
+            </a>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
     <!-- Header Section End -->
 
     <!-- Hero Section -->
-    <!-- <section
-      id="home"
-      class="relative overflow-x-hidden bg-[url(./img/bg-3.jpg)] bg-cover bg-center bg-no-repeat"
-    >
-      <div
-        class="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-t sm:from-black/60 sm:to-black/80"
-      ></div>
-
-      <div
-        class="container relative mx-auto max-w-screen-xl px-4 pb-12 pt-32 lg:flex lg:h-[90vh] lg:items-center"
-      >
-        <div class="js-scroll js-fade mx-auto text-center">
-          <h1
-            class="mx-auto max-w-[40rem] font-poppins text-3xl font-extrabold text-white sm:text-5xl sm:leading-tight"
-          >
-            <strong class="block font-extrabold text-tertiary sm:block">
-              Marketing e Vendas
-            </strong>
-            para o Crescimento do seu negócio
-          </h1>
-
-          <p
-            class="text-shadow mx-auto mt-4 max-w-2xl text-gray-300 sm:text-base/relaxed"
-          >
-            Marketing Digital especializado para Imobiliárias, Incorporadoras,
-            Construtoras e Corretores em todo o Brasil, com foco em aumentar
-            vendas e impulsionar o crescimento do negócio.
-          </p>
-
-          <div class="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              href="#contato-form"
-              class="button-color scrollto block w-full rounded px-12 py-3 font-poppins text-lg font-medium text-black shadow focus:outline-none focus:ring sm:w-auto"
-            >
-              Entre em Contato
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section
       id="home"
-      class="relative overflow-x-hidden bg-[url(./img/bg-3.jpg)] bg-cover bg-center bg-no-repeat"
+      class="relative overflow-x-hidden bg-[url(../img/bg-3.jpg)] bg-cover bg-center bg-no-repeat"
     >
       <div
         class="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-t sm:from-black/60 sm:to-black/80"
@@ -139,17 +90,17 @@
       <div
         class="container relative mx-auto max-w-screen-xl px-8 pb-12 pt-32 lg:grid lg:h-[90vh] lg:max-h-[700px] lg:grid-cols-2 lg:items-center"
       >
-        <div class="js-scroll js-fade mx-auto text-center lg:mx-0 lg:text-left">
-          <header>
-            <h1
-              class="mx-auto max-w-[40rem] font-poppins text-3xl font-extrabold text-white sm:text-5xl sm:leading-tight lg:text-4xl xl:text-5xl"
-            >
-              <strong class="block font-extrabold text-tertiary sm:block">
-                Marketing e Vendas
-              </strong>
-              para o Crescimento do seu negócio
-            </h1>
-          </header>
+        <div
+          class="mx-auto text-center lg:mx-0 lg:text-left"
+          data-init="scroll"
+          data-anima="fade"
+        >
+          <h1
+            class="mx-auto max-w-[40rem] font-poppins text-3xl font-extrabold text-white sm:text-5xl sm:leading-tight lg:text-4xl xl:text-5xl"
+          >
+            <strong class="block text-tertiary"> Marketing e Vendas </strong>
+            para o Crescimento do seu negócio
+          </h1>
 
           <p
             class="text-shadow mx-auto mt-4 max-w-[40rem] text-gray-300 sm:text-base/relaxed"
@@ -175,26 +126,26 @@
           <img
             src="./img/model222.png"
             alt="Business marketing illustration"
-            class="js-scroll js-fade max-h-full w-auto object-contain"
+            class="max-h-full w-auto object-contain"
             loading="lazy"
+            decoding="async"
+            data-init="scroll"
+            data-anima="fade"
           />
         </div>
       </div>
     </section>
-
     <!-- Hero Section End -->
 
     <!-- Form Section -->
     <section
       id="contato"
-      class="relative overflow-x-hidden bg-[linear-gradient(#000_5%,_#1B1D20_50%,_#F1F1F1_100%)]"
+      class="relative overflow-x-hidden bg-gradient-to-b from-black via-[#1B1D20] to-[#F1F1F1]"
     >
-      <!-- TODO: CHECK ANIMATION -->
-      <!-- <section id="contato" class="relative overflow-x-hidden bg-black"> -->
-      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="flex flex-col items-center gap-x-16 gap-y-8">
+      <div class="container mx-auto max-w-screen-xl px-1 py-16 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center gap-x-16 gap-y-8 px-3">
           <div class="flex w-full">
-            <div class="js-scroll js-fade lg:pb-12">
+            <div class="lg:pb-12" data-init="scroll" data-anima="fade">
               <div class="z-10 max-w-3xl pb-8">
                 <h3 class="font-poppins font-semibold text-tertiary">
                   Fale Conosco e Transforme Suas Vendas!
@@ -214,20 +165,22 @@
                 imobiliário enfrentam desafios como:
               </p>
 
-              <ul class="mt-6 grid grid-cols-3 gap-4 sm:my-8">
+              <ul class="my-6 grid grid-cols-1 gap-4 sm:my-8 lg:grid-cols-3">
                 <li
-                  class="js-scroll js-right bg- flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-8 py-8 text-center uppercase text-black !delay-[600ms]"
+                  class="contact-card !delay-[600ms]"
+                  data-init="scroll"
+                  data-anima="right"
                 >
                   Perder clientes por falta de um atendimento eficiente.
                 </li>
                 <li
-                  class="js-scroll js-right flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-8 py-8 text-center uppercase text-black !delay-300"
+                  class="contact-card !delay-300"
+                  data-init="scroll"
+                  data-anima="right"
                 >
                   Não conseguir alcançar o público certo com seus anúncios.
                 </li>
-                <li
-                  class="js-scroll js-right flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-8 py-8 text-center uppercase text-black"
-                >
+                <li class="contact-card" data-init="scroll" data-anima="right">
                   Sentir que está estagnado e não conseguir avançar do patamar
                   em que parou.
                 </li>
@@ -245,7 +198,7 @@
                   </li>
                 </ul> -->
               <p class="mb-4 max-w-3xl text-lg text-white">Agora imagine...</p>
-              <ul class="text-md mb-4 max-w-3xl list-disc pl-5 text-gray-400">
+              <!-- <ul class="text-md mb-4 max-w-3xl list-disc pl-5 text-gray-400">
                 <li>
                   Ter um processo de vendas no digital bem estruturado, que te
                   ajuda a fechar negócios com mais facilidade, sem abrir mão dos
@@ -255,6 +208,30 @@
                   Alcançar clientes com o perfil específico dos seus imóveis.
                 </li>
                 <li>
+                  Aumentar seu faturamento e, ao mesmo tempo, deixar as
+                  estratégias de Marketing e vendas no digital com especialistas
+                  que entendem e conhecem o mercado imobiliário, liberando você
+                  para ter mais tempo para o que realmente importa em sua vida.
+                </li>
+              </ul> -->
+              <ul class="my-6 grid grid-cols-1 gap-4 sm:my-8 lg:grid-cols-3">
+                <li
+                  class="contact-card !delay-[600ms]"
+                  data-init="scroll"
+                  data-anima="right"
+                >
+                  Ter um processo de vendas no digital bem estruturado, que te
+                  ajuda a fechar negócios com mais facilidade, sem abrir mão dos
+                  canais de venda que você já possui.
+                </li>
+                <li
+                  class="contact-card !delay-300"
+                  data-init="scroll"
+                  data-anima="right"
+                >
+                  Alcançar clientes com o perfil específico dos seus imóveis.
+                </li>
+                <li class="contact-card" data-init="scroll" data-anima="right">
                   Aumentar seu faturamento e, ao mesmo tempo, deixar as
                   estratégias de Marketing e vendas no digital com especialistas
                   que entendem e conhecem o mercado imobiliário, liberando você
@@ -276,21 +253,14 @@
                 longe.
               </p>
             </div>
-
-            <!-- <div
-                class="absolute bottom-0 right-0 hidden h-auto w-full max-w-[50%] xl:block"
-              >
-                <img
-                  src="./img/model2.png"
-                  class="h-auto w-full object-cover"
-                  alt=""
-                />
-              </div> -->
           </div>
         </div>
 
         <div
-          class="sm:min-w[500px] js-scroll js-fade min-w-full rounded-lg border bg-quaternary p-8 shadow-lg md:min-w-[700px] lg:min-w-[800px] lg:p-12"
+          id="contato-form"
+          class="sm:min-w[500px] mx-auto max-w-[800px] rounded-lg border bg-quaternary p-8 shadow-lg md:min-w-[700px] lg:min-w-[800px] lg:p-12"
+          data-init="scroll"
+          data-anima="fade"
         >
           <form action="#" class="space-y-4">
             <div class="relative">
@@ -298,15 +268,10 @@
                 type="text"
                 id="nome"
                 required
-                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                class="form-input peer"
                 placeholder="Nome"
               />
-              <label
-                for="nome"
-                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
-              >
-                Nome
-              </label>
+              <label for="nome" class="form-label"> Nome </label>
             </div>
 
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -316,15 +281,10 @@
                   type="tel"
                   id="phone"
                   required
-                  class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                  class="form-input peer"
                   placeholder="Telefone"
                 />
-                <label
-                  for="phone"
-                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
-                >
-                  Telefone com DDD
-                </label>
+                <label for="phone" class="form-label"> Telefone com DDD </label>
               </div>
 
               <div class="relative">
@@ -332,15 +292,10 @@
                   type="text"
                   id="city"
                   required
-                  class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                  class="form-input peer"
                   placeholder="Cidade"
                 />
-                <label
-                  for="city"
-                  class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
-                >
-                  Cidade/Região
-                </label>
+                <label for="city" class="form-label"> Cidade/Região </label>
               </div>
             </div>
 
@@ -349,22 +304,17 @@
                 type="email"
                 id="email"
                 required
-                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 px-4 text-sm text-white placeholder-transparent outline-none"
+                class="form-input peer"
                 placeholder="E-Mail"
               />
-              <label
-                for="email"
-                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
-              >
-                E-mail
-              </label>
+              <label for="email" class="form-label"> E-mail </label>
             </div>
 
             <div class="relative">
               <select
                 name="company"
                 id="company"
-                class="select-white peer w-full rounded-[5px] border-2 border-gray-300 bg-quaternary p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none"
+                class="select-white form-select peer"
               >
                 <option value="" disabled selected class="text-gray-500">
                   Selecione uma opção
@@ -376,19 +326,14 @@
                 <option value="" class="text-white">Corretor de Imóveis</option>
                 <option value="" class="text-white">Outros</option>
               </select>
-              <label
-                for="company"
-                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
-              >
-                Seguimento
-              </label>
+              <label for="company" class="form-label"> Seguimento </label>
             </div>
 
             <div class="relative">
               <select
                 name="contact-type"
                 id="contact-type"
-                class="select-white peer w-full rounded-[5px] border-2 border-gray-300 bg-quaternary p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none"
+                class="select-white form-select peer"
               >
                 <option value="" disabled selected class="text-gray-500">
                   Selecione uma opção
@@ -397,17 +342,14 @@
                 <option value="" class="text-white">Telefone</option>
                 <option value="" class="text-white">Email</option>
               </select>
-              <label
-                for="position"
-                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-[5px] py-0 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
-              >
+              <label for="position" class="form-label">
                 Como prefere receber nosso contato?
               </label>
             </div>
 
             <div class="relative">
               <textarea
-                class="peer w-full rounded-[5px] border-2 border-gray-300 bg-transparent p-4 text-sm text-white placeholder-transparent outline-none"
+                class="form-input peer"
                 placeholder="Mensagem"
                 rows="8"
                 id="message"
@@ -415,7 +357,7 @@
               ></textarea>
               <label
                 for="message"
-                class="pointer-events-none absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-1 text-sm text-gray-500 transition-all duration-300 ease-in-out peer-placeholder-shown:top-6 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm"
+                class="form-label peer-placeholder-shown:top-[15%]"
               >
                 Gostaria de adiantar alguma informação?
               </label>
@@ -432,40 +374,40 @@
         </div>
       </div>
     </section>
-
     <!-- Form Section End -->
 
     <!-- About Section -->
     <section
       id="sobre"
-      class="relative overflow-hidden overflow-x-hidden pb-8 pt-8 lg:pb-8 lg:pt-8"
+      class="container relative overflow-hidden overflow-x-hidden mx-auto pb-8 pt-8 lg:pb-8 lg:pt-8"
     >
-      <div
-        class="absolute inset-0 -z-10 h-full w-full items-center bg-secondary px-5 py-24"
-      ></div>
-      <div class="container mx-auto px-6">
+      <div class="mx-auto px-6">
         <div class="-mx-4 flex flex-wrap items-center justify-evenly">
-          <div class="js-scroll js-fade w-full px-4 lg:w-6/12">
-            <div class="-mx-3 flex items-center sm:-mx-4">
-              <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                <div class="py-3 sm:py-4">
-                  <img
-                    src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-1.jpg"
-                    alt=""
-                    class="w-full rounded-2xl"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="py-3 sm:py-4">
+          <div
+            class="w-full px-4 lg:w-6/12"
+            data-init="scroll"
+            data-anima="fade"
+          >
+            <!-- <div class="-mx-3 flex items-center sm:-mx-4"> -->
+            <!-- <div class="w-full px-3 sm:px-4 xl:w-1/2"> -->
+            <div class="py-3 sm:py-4">
+              <img
+                src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-1.jpg"
+                alt=""
+                class="w-full rounded-2xl"
+                loading="lazy"
+              />
+            </div>
+            <!-- <div class="py-3 sm:py-4">
                   <img
                     src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-2.jpg"
                     alt=""
                     class="w-full rounded-2xl"
                     loading="lazy"
                   />
-                </div>
-              </div>
-              <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                </div> -->
+          </div>
+          <!-- <div class="w-full px-3 sm:px-4 xl:w-1/2">
                 <div class="relative z-10 my-4">
                   <img
                     src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-3.jpg"
@@ -1044,10 +986,14 @@
                     </svg>
                   </span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="js-scroll js-fade w-full px-4 lg:w-1/2 xl:w-5/12">
+              </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <div
+            class="w-full px-4 lg:w-1/2 xl:w-5/12"
+            data-init="scroll"
+            data-anima="fade"
+          >
             <div class="mt-10 lg:mt-0">
               <span
                 class="mb-4 block font-poppins text-lg font-semibold text-tertiary"
@@ -1059,32 +1005,23 @@
               >
                 Você quer vender mais, certo? Então conheça a X³!
               </h2>
-              <p class="text-body-color mb-5 text-base text-gray-800">
-                Ajudamos marcas a alcançarem novos patamares com estratégias
-                criativas e eficazes. Nossa missão é transformar desafios em
-                oportunidades, nossa visão é ser referência no mercado digital,
-                e nossos valores incluem inovação, transparência e compromisso
-                com resultados.
+              <p class="mt-4 text-gray-500">
+                Somos
+                <span class="bg-tertiary3 text-black">especializados</span> em
+                marketing e vendas para o mercado imobiliário. Conhecemos
+                profundamente seus clientes, seja para imóveis de baixo, médio
+                ou alto padrão. Sabemos exatamente quais são suas dores, seus
+                desejos, as objeções que podem apresentar e como capturar sua
+                atenção.
               </p>
-              <p class="text-body-color mb-8 text-base text-gray-800">
-                Nosso compromisso é entregar resultados que fazem a diferença.
-                Trabalhamos lado a lado com nossos clientes para criar campanhas
-                estratégicas e impactantes, sempre focando em alcançar objetivos
-                reais e mensuráveis.
+              <p class="mt-4 text-gray-500">
+                Através de anúncios online, conduzimos os potenciais clientes
+                até sua equipe de atendimento, que será treinada em vendas pela
+                X³, convertendo-os em clientes reais. Também ensinamos
+                estratégias de retenção à sua equipe, fazendo com que os
+                clientes permaneçam por mais tempo, entregando valor e
+                diminuindo seu custo de aquisição.
               </p>
-              <h3 class="font-semibold text-gray-800">
-                Pronto para alavancar sua marca?
-              </h3>
-              <p class="text-body-color mb-8 text-base text-gray-800">
-                Estamos aqui para ajudar você a crescer com soluções
-                personalizadas que fazem a diferença.
-              </p>
-              <a
-                href="#contato"
-                class="button-color scrollto inline-flex items-center justify-center rounded-md border border-transparent px-7 py-3 text-center text-base font-medium text-black"
-              >
-                Entre em Contato
-              </a>
             </div>
           </div>
         </div>
@@ -1095,31 +1032,14 @@
     <!-- CTA Section -->
     <section
       id="cta"
-      class="relative overflow-hidden overflow-x-hidden bg-secondary sm:grid sm:grid-cols-2 sm:items-center"
+      class="container relative mx-auto overflow-hidden overflow-x-hidden bg-secondary sm:grid sm:grid-cols-2 sm:items-center"
     >
       <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-        <div class="js-scroll js-fade mx-auto max-w-xl text-left">
-          <h2
-            class="text-center font-poppins text-2xl font-bold text-gray-700 sm:text-left md:text-3xl"
-          >
-            Você quer vender mais, certo? Então conheça a X³!
-          </h2>
-
-          <p class="mt-4 text-gray-500">
-            Somos
-            <span class="bg-tertiary3 text-black">especializados</span> em
-            marketing e vendas para o mercado imobiliário. Conhecemos
-            profundamente seus clientes, seja para imóveis de baixo, médio ou
-            alto padrão. Sabemos exatamente quais são suas dores, seus desejos,
-            as objeções que podem apresentar e como capturar sua atenção.
-          </p>
-          <p class="mt-4 text-gray-500">
-            Através de anúncios online, conduzimos os potenciais clientes até
-            sua equipe de atendimento, que será treinada em vendas pela X³,
-            convertendo-os em clientes reais. Também ensinamos estratégias de
-            retenção à sua equipe, fazendo com que os clientes permaneçam por
-            mais tempo, entregando valor e diminuindo seu custo de aquisição.
-          </p>
+        <div
+          class="mx-auto max-w-xl text-left"
+          data-init="scroll"
+          data-anima="fade"
+        >
           <p class="mt-4 text-gray-500">
             Nossas estratégias digitais já trouxeram resultados significativos
             para nossos clientes no mercado imobiliário. Sabemos exatamente como
@@ -1136,7 +1056,7 @@
 
           <div class="mt-4 text-center sm:text-left md:mt-8">
             <a
-              href="#contato"
+              href="#contato-form"
               class="button-color scrollto inline-block rounded px-12 py-3 text-sm font-medium text-black focus:outline-none"
             >
               Comece Agora
@@ -1148,15 +1068,21 @@
       <img
         alt=""
         src="./img/meet.jpg"
-        class="js-scroll js-fade h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
+        class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
         loading="lazy"
+        data-init="scroll"
+        data-anima="fade"
       />
     </section>
     <!-- CTA Section End -->
 
     <!-- Services Section -->
     <section class="relative h-auto bg-primary py-[60px]">
-      <div class="js-fade js-scroll mx-auto max-w-[1304px] px-2 sm:px-6">
+      <div
+        class="mx-auto max-w-[1304px] px-2 sm:px-6"
+        data-anima="fade"
+        data-init="scroll"
+      >
         <div class="px-0 pb-10 pt-0 text-center lg:p-[60px] lg:text-left">
           <div
             class="mb-6 flex flex-col items-center lg:mt-20 lg:block lg:w-[300px] lg:pt-6 xl:w-[400px]"
@@ -1175,11 +1101,11 @@
             >
               <button
                 aria-label="Anterior"
-                class="swiper-button-prev mr-4 h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(./icons/left-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(./icons/left-arrow-red.svg)]"
+                class="swiper-button-prev mr-4 h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(../icons/left-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(../icons/left-arrow-red.svg)]"
               ></button
               ><button
                 aria-label="Próximo"
-                class="swiper-button-next relative h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(./icons/right-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(./icons/right-arrow-red.svg)]"
+                class="swiper-button-next relative h-12 w-12 cursor-pointer rounded-full border-2 border-[#c2c2c2] bg-transparent bg-[url(../icons/right-arrow-grey.svg)] bg-auto bg-center bg-no-repeat text-[#c2c2c2] hover:border-tertiary hover:bg-[url(../icons/right-arrow-red.svg)]"
               ></button>
             </div>
           </div>
@@ -1333,10 +1259,12 @@
     <!-- Testimonials Section -->
     <section id="depoimentos" class="bg-primary">
       <div
-        class="js-scroll js-fade mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16"
+        class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16"
+        data-init="scroll"
+        data-anima="fade"
       >
         <h2
-          class="text-center font-poppins text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl"
+          class="text-center font-poppins text-4xl font-bold tracking-tight text-gray-300 sm:text-5xl"
         >
           O que Nossos Clientes Têm a Dizer
         </h2>
@@ -1725,8 +1653,12 @@
     <!-- Testimonial Section End -->
 
     <!-- CTA WhatsApp -->
-    <section class="bg-secondary">
-      <div class="js-scroll js-fade p-8 md:p-12 lg:px-16 lg:py-24">
+    <section class="container mx-auto">
+      <div
+        class="p-8 md:p-12 lg:px-16 lg:py-24"
+        data-init="scroll"
+        data-anima="fade"
+      >
         <div class="mx-auto max-w-lg text-center">
           <h2 class="font-poppins text-2xl font-bold text-white md:text-3xl">
             Fale Conosco no WhatsApp!
@@ -1875,6 +1807,5 @@
     </footer>
 
     <!-- Footer Section End -->
-    <script src="swiper.js"></script>
   </body>
 </html>

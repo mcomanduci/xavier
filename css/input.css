@@ -41,3 +41,19 @@ i {
 .button-color {
   @apply bg-golden-gradient bg-[200%_auto] font-poppins duration-500 hover:bg-[right_center] active:bg-[right_center];
 }
+
+.contact-card {
+  @apply flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-4 py-4 text-center font-poppins font-medium uppercase text-black lg:px-6 lg:py-6;
+}
+
+.form-input {
+  @apply w-full rounded-md border-2 border-gray-300 bg-transparent p-4 text-sm text-white outline-none ring-offset-2 transition placeholder:text-transparent focus:border-white focus:ring-inset focus:ring-white;
+}
+
+.form-select {
+  @apply w-full rounded-[5px] border-2 border-gray-300 bg-quaternary p-4 px-4 text-sm text-gray-500 placeholder-transparent outline-none;
+}
+
+.form-label {
+  @apply absolute left-4 top-0 -translate-y-1/2 bg-quaternary px-2 text-sm text-gray-500 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:bg-quaternary peer-focus:text-sm peer-focus:text-secondary;
+}
