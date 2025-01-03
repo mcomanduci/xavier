@@ -1,3 +1,6 @@
+@import "./style.css";
+@import "./keen-slider.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,15 +30,15 @@
 }
 
 i {
-  @apply mb-1 text-2xl text-white;
+  @apply mb-1 text-2xl text-light;
 }
 
 .card_title {
-  @apply z-30 text-2xl font-semibold leading-[30px] text-white duration-500 max-lg:max-w-[290px] lg:leading-none lg:group-hover:text-xl;
+  @apply z-30 text-2xl font-semibold leading-[30px] text-light duration-500 max-lg:max-w-[290px] lg:leading-none lg:group-hover:text-xl;
 }
 
 .card_content {
-  @apply absolute z-30 mt-2 w-[calc(100%-32px)] text-base leading-7 text-white transition-opacity duration-500 ease-[cubic-bezier(0.5,_0,_0,_1)] lg:text-lg lg:leading-[30px] lg:opacity-0 lg:group-hover:absolute lg:group-hover:leading-6 lg:group-hover:opacity-100 lg:group-hover:delay-200 lg:group-hover:duration-700;
+  @apply absolute z-30 mt-2 w-[calc(100%-32px)] text-base leading-7 text-light transition-opacity duration-500 ease-[cubic-bezier(0.5,_0,_0,_1)] lg:text-lg lg:leading-[30px] lg:opacity-0 lg:group-hover:absolute lg:group-hover:leading-6 lg:group-hover:opacity-100 lg:group-hover:delay-200 lg:group-hover:duration-700;
 }
 
 .button-color {
@@ -43,11 +46,11 @@ i {
 }
 
 .contact-card {
-  @apply flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-4 py-4 text-center font-poppins font-medium uppercase text-black lg:px-6 lg:py-6;
+  @apply flex flex-col justify-center rounded-lg bg-gradient-to-t from-tertiary to-tertiary3 px-4 py-4 text-center font-poppins font-medium uppercase text-darklight lg:px-6 lg:py-6;
 }
 
 .form-input {
-  @apply w-full rounded-md border-2 border-gray-300 bg-transparent p-4 text-sm text-white outline-none ring-offset-2 transition placeholder:text-transparent focus:border-white focus:ring-inset focus:ring-white;
+  @apply w-full rounded-md border-2 border-gray-300 bg-transparent p-4 text-sm text-light outline-none ring-offset-2 transition placeholder:text-transparent focus:border-white focus:ring-inset focus:ring-white;
 }
 
 .form-select {
